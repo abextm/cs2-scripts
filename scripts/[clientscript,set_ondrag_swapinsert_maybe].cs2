@@ -1,0 +1,3 @@
+// 3906
+[clientscript,set_ondrag_swapinsert_maybe](int $int0)
+~script3907($int0);

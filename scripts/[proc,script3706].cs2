@@ -19,7 +19,7 @@ while ($size5 < $size1) {
 		cc_setgraphicshadow(0x333333);
 		cc_setobject($obj2, $num3);
 		if ($inv0 = inv) {
-			if ($obj2 = extradimensional_bag_25106 | $obj2 = extradimensional_bag_25108) {
+			if ($obj2 = obj_25106 | $obj2 = obj_25108) {
 				cc_settrans(150);
 				cc_setonmouserepeat(null);
 				cc_setonmouseleave(null);

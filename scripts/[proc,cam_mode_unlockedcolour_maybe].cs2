@@ -1,0 +1,7 @@
+// 24
+[proc,cam_mode_unlockedcolour_maybe](int $int0)
+if (%var263 < $int0) {
+	cc_setcolour(^red);
+} else {
+	cc_setcolour(^white);
+}

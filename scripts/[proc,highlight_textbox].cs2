@@ -17,7 +17,7 @@ if_setcolour($colour0, interface_664:28);
 if_settext("<tostring(calc(1 + %varbit10308))>/<tostring(%varbit10309)>", interface_664:28);
 def_int $int7 = 0;
 def_int $int8 = 0;
-$int7, $int8 = ~script3416($string0, p12_full, 16);
+$int7, $int8 = ~wilderness_switchtab_type_maybe($string0, p12_full, 16);
 if_setsize($int7, $int8, ^setsize_abs, ^setsize_abs, interface_664:8);
 if_setcolour($colour0, interface_664:27);
 if_settext($string0, interface_664:27);

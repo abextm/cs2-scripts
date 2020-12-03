@@ -18,7 +18,7 @@ if (%varcint181 ! 0 & %varcint181 ! 1 & %varcint181 ! 2 & %varcint181 ! 3 & %var
 }
 ~raids_partydetails_setsort(-1);
 ~raids_partydetails_closestats;
-~script1537;
+~tol_chatscrollside_mode1_maybe;
 if_setonvartransmit("script1536{var1430}", interface_507:11);
 ~steelborder(interface_507:2, $text0, 0);
 def_string $string1 = "";

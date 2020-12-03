@@ -1,0 +1,7 @@
+// 3943
+[clientscript,zoom_timer_maybe](int $int0, int $int1)
+if (%varcint73 = $int0 & %varcint74 = $int1) {
+	return;
+}
+~zoom_position_slider;
+if_setontimer("zoom_timer_maybe(%varcint73, %varcint74)", new_options:55);

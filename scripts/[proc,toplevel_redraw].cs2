@@ -146,7 +146,7 @@ if (%varbit9528 = 0 & %varbit542 = ^false) {
 } else {
 	if_sethide(true, $component2);
 }
-~script3175($component2, ^min_32bit_int);
+~bankmain_view_toggleplaceholders_maybe($component2, ^min_32bit_int);
 if (%varbit4134 = 1) {
 	mousecam(false);
 } else {

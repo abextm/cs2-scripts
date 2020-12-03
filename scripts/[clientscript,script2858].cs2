@@ -5,17 +5,17 @@ if_setonop("script3774(event_opindex)", $component19);
 if (~on_mobile = false) {
 	if_setonmouseover("settrans(event_com, 240)", $component19);
 	if_setonmouseleave("settrans(event_com, 255)", $component19);
-	if_setonmouseover("model_swapper($component3, model_38985)", $component1);
+	if_setonmouseover("model_swapper($component3, twisted_dragon_trophy_38985)", $component1);
 	if_setonmouseleave("model_swapper($component3, model_7747)", $component1);
-	if_setonmouseover("model_swapper($component3, model_38985)", $component2);
+	if_setonmouseover("model_swapper($component3, twisted_dragon_trophy_38985)", $component2);
 	if_setonmouseleave("model_swapper($component3, model_7747)", $component2);
-	if_setonmouseover("model_swapper($component9, model_38985)", $component7);
+	if_setonmouseover("model_swapper($component9, twisted_dragon_trophy_38985)", $component7);
 	if_setonmouseleave("model_swapper($component9, model_7747)", $component7);
-	if_setonmouseover("model_swapper($component9, model_38985)", $component8);
+	if_setonmouseover("model_swapper($component9, twisted_dragon_trophy_38985)", $component8);
 	if_setonmouseleave("model_swapper($component9, model_7747)", $component8);
-	if_setonmouseover("model_swapper($component15, model_38985)", $component13);
+	if_setonmouseover("model_swapper($component15, twisted_dragon_trophy_38985)", $component13);
 	if_setonmouseleave("model_swapper($component15, model_7747)", $component13);
-	if_setonmouseover("model_swapper($component15, model_38985)", $component14);
+	if_setonmouseover("model_swapper($component15, twisted_dragon_trophy_38985)", $component14);
 	if_setonmouseleave("model_swapper($component15, model_7747)", $component14);
 }
 if_setontimer("spinner(calc(12 + randominc(4)), calc(12 + randominc(4)), 0, event_com)", $component4);

@@ -1,0 +1,5 @@
+// 2080
+[clientscript,scrollbar_submit_hitsplattint_maybe](obj $obj0)
+if ($obj0 = %varcint393) {
+	~magic_stop_flash($obj0);
+}

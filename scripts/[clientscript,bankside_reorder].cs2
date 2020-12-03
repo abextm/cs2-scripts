@@ -24,6 +24,6 @@ if (cc_find($drop0, $comsubid2) = ^true) {
 if ($obj9 = looting_bag_11941 | $obj9 = looting_bag_22586 | $obj10 = looting_bag_11941 | $obj10 = looting_bag_22586) {
 	cc_deleteall($component4);
 }
-if ($obj9 = extradimensional_bag_25106 | $obj9 = extradimensional_bag_25108 | $obj10 = extradimensional_bag_25106 | $obj10 = extradimensional_bag_25108) {
+if ($obj9 = obj_25106 | $obj9 = obj_25108 | $obj10 = obj_25106 | $obj10 = obj_25108) {
 	cc_deleteall($component4);
 }

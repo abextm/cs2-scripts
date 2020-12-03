@@ -1,0 +1,3 @@
+// 2512
+[clientscript,show_mainmodal_hint_maybe](component $component0, int $clock1)
+~script2513($component0, $clock1);

@@ -1,0 +1,4 @@
+// 3521
+[clientscript,trail_tick_indicator_maybe](component $component0, component $component1)
+~script3522($component0, $component1);
+if_setonvartransmit("trail_tick_indicator_maybe($component0, $component1){var2743}", $component0);

@@ -52,7 +52,7 @@ while ($int25 < 50) {
 			case burnt_fishcake_7531 :
 				$int16, $int17 = ~deathkeep_left_coinsitem($obj23, inv_getnum(inv_584, $int25), calc(inv_getnum(inv_468, $int25) - 1), $int1, $int2, $int3, $int16);
 			case jug_of_bad_wine_1991 :
-				$int14, $int15 = ~script1695($obj23, inv_getnum(inv_584, $int25), $int1, $int2, $int3, $int14);
+				$int14, $int15 = ~area_tooltip_skip_maybe($obj23, inv_getnum(inv_584, $int25), $int1, $int2, $int3, $int14);
 			case default :
 				$int18, $int19 = ~deathkeep_left_deleteditem($obj23, inv_getnum(inv_584, $int25), $int1, $int2, $int3, $int18);
 		}

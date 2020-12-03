@@ -49,7 +49,7 @@ while ($int9 > 0) {
 			.cc_setgraphic("prayerglow");
 			.cc_settrans(180);
 		}
-		if ($obj8 = extradimensional_bag_25106 | $obj8 = extradimensional_bag_25108) {
+		if ($obj8 = obj_25106 | $obj8 = obj_25108) {
 			.cc_create($component2, ^iftype_graphic, $int11);
 			$int11 = calc($int11 + 1);
 			.cc_setsize(34, 34, ^setsize_abs, ^setsize_abs);

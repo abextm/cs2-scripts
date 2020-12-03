@@ -1,0 +1,3 @@
+// 1202
+[clientscript,barbassault_action_insurance_maybe](int $int0)
+%varcint79 = $int0;

@@ -9,4 +9,4 @@ if (%varbit6275 = $int2) {
 } else {
 	%varbit6275 = $int2;
 }
-~script2173;
+~tzhaar_volcanic_populate_maybe;

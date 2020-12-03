@@ -6,4 +6,4 @@
 ~hallowed_tools_side_create($component4, hallowed_symbol_24725, "Symbol");
 ~hallowed_tools_side_create($component5, hallowed_hammer_24727, "Hammer");
 ~hallowed_tools_side_create($component6, hallowed_ring_24731, "Ring");
-~script3574($component7, "Deposit", true);
+~deadmanloot_graphic_ondialogabort_maybe($component7, "Deposit", true);

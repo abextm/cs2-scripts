@@ -13,7 +13,7 @@ while ($obj5 ! null) {
 		if_setontargetenter("magic_spellbook_targetmode(true, event_com, $obj5)", $component3);
 		if_setontargetleave("magic_spellbook_targetmode(false, event_com, $obj5)", $component3);
 	} else {
-		if_setonop("script2080($obj5)", $component3);
+		if_setonop("scrollbar_submit_hitsplattint_maybe($obj5)", $component3);
 	}
 	$int4 = calc($int4 + 1);
 	$obj5 = enum(int, obj, $enum0, $int4);

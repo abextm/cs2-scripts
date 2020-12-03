@@ -1,0 +1,3 @@
+// 3872
+[clientscript,settings_show_keyboard_maybe]
+~keyboard_show_string(0, 50, %varcstring417);

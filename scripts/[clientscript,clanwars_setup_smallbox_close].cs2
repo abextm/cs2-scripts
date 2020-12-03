@@ -5,7 +5,7 @@ if ($int0 = 1 & $enum2 ! null & ($int1 = -1 | $int1 >= 0 & $int1 < enum_getoutpu
 	if ($int1 ! -1) {
 		~script573($enum2, $int1);
 	}
-	~script2881;
+	~longscroll_switchtab_skip_maybe;
 	if_sethide(true, $component5);
 	if_sethide(false, $component6);
 	~xpdrops_setup_display_hoveroff($component3);

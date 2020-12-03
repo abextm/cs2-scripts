@@ -1,9 +1,11 @@
 // 1043
 [clientscript,zoom_slider_dragcomplete](component $component0, component $component1, int $mousex2)
-if ($component0 ! options:15) {
+~script3945;
+if ($component0 ! new_options:55) {
 	return;
 }
 if (%varbit4606 ! 0) {
 	return;
 }
 ~zoom_position_slider;
+if_setontimer("zoom_timer_maybe(%varcint73, %varcint74)", new_options:55);
