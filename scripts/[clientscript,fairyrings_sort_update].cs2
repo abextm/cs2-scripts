@@ -1,5 +1,5 @@
 // 402
-[clientscript,fairyrings_sort_update](component $component0, component $component1, int $int2, component $component3, component $component4)
+[clientscript,fairyrings_sort_update](component $widget_381:7_0, component $widget_381:152_1, int $int2, component $widget_381:9_3, component $widget_381:8_4)
 if ($int2 = 1) {
 	if (%varcint54 = 1 | %varcint54 = 0) {
 		%varcint54 = %varcint54;
@@ -9,7 +9,7 @@ if ($int2 = 1) {
 	if (%varcint0 < 0) {
 		%varcint0 = 0;
 	}
-	~scrollbar_vertical($component1, $component0, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+	~scrollbar_vertical($widget_381:152_1, $widget_381:7_0, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
 } else {
 	sound_synth(synth_2266, 1, 0);
 	if (%varcint54 = 1) {
@@ -21,12 +21,12 @@ if ($int2 = 1) {
 def_component $component5 = null;
 def_component $component6 = null;
 def_component $component7 = null;
-def_int $width8 = calc(if_getwidth($component0) - 20);
+def_int $width8 = calc(if_getwidth($widget_381:7_0) - 20);
 if ($width8 <= 0) {
 	$width8 = 143;
 }
-cc_deleteall($component0);
-cc_deleteall($component4);
+cc_deleteall($widget_381:7_0);
+cc_deleteall($widget_381:8_4);
 def_int $int9 = 17;
 def_int $int10 = 0;
 def_int $int11 = 0;
@@ -47,8 +47,8 @@ while ($int11 < 4) {
 			if_setposition(2, $int10, ^setpos_abs_left, ^setpos_abs_top, $component6);
 			if_setposition(20, $int10, ^setpos_abs_left, ^setpos_abs_top, $component7);
 			if_setopbase("<col=ff981f><if_gettext($component7)></col>", $component5);
-			if_setonmouseover("text_colour_swapper($component7, 0xff7f7f)", $component5);
-			if_setonmouseleave("text_colour_swapper($component7, 0xff3f3f)", $component5);
+			if_setonmouseover("text_colour_swapper($component7, 16744319)", $component5);
+			if_setonmouseleave("text_colour_swapper($component7, 16727871)", $component5);
 			$boolean12 = false;
 			$int10 = calc($int10 + $int9 + 3);
 		} else {
@@ -62,8 +62,8 @@ while ($int11 < 4) {
 if ($boolean12 = false) {
 	$int10 = calc($int10 + 3);
 }
-if_sethide($boolean12, $component3);
-if_setsize(0, $int10, ^setsize_minus, ^setsize_abs, $component4);
+if_sethide($boolean12, $widget_381:9_3);
+if_setsize(0, $int10, ^setsize_minus, ^setsize_abs, $widget_381:8_4);
 def_int $int13 = 0;
 def_component $component14 = null;
 def_component $componentarray0(64);
@@ -97,7 +97,7 @@ if ($int15 > 0) {
 	}
 }
 $int13 = 0;
-cc_deleteall($component0);
+cc_deleteall($widget_381:7_0);
 while ($int13 < $int15) {
 	$component6 = enum(component, component, enum_1296, $componentarray0($int13));
 	$string0 = enum(component, string, enum_823, $componentarray0($int13));
@@ -107,7 +107,7 @@ while ($int13 < $int15) {
 	}
 	if_setsize($width8, $int9, ^setsize_abs, ^setsize_abs, $componentarray0($int13));
 	if_setposition(20, $int10, ^setpos_abs_left, ^setpos_abs_top, $componentarray0($int13));
-	cc_create($component0, ^iftype_text, $int13);
+	cc_create($widget_381:7_0, ^iftype_text, $int13);
 	cc_setsize($width8, $int9, ^setsize_abs, ^setsize_abs);
 	cc_setposition(20, if_gety($componentarray0($int13)), ^setpos_abs_left, ^setpos_abs_top);
 	cc_settextfont(p12_full);
@@ -116,8 +116,8 @@ while ($int13 < $int15) {
 	cc_settextalign(^settextalign_left, ^settextalign_top, 0);
 	cc_settext($string0);
 	if_setopbase("<col=ff981f><$string0></col>", $componentarray0($int13));
-	if_setonmouseover("cc_colour_swapper($component0, cc_getid, 0xff7f7f)", $componentarray0($int13));
-	if_setonmouseleave("cc_colour_swapper($component0, cc_getid, 0xff3f3f)", $componentarray0($int13));
+	if_setonmouseover("cc_colour_swapper($widget_381:7_0, cc_getid, 0xff7f7f)", $componentarray0($int13));
+	if_setonmouseleave("cc_colour_swapper($widget_381:7_0, cc_getid, 0xff3f3f)", $componentarray0($int13));
 	$int10 = calc($int10 + $int9 + 3);
 	$int13 = calc($int13 + 1);
 }
@@ -128,8 +128,8 @@ if (string_length($string0) > 0) {
 	if_setsize($width8, $int9, ^setsize_abs, ^setsize_abs, interface_381:139);
 	if_setposition(20, $int10, ^setpos_abs_left, ^setpos_abs_top, interface_381:139);
 	if_setcolour(0xff3f3f, interface_381:139);
-	if_setonmouseover("text_colour_swapper(event_com, 0xff7f7f)", interface_381:139);
-	if_setonmouseleave("text_colour_swapper(event_com, 0xff3f3f)", interface_381:139);
+	if_setonmouseover("text_colour_swapper(event_com, 16744319)", interface_381:139);
+	if_setonmouseleave("text_colour_swapper(event_com, 16727871)", interface_381:139);
 	$int10 = calc($int10 + $int9 + 3);
 } else {
 	if_sethide(true, interface_381:139);
@@ -137,15 +137,15 @@ if (string_length($string0) > 0) {
 if ($int10 > 0) {
 	$int10 = calc($int10 - 3);
 }
-$int9 = if_getheight($component0);
+$int9 = if_getheight($widget_381:7_0);
 if ($int10 > $int9) {
-	if_setscrollsize(0, $int10, $component0);
+	if_setscrollsize(0, $int10, $widget_381:7_0);
 	$int9 = calc($int10 - $int9);
 	if (%varcint0 > $int9) {
 		%varcint0 = $int9;
 	}
 } else {
-	if_setscrollsize(0, 0, $component0);
+	if_setscrollsize(0, 0, $widget_381:7_0);
 	%varcint0 = 0;
 }
-~scrollbar_resize($component1, $component0, %varcint0);
+~scrollbar_resize($widget_381:152_1, $widget_381:7_0, %varcint0);

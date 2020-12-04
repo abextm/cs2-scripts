@@ -1,5 +1,5 @@
 // 777
-[clientscript,ge_offers_setup_changequantity](int $int0, int $opindex1, component $component2, int $comsubid3, int $comsubid4, int $comsubid5, int $comsubid6, int $comsubid7, int $comsubid8, int $comsubid9, int $comsubid10, int $comsubid11, int $comsubid12, int $comsubid13, int $comsubid14, component $component15, int $comsubid16)
+[clientscript,ge_offers_setup_changequantity](int $int0, int $opindex1, component $widget_465:24_2, int $comsubid3, int $comsubid4, int $comsubid5, int $comsubid6, int $comsubid7, int $comsubid8, int $comsubid9, int $comsubid10, int $comsubid11, int $comsubid12, int $comsubid13, int $comsubid14, component $widget_465:27_15, int $comsubid16)
 if ($opindex1 ! 1 | %var1151 = null) {
 	return;
 }
@@ -53,4 +53,4 @@ if (%var1151 = old_school_bond_13190) {
 		sound_synth(synth_3930, 1, 0);
 	}
 }
-~ge_offers_setup_draw($component2, $comsubid3, $comsubid4, $comsubid5, $comsubid6, $comsubid7, $comsubid8, $comsubid9, $comsubid10, $comsubid11, $comsubid12, $comsubid13, $comsubid14, $component15, $comsubid16);
+~ge_offers_setup_draw($widget_465:24_2, $comsubid3, $comsubid4, $comsubid5, $comsubid6, $comsubid7, $comsubid8, $comsubid9, $comsubid10, $comsubid11, $comsubid12, $comsubid13, $comsubid14, $widget_465:27_15, $comsubid16);

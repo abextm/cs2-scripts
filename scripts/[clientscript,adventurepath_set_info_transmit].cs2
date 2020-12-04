@@ -1,5 +1,5 @@
 // 2954
-[clientscript,adventurepath_set_info_transmit](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20)
+[clientscript,adventurepath_set_info_transmit](component $widget_642:30_0, component $widget_642:31_1, component $widget_642:29_2, component $widget_642:32_3, component $widget_642:21_4, component $widget_642:23_5, component $widget_642:5_6, component $widget_642:3_7, component $widget_642:7_8, component $widget_642:24_9, component $widget_642:25_10, component $widget_642:33_11, component $widget_642:4_12, component $widget_642:8_13, component $widget_642:11_14, component $widget_642:13_15, component $widget_642:16_16, component $widget_642:17_17, component $widget_642:19_18, component $widget_642:12_19, component $widget_642:26_20)
 if (%var2358 = 0) {
 	return;
 }
@@ -13,7 +13,7 @@ def_int $int24 = struct_param($struct23, param_806);
 while ($count22 < enum_getoutputcount($enum21)) {
 	$struct23 = enum(int, struct, $enum21, $count22);
 	if ($struct23 ! null & $int24 = %var2358) {
-		~adventurepath_set_info($int24, $component0, $component1, $component2, $component3, $struct23, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20);
+		~adventurepath_set_info($int24, $widget_642:30_0, $widget_642:31_1, $widget_642:29_2, $widget_642:32_3, $struct23, $widget_642:21_4, $widget_642:23_5, $widget_642:5_6, $widget_642:3_7, $widget_642:7_8, $widget_642:24_9, $widget_642:25_10, $widget_642:33_11, $widget_642:4_12, $widget_642:8_13, $widget_642:11_14, $widget_642:13_15, $widget_642:16_16, $widget_642:17_17, $widget_642:19_18, $widget_642:12_19, $widget_642:26_20);
 		return;
 	}
 	$count22 = calc($count22 + 1);

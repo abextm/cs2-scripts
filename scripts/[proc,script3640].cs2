@@ -1,8 +1,8 @@
 // 3640
-[proc,script3640](int $count0, component $component1, component $component2, component $component3, component $component4, component $component5)
+[proc,script3640](int $count0, component $widget_2:2_1, component $widget_2:6_2, component $widget_2:7_3, component $widget_2:8_4, component $widget_2:9_5)
 def_int $count6 = 0;
 while ($count6 < $count0) {
-	if (cc_find($component1, $count6) = ^true) {
+	if (cc_find($widget_2:2_1, $count6) = ^true) {
 		cc_clearops;
 		switch_int (%varbit6348) {
 			case 1 :
@@ -32,23 +32,23 @@ while ($count6 < $count0) {
 }
 switch_int (%varbit6348) {
 	case 1 :
-		~script3642(false, false, $component2, -1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(true, null, $component3, 1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component4, 5, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component5, 0, $count0, $component1, $component2, $component3, $component4, $component5);
+		~script3642(false, false, $widget_2:6_2, -1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(true, null, $widget_2:7_3, 1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:8_4, 5, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:9_5, 0, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
 	case 2 :
-		~script3642(false, false, $component2, -1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component3, 1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(true, null, $component4, 5, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component5, 0, $count0, $component1, $component2, $component3, $component4, $component5);
+		~script3642(false, false, $widget_2:6_2, -1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:7_3, 1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(true, null, $widget_2:8_4, 5, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:9_5, 0, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
 	case 3 :
-		~script3642(false, false, $component2, -1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component3, 1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component4, 5, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(true, null, $component5, 0, $count0, $component1, $component2, $component3, $component4, $component5);
+		~script3642(false, false, $widget_2:6_2, -1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:7_3, 1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:8_4, 5, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(true, null, $widget_2:9_5, 0, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
 	case default :
-		~script3642(true, null, $component2, -1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component3, 1, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component4, 5, $count0, $component1, $component2, $component3, $component4, $component5);
-		~script3642(false, false, $component5, 0, $count0, $component1, $component2, $component3, $component4, $component5);
+		~script3642(true, null, $widget_2:6_2, -1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:7_3, 1, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:8_4, 5, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
+		~script3642(false, false, $widget_2:9_5, 0, $count0, $widget_2:2_1, $widget_2:6_2, $widget_2:7_3, $widget_2:8_4, $widget_2:9_5);
 }

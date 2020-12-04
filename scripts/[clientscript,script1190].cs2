@@ -1,11 +1,11 @@
 // 1190
-[clientscript,script1190](component $component0, component $component1)
-~scrollbar_vertical($component1, $component0, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
-if (cc_find($component1, 1) = ^true) {
-	if (%varcint80 < 0 | %varcint80 >= if_getscrollheight($component0)) {
+[clientscript,script1190](component $widget_75:2_0, component $widget_75:65_1)
+~scrollbar_vertical($widget_75:65_1, $widget_75:2_0, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+if (cc_find($widget_75:65_1, 1) = ^true) {
+	if (%varcint80 < 0 | %varcint80 >= if_getscrollheight($widget_75:2_0)) {
 		%varcint80 = 0;
 	}
-	~scrollbar_vertical_doscroll($component1, $component0, %varcint80, true);
+	~scrollbar_vertical_doscroll($widget_75:65_1, $widget_75:2_0, %varcint80, true);
 } else {
 	%varcint80 = 0;
 }

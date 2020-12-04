@@ -1,4 +1,4 @@
 // 1365
-[clientscript,script1365](component $component0, component $component1)
-~script1367($component0, $component1);
+[clientscript,script1365](component $widget_491:2_0, component $widget_491:3_1)
+~script1367($widget_491:2_0, $widget_491:3_1);
 ~script1366;

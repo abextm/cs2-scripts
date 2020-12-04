@@ -1,8 +1,8 @@
 // 2368
-[clientscript,script2368](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8)
-cc_deleteall($component0);
-~steelbox($component0, 0);
-~script2371($component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8);
-if_setonvartransmit("script2370($component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8){var261}", $component0);
-if_setonop("script2369(1, event_opindex, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8)", $component1);
-if_setonop("script2369(-1, event_opindex, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8)", $component2);
+[clientscript,script2368](component $widget_18:0_0, component $widget_18:22_1, component $widget_18:23_2, component $widget_18:3_3, component $widget_18:7_4, component $widget_18:10_5, component $widget_18:13_6, component $widget_18:16_7, component $widget_18:19_8)
+cc_deleteall($widget_18:0_0);
+~steelbox($widget_18:0_0, 0);
+~script2371($widget_18:22_1, $widget_18:23_2, $widget_18:3_3, $widget_18:7_4, $widget_18:10_5, $widget_18:13_6, $widget_18:16_7, $widget_18:19_8);
+if_setonvartransmit("script2370($widget_18:22_1, $widget_18:23_2, $widget_18:3_3, $widget_18:7_4, $widget_18:10_5, $widget_18:13_6, $widget_18:16_7, $widget_18:19_8){var261}", $widget_18:0_0);
+if_setonop("script2369(1, event_opindex, $widget_18:22_1, $widget_18:23_2, $widget_18:3_3, $widget_18:7_4, $widget_18:10_5, $widget_18:13_6, $widget_18:16_7, $widget_18:19_8)", $widget_18:22_1);
+if_setonop("script2369(-1, event_opindex, $widget_18:22_1, $widget_18:23_2, $widget_18:3_3, $widget_18:7_4, $widget_18:10_5, $widget_18:13_6, $widget_18:16_7, $widget_18:19_8)", $widget_18:23_2);

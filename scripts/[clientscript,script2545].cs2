@@ -1,4 +1,4 @@
 // 2545
-[clientscript,script2545](component $component0, component $component1)
-~script2249($component0, setbit(0, 2));
-~script1486($component1, ^setpos_abs_right, 1, 0);
+[clientscript,script2545](component $widget_171:1_0, component $widget_171:2_1)
+~script2249($widget_171:1_0, setbit(0, 2));
+~script1486($widget_171:2_1, ^setpos_abs_right, 1, 0);

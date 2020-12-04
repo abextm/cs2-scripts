@@ -1,6 +1,6 @@
 // 3929
-[clientscript,script3929](component $component0, component $component1)
-if (~on_mobile = false & cc_find($component0, 0) = ^true) {
+[clientscript,script3929](component $widget_116:22_0, component $widget_116:34_1)
+if (~on_mobile = false & cc_find($widget_116:22_0, 0) = ^true) {
 	cc_setcolour(0xff981f);
 }
-~deltooltip_action($component1);
+~deltooltip_action($widget_116:34_1);

@@ -1,8 +1,8 @@
 // 1363
-[clientscript,br_loadout_drawloadout_request](component $component0, component $component1, component $component2, component $drop3, component $component4)
+[clientscript,br_loadout_drawloadout_request](component $widget_646:0_0, component $widget_646:2_1, component $widget_646:21_2, component $widget_646:3_3, component $widget_646:26_4)
 if (clientclock > %varcint110) {
-	~br_loadout_drawloadout($component1, $component2, $drop3, $component4);
-	if_setontimer(null, $component0);
+	~br_loadout_drawloadout($widget_646:2_1, $widget_646:21_2, $widget_646:3_3, $widget_646:26_4);
+	if_setontimer(null, $widget_646:0_0);
 } else {
-	if_setontimer("br_loadout_drawloadout_request($component0, $component1, $component2, $drop3, $component4)", $component0);
+	if_setontimer("br_loadout_drawloadout_request($widget_646:0_0, $widget_646:2_1, $widget_646:21_2, $widget_646:3_3, $widget_646:26_4)", $widget_646:0_0);
 }

@@ -1,5 +1,5 @@
 // 3217
-[clientscript,league_info_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9)
-~leagues_close_button($component9, false);
+[clientscript,league_info_init](component $widget_654:6_0, component $widget_654:7_1, component $widget_654:9_2, component $widget_654:12_3, component $widget_654:10_4, component $widget_654:13_5, component $widget_654:15_6, component $widget_654:17_7, component $widget_654:16_8, component $widget_654:14_9)
+~leagues_close_button($widget_654:14_9, false);
 def_int $comsubid10 = ~steelborder(interface_654:2, "Trailblazer Info", 1);
-~league_info_draw_interface($component0, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, 0, 0, $comsubid10);
+~league_info_draw_interface($widget_654:6_0, $widget_654:7_1, $widget_654:9_2, $widget_654:12_3, $widget_654:10_4, $widget_654:13_5, $widget_654:15_6, $widget_654:17_7, $widget_654:16_8, 0, 0, $comsubid10);

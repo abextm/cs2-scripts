@@ -1,15 +1,15 @@
 // 1708
-[clientscript,worldmap_maplist_open](component $component0, component $component1, component $component2, int $x3, int $z4)
+[clientscript,worldmap_maplist_open](component $widget_595:26_0, component $widget_595:31_1, component $widget_595:35_2, int $x3, int $z4)
 sound_synth(synth_2266, 1, 0);
-~xpdrops_setup_display_hoverdisable($component0);
-if_sethide(false, $component1);
+~xpdrops_setup_display_hoverdisable($widget_595:26_0);
+if_sethide(false, $widget_595:31_1);
 def_int $y5 = ^min_32bit_int;
 def_int $y6 = ^min_32bit_int;
 def_int $int7 = 0;
 def_maparea $maparea8 = null;
 while ($int7 <= 37) {
 	$maparea8 = enum(int, maparea, enum_1697, $int7);
-	if ($maparea8 ! null & cc_find($component2, calc($int7 + 1)) = ^true) {
+	if ($maparea8 ! null & cc_find($widget_595:35_2, calc($int7 + 1)) = ^true) {
 		if (~worldmap_findcoordinmap($maparea8, %varcint188) ! null) {
 			if (~on_mobile = false) {
 				$y5 = calc(cc_gety - 1);
@@ -27,7 +27,7 @@ while ($int7 <= 37) {
 	}
 	$int7 = calc($int7 + 1);
 }
-if (cc_find($component2, $x3) = ^true & .cc_find($component2, $z4) = ^true) {
+if (cc_find($widget_595:35_2, $x3) = ^true & .cc_find($widget_595:35_2, $z4) = ^true) {
 	if ($y5 ! ^min_32bit_int) {
 		if ($y6 ! ^min_32bit_int) {
 			cc_sethide(false);

@@ -1,12 +1,12 @@
 // 3068
-[clientscript,br_loadout_insert](component $component0, int $comsubid1, component $drop2, int $dropsubid3, int $count4, component $component5, int $comsubid6, int $comsubid7, component $drop8, component $drop9, component $component10)
+[clientscript,br_loadout_insert](component $component0, int $comsubid1, component $drop2, int $dropsubid3, int $count4, component $widget_646:2_5, int $comsubid6, int $comsubid7, component $widget_646:21_8, component $widget_646:3_9, component $widget_646:26_10)
 if (cc_find($component0, $comsubid1) = ^true) {
 	cc_setontimer(null);
 }
-if (cc_find($component5, $comsubid6) = ^true) {
+if (cc_find($widget_646:2_5, $comsubid6) = ^true) {
 	cc_sethide(true);
 }
-if (cc_find($component5, $comsubid7) = ^true) {
+if (cc_find($widget_646:2_5, $comsubid7) = ^true) {
 	cc_sethide(true);
 }
 def_namedobj $namedobj11 = enum(int, namedobj, enum_2630, $count4);
@@ -15,7 +15,7 @@ if ($namedobj11 = null) {
 }
 def_int $int12 = 0;
 def_int $int13 = -1;
-if ($drop2 = $drop8) {
+if ($drop2 = $widget_646:21_8) {
 	if ($dropsubid3 >= 0 & $dropsubid3 < inv_size(inv)) {
 		$int13 = $dropsubid3;
 	}
@@ -38,7 +38,7 @@ if ($int12 = 0) {
 		return;
 	}
 } else if (enum(int, namedobj, enum_2630, ~br_loadout_get_inv($int13)) ! null) {
-	~br_loadout_additem($count4, $namedobj11, $int13, $component5, $drop8, $drop9, $component10);
+	~br_loadout_additem($count4, $namedobj11, $int13, $widget_646:2_5, $widget_646:21_8, $widget_646:3_9, $widget_646:26_10);
 	return;
 }
 sound_synth(synth_2266, 1, 0);
@@ -47,4 +47,4 @@ if ($int12 = 1) {
 } else {
 	~br_loadout_set_worn($int13, $count4);
 }
-~br_loadout_drawloadout($component5, $drop8, $drop9, $component10);
+~br_loadout_drawloadout($widget_646:2_5, $widget_646:21_8, $widget_646:3_9, $widget_646:26_10);

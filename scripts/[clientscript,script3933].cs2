@@ -1,26 +1,26 @@
 // 3933
-[clientscript,script3933](component $component0, component $component1, component $component2, component $component3)
-cc_deleteall($component1);
+[clientscript,script3933](component $widget_116:11_0, component $widget_116:35_1, component $widget_116:36_2, component $widget_116:34_3)
+cc_deleteall($widget_116:35_1);
 def_int $int4 = struct_param(struct_2753, param_1101);
 def_int $int5 = 0;
-def_int $width6 = if_getwidth($component1);
+def_int $width6 = if_getwidth($widget_116:35_1);
 def_graphic $graphic7 = "options_icons,1";
 def_int $int8 = ~settings_get_slider_maybe(30);
 def_string $string0 = "Mute Music";
 def_string $string1 = "Unmute Music";
-~settings_create_icon_maybe($int8, 30, $component2, $component1, $int4, $graphic7, $component0, $string0, $string1, $component3);
-if_setonvartransmit("script3939(30, $component2, $component1, $int4, $graphic7, $component0, $string0, $string1, $component3){var168}", $component2);
-if_setnoclickthrough(true, $component2);
-if_setonclick("opsound(0, 0)", $component2);
+~settings_create_icon_maybe($int8, 30, $widget_116:36_2, $widget_116:35_1, $int4, $graphic7, $widget_116:11_0, $string0, $string1, $widget_116:34_3);
+if_setonvartransmit("script3939(30, $widget_116:36_2, $widget_116:35_1, $int4, $graphic7, $widget_116:11_0, $string0, $string1, $widget_116:34_3){var168}", $widget_116:36_2);
+if_setnoclickthrough(true, $widget_116:36_2);
+if_setonclick("opsound(0, 0)", $widget_116:36_2);
 while ($int5 <= $int4) {
-	cc_create($component1, ^iftype_rectangle, $int5);
+	cc_create($widget_116:35_1, ^iftype_rectangle, $int5);
 	cc_setop(1, "Adjust Music Volume");
 	cc_setposition(scale($int5, $int4, $width6), 0, ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(calc(scale(1 + $int5, $int4, $width6) - scale($int5, $int4, $width6)), 0, ^setsize_abs, ^setsize_minus);
 	cc_setfill(true);
 	cc_setcolour(^white);
 	cc_settrans(255);
-	cc_setonop("script3940(30, $int5, $component2, $component1, $int4, $graphic7, $component0, $string0, $string1, $component3)");
+	cc_setonop("script3940(30, $int5, $widget_116:36_2, $widget_116:35_1, $int4, $graphic7, $widget_116:11_0, $string0, $string1, $widget_116:34_3)");
 	$int5 = calc($int5 + 1);
 }
-~script3941($int8, $component2, $component1, $int4);
+~script3941($int8, $widget_116:36_2, $widget_116:35_1, $int4);

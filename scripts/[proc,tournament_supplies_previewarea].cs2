@@ -1,5 +1,5 @@
 // 2696
-[proc,tournament_supplies_previewarea](component $component0)
+[proc,tournament_supplies_previewarea](component $widget_100:9_0)
 def_int $int1 = 0;
 def_component $component2 = null;
 def_obj $obj3 = null;
@@ -35,14 +35,14 @@ while ($size4 < $size5) {
 	}
 	$size4 = calc($size4 + 1);
 }
-cc_deleteall($component0);
-def_int $int6 = calc((if_getwidth($component0) - 4 - 4 * 36) / 3 + 36);
-def_int $int7 = calc((if_getheight($component0) - 4 - 7 * 32) / 6 + 32);
+cc_deleteall($widget_100:9_0);
+def_int $int6 = calc((if_getwidth($widget_100:9_0) - 4 - 4 * 36) / 3 + 36);
+def_int $int7 = calc((if_getheight($widget_100:9_0) - 4 - 7 * 32) / 6 + 32);
 def_int $size8 = 0;
 def_int $size9 = inv_size(inv);
 while ($size8 < $size9) {
 	$obj3 = inv_getobj(inv_207, $size4);
-	cc_create($component0, ^iftype_graphic, $size8);
+	cc_create($widget_100:9_0, ^iftype_graphic, $size8);
 	if ($obj3 ! null) {
 		cc_sethide(false);
 		cc_setposition(calc(2 + $int6 * ($size8 % 4)), calc(2 + $int7 * ($size8 / 4)), ^setpos_abs_left, ^setpos_abs_top);
@@ -59,7 +59,7 @@ while ($size8 < $size9) {
 	$size8, $size4 = calc($size8 + 1), calc($size4 + 1);
 }
 if ($int1 = 0) {
-	cc_create($component0, ^iftype_text, $size8);
+	cc_create($widget_100:9_0, ^iftype_text, $size8);
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 	cc_setcolour(0xff981f);

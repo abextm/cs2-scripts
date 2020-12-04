@@ -1,10 +1,10 @@
 // 2069
-[clientscript,orbs_update_specenergy](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5)
-if ($component0 ! null) {
-	if_setnoclickthrough(true, $component4);
-	if_setonvartransmit("orbs_update_specenergy(null, $component1, $component2, $component3, $component4, $component5){var301, var300, var284, var1377, var243}", $component0);
-	if_setoninvtransmit("orbs_update_specenergy(null, $component1, $component2, $component3, $component4, $component5){worn}", $component0);
-	if_setonsubchange("orbs_update_specenergy(null, $component1, $component2, $component3, $component4, $component5)", $component0);
+[clientscript,orbs_update_specenergy](component $widget_311:30_0, component $widget_311:33_1, component $widget_311:35_2, component $widget_311:34_3, component $widget_311:31_4, component $widget_311:32_5)
+if ($widget_311:30_0 ! null) {
+	if_setnoclickthrough(true, $widget_311:31_4);
+	if_setonvartransmit("orbs_update_specenergy(null, $widget_311:33_1, $widget_311:35_2, $widget_311:34_3, $widget_311:31_4, $widget_311:32_5){var301, var300, var284, var1377, var243}", $widget_311:30_0);
+	if_setoninvtransmit("orbs_update_specenergy(null, $widget_311:33_1, $widget_311:35_2, $widget_311:34_3, $widget_311:31_4, $widget_311:32_5){worn}", $widget_311:30_0);
+	if_setonsubchange("orbs_update_specenergy(null, $widget_311:33_1, $widget_311:35_2, $widget_311:34_3, $widget_311:31_4, $widget_311:32_5)", $widget_311:30_0);
 }
-~orbs_spec_draw_button($component0, $component1, $component2, $component3, $component4, $component5);
-~orbs_update($component1, $component2, calc(%var300 / 10), 100);
+~orbs_spec_draw_button($widget_311:30_0, $widget_311:33_1, $widget_311:35_2, $widget_311:34_3, $widget_311:31_4, $widget_311:32_5);
+~orbs_update($widget_311:33_1, $widget_311:35_2, calc(%var300 / 10), 100);

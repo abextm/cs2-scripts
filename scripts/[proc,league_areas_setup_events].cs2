@@ -1,16 +1,16 @@
 // 3660
-[proc,league_areas_setup_events](int $int0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14)
+[proc,league_areas_setup_events](int $int0, component $component1, component $component2, component $widget_512:22_3, component $widget_512:23_4, component $widget_512:24_5, component $widget_512:55_6, component $widget_512:56_7, component $widget_512:57_8, component $widget_512:58_9, component $widget_512:53_10, component $widget_512:59_11, component $widget_512:60_12, component $widget_512:65_13, component $widget_512:21_14)
 def_string $string0 = enum(int, string, enum_3330, $int0);
 if_setop(1, "View", $component1);
 if_setopbase("<col=ff981f><$string0></col>", $component1);
-if_setonop("league_areas_onclick($int0, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14)", $component1);
+if_setonop("league_areas_onclick($int0, $component1, $component2, $widget_512:22_3, $widget_512:23_4, $widget_512:24_5, $widget_512:55_6, $widget_512:56_7, $widget_512:57_8, $widget_512:58_9, $widget_512:53_10, $widget_512:59_11, $widget_512:60_12, $widget_512:65_13, $widget_512:21_14)", $component1);
 if (~on_mobile = false) {
 	if_setonmouserepeat("league_areas_mouseover($int0, $component1, $component2)", $component1);
 	if_setonmouseleave("league_areas_mouseleave($int0, $component1, $component2)", $component1);
 }
 if_setop(1, "View", $component2);
 if_setopbase("<col=ff981f><$string0></col>", $component2);
-if_setonop("league_areas_onclick($int0, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14)", $component2);
+if_setonop("league_areas_onclick($int0, $component1, $component2, $widget_512:22_3, $widget_512:23_4, $widget_512:24_5, $widget_512:55_6, $widget_512:56_7, $widget_512:57_8, $widget_512:58_9, $widget_512:53_10, $widget_512:59_11, $widget_512:60_12, $widget_512:65_13, $widget_512:21_14)", $component2);
 if (~on_mobile = false) {
 	if_setonmouserepeat("league_areas_mouseover($int0, $component1, $component2)", $component2);
 	if_setonmouseleave("league_areas_mouseleave($int0, $component1, $component2)", $component2);

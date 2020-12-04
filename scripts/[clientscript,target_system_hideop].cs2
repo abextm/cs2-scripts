@@ -1,5 +1,5 @@
 // 3142
-[clientscript,target_system_hideop](int $opindex0, int $int1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9)
+[clientscript,target_system_hideop](int $opindex0, int $int1, component $widget_90:6_2, component $widget_90:7_3, component $widget_90:8_4, component $widget_90:13_5, component $widget_90:15_6, component $widget_90:16_7, component $widget_90:17_8, component $widget_90:18_9)
 if ($int1 = 1) {
 	switch_int ($opindex0) {
 		case 1 :
@@ -17,4 +17,4 @@ if ($int1 = 1) {
 	return;
 }
 sound_synth(synth_2266, 1, 0);
-~target_system_redraw($component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9);
+~target_system_redraw($widget_90:6_2, $widget_90:7_3, $widget_90:8_4, $widget_90:13_5, $widget_90:15_6, $widget_90:16_7, $widget_90:17_8, $widget_90:18_9);

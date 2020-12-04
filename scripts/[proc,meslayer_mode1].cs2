@@ -20,8 +20,8 @@ if (%varcint5 <= 0 | %varcint5 = 1) {
 	if_settextfont(q8_full, interface_162:44);
 	if_settextfont(q8_full, interface_162:45);
 	if_setcolour(^blue, interface_162:45);
-	if_setonmouseover("text_colour_swapper(event_com, ^white)", interface_162:45);
-	if_setonmouseleave("text_colour_swapper(event_com, ^blue)", interface_162:45);
+	if_setonmouseover("text_colour_swapper(event_com, 16777215)", interface_162:45);
+	if_setonmouseleave("text_colour_swapper(event_com, 255)", interface_162:45);
 	if_settext("<~text_device("Click", "Tap")> here to continue", interface_162:45);
 	if_setposition(0, 96, ^setpos_abs_centre, ^setpos_abs_top, interface_162:45);
 	if_setsize(479, 17, ^setsize_abs, ^setsize_abs, interface_162:45);

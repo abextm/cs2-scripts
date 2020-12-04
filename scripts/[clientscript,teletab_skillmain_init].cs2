@@ -1,4 +1,4 @@
 // 3585
-[clientscript,teletab_skillmain_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6)
-~skillmain_init($component0, 0, 40, ~script3588, $component1, $component2, $component3, $component4, $component5, $component6);
-if_setonvartransmit("skillmain_init($component0, 0, 40, ~script3588, $component1, $component2, $component3, $component4, $component5, $component6){var675}", $component0);
+[clientscript,teletab_skillmain_init](component $widget_403:3_0, component $widget_403:4_1, component $widget_403:5_2, component $widget_403:6_3, component $widget_403:7_4, component $widget_403:8_5, component $widget_403:9_6)
+~skillmain_init($widget_403:3_0, 0, 40, ~script3588, $widget_403:4_1, $widget_403:5_2, $widget_403:6_3, $widget_403:7_4, $widget_403:8_5, $widget_403:9_6);
+if_setonvartransmit("skillmain_init($widget_403:3_0, 0, 40, ~script3588, $widget_403:4_1, $widget_403:5_2, $widget_403:6_3, $widget_403:7_4, $widget_403:8_5, $widget_403:9_6){var675}", $widget_403:3_0);

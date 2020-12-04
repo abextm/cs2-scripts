@@ -1,5 +1,5 @@
 // 3947
-[proc,script3947](component $component0, component $component1, string $text0, component $component2, component $layer3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11)
+[proc,script3947](component $component0, component $component1, string $text0, component $widget_116:4_2, component $widget_116:0_3, component $widget_116:6_4, component $widget_116:7_5, component $widget_116:27_6, component $widget_116:29_7, component $widget_116:31_8, component $widget_116:32_9, component $widget_116:33_10, component $widget_116:34_11)
 cc_deleteall($component0);
 def_int $int12 = 0;
 cc_create($component0, ^iftype_graphic, $int12);
@@ -8,7 +8,7 @@ cc_setsize(0, 20, ^setsize_minus, ^setsize_abs);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom);
 cc_setgraphic("tradebacking");
 cc_settiling(true);
-cc_setonclick("script3948($component0, $component1, $component2, $layer3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11)");
+cc_setonclick("script3948($component0, $component1, $widget_116:4_2, $widget_116:0_3, $widget_116:6_4, $widget_116:7_5, $widget_116:27_6, $widget_116:29_7, $widget_116:31_8, $widget_116:32_9, $widget_116:33_10, $widget_116:34_11)");
 cc_create($component0, ^iftype_rectangle, $int12);
 $int12 = calc($int12 + 1);
 cc_setsize(0, 20, ^setsize_minus, ^setsize_abs);

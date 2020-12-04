@@ -1,3 +1,3 @@
 // 937
-[clientscript,script937](component $component0, component $component1)
-~script939($component0, ^min_32bit_int, ^min_32bit_int, $component1);
+[clientscript,script937](component $widget_546:0_0, component $widget_546:1_1)
+~script939($widget_546:0_0, ^min_32bit_int, ^min_32bit_int, $widget_546:1_1);

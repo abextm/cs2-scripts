@@ -1,5 +1,5 @@
 // 413
-[proc,script413](int $int0, string $string0, component $component1, component $component2, component $component3, component $component4, component $component5)
+[proc,script413](int $int0, string $string0, component $widget_426:11_1, component $widget_426:2_2, component $widget_426:4_3, component $widget_426:8_4, component $widget_426:5_5)
 if ($int0 < 32 & testbit(%var1076, $int0) = ^true | $int0 >= 32 & testbit(%var1344, calc($int0 % 32)) = ^true) {
 	if ($int0 = 35) {
 		if (%varbit5362 = 1) {
@@ -9,7 +9,7 @@ if ($int0 < 32 & testbit(%var1076, $int0) = ^true | $int0 >= 32 & testbit(%var13
 			cc_setgraphic("options_radio_buttons,6");
 			.cc_setop(1, "Disable");
 		}
-		.cc_setonop("slayer_rewards_unlock_confirm(false, $int0, $string0, $component1, $component2, $component3, $component4, $component5, -1)");
+		.cc_setonop("slayer_rewards_unlock_confirm(false, $int0, $string0, $widget_426:11_1, $widget_426:2_2, $widget_426:4_3, $widget_426:8_4, $widget_426:5_5, -1)");
 		return;
 	}
 	if ($int0 = 43) {
@@ -20,13 +20,13 @@ if ($int0 < 32 & testbit(%var1076, $int0) = ^true | $int0 >= 32 & testbit(%var13
 			cc_setgraphic("options_radio_buttons,6");
 			.cc_setop(1, "Disable");
 		}
-		.cc_setonop("slayer_rewards_unlock_confirm(false, $int0, $string0, $component1, $component2, $component3, $component4, $component5, -1)");
+		.cc_setonop("slayer_rewards_unlock_confirm(false, $int0, $string0, $widget_426:11_1, $widget_426:2_2, $widget_426:4_3, $widget_426:8_4, $widget_426:5_5, -1)");
 		return;
 	}
 	cc_setgraphic("options_radio_buttons,6");
 	if (enum(int, boolean, enum_854, $int0) = true) {
 		.cc_setop(1, "Disable");
-		.cc_setonop("slayer_rewards_unlock_confirm(false, $int0, $string0, $component1, $component2, $component3, $component4, $component5, -1)");
+		.cc_setonop("slayer_rewards_unlock_confirm(false, $int0, $string0, $widget_426:11_1, $widget_426:2_2, $widget_426:4_3, $widget_426:8_4, $widget_426:5_5, -1)");
 	} else {
 		.cc_setop(1, "");
 		.cc_setonop(null);
@@ -34,5 +34,5 @@ if ($int0 < 32 & testbit(%var1076, $int0) = ^true | $int0 >= 32 & testbit(%var13
 } else {
 	cc_setgraphic("options_radio_buttons,4");
 	.cc_setop(1, "Unlock");
-	.cc_setonop("slayer_rewards_unlock_confirm(true, $int0, $string0, $component1, $component2, $component3, $component4, $component5, -1)");
+	.cc_setonop("slayer_rewards_unlock_confirm(true, $int0, $string0, $widget_426:11_1, $widget_426:2_2, $widget_426:4_3, $widget_426:8_4, $widget_426:5_5, -1)");
 }

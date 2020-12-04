@@ -1,19 +1,19 @@
 // 312
-[clientscript,welcome_screen_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12)
-~script1490($component1);
-~welcome_screen_position($component0);
-~script3310($component11);
-~welcome_type_setup(%varbit10116, $component3, $component4, $component5, $component6, $component12);
-if_setonvartransmit("welcome_type_setup_transmit($component3, $component4, $component5, $component6, $component12){var1226}", $component11);
-if_setonop("welcome_type_setup_op($component3, $component4, $component5, $component6, $component12, $component7, $component8, $component9, $component10)", $component11);
-~welcome_screen_lastlogin($component2);
-if_setonvartransmit("welcome_screen_lastlogin($component2){var261}", $component2);
-~welcome_screen_messages($component6, $component7, $component8, %varbit10116);
-if_setonvartransmit("welcome_screen_messages($component6, $component7, $component8){var1781, var1226}", $component7);
-~welcome_screen_credit($component5, $component9, $component10, %varbit10116);
-if_setonvartransmit("welcome_screen_credit($component5, $component9, $component10){var1780, var1226}", $component9);
+[clientscript,welcome_screen_init](component $widget_378:2_0, component $widget_378:1_1, component $widget_378:63_2, component $widget_378:81_3, component $widget_378:85_4, component $widget_378:79_5, component $widget_378:83_6, component $widget_378:70_7, component $widget_378:68_8, component $widget_378:77_9, component $widget_378:75_10, component $widget_378:59_11, component $widget_378:86_12)
+~script1490($widget_378:1_1);
+~welcome_screen_position($widget_378:2_0);
+~script3310($widget_378:59_11);
+~welcome_type_setup(%varbit10116, $widget_378:81_3, $widget_378:85_4, $widget_378:79_5, $widget_378:83_6, $widget_378:86_12);
+if_setonvartransmit("welcome_type_setup_transmit($widget_378:81_3, $widget_378:85_4, $widget_378:79_5, $widget_378:83_6, $widget_378:86_12){var1226}", $widget_378:59_11);
+if_setonop("welcome_type_setup_op($widget_378:81_3, $widget_378:85_4, $widget_378:79_5, $widget_378:83_6, $widget_378:86_12, $widget_378:70_7, $widget_378:68_8, $widget_378:77_9, $widget_378:75_10)", $widget_378:59_11);
+~welcome_screen_lastlogin($widget_378:63_2);
+if_setonvartransmit("welcome_screen_lastlogin($widget_378:63_2){var261}", $widget_378:63_2);
+~welcome_screen_messages($widget_378:83_6, $widget_378:70_7, $widget_378:68_8, %varbit10116);
+if_setonvartransmit("welcome_screen_messages($widget_378:83_6, $widget_378:70_7, $widget_378:68_8){var1781, var1226}", $widget_378:70_7);
+~welcome_screen_credit($widget_378:79_5, $widget_378:77_9, $widget_378:75_10, %varbit10116);
+if_setonvartransmit("welcome_screen_credit($widget_378:79_5, $widget_378:77_9, $widget_378:75_10){var1780, var1226}", $widget_378:77_9);
 ~script2218;
-if_setonvartransmit("script2217{var264}", $component0);
-~welcome_screen_continue_text(welcome_screen:87);
+if_setonvartransmit("script2217{var264}", $widget_378:2_0);
+~welcome_screen_continue_text(interface_378:87);
 ~welcome_screen_banner;
-if_setopkey(1, 13, 0, welcome_screen:3);
+if_setopkey(1, 13, 0, interface_378:3);

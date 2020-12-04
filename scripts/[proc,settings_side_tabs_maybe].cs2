@@ -1,13 +1,13 @@
 // 3910
 [proc,settings_side_tabs_maybe]
-if_setop(1, "Controls", new_options:59);
-if_setop(1, "Audio", new_options:64);
-if_setonop("script3915(0)", new_options:59);
-if_setonop("script3915(1)", new_options:64);
+if_setop(1, "Controls", interface_116:59);
+if_setop(1, "Audio", interface_116:64);
+if_setonop("script3915(0)", interface_116:59);
+if_setonop("script3915(1)", interface_116:64);
 if (~on_mobile = true) {
 	return;
 }
-if_setonmouserepeat("script3911(new_options:60, new_options:61, new_options:62, 0)", new_options:59);
-if_setonmouserepeat("script3911(new_options:65, new_options:66, new_options:67, 1)", new_options:64);
-if_setonmouseleave("script3912(new_options:60, new_options:61, new_options:62, 0)", new_options:59);
-if_setonmouseleave("script3912(new_options:65, new_options:66, new_options:67, 1)", new_options:64);
+if_setonmouserepeat("script3911(interface_116:60, interface_116:61, interface_116:62, 0)", interface_116:59);
+if_setonmouserepeat("script3911(interface_116:65, interface_116:66, interface_116:67, 1)", interface_116:64);
+if_setonmouseleave("script3912(interface_116:60, interface_116:61, interface_116:62, 0)", interface_116:59);
+if_setonmouseleave("script3912(interface_116:65, interface_116:66, interface_116:67, 1)", interface_116:64);

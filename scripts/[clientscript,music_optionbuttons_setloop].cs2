@@ -1,5 +1,5 @@
 // 316
-[clientscript,music_optionbuttons_setloop](int $opindex0, component $component1, component $component2, component $component3)
+[clientscript,music_optionbuttons_setloop](int $opindex0, component $widget_239:7_1, component $widget_239:9_2, component $widget_239:11_3)
 if ($opindex0 ! 1) {
 	return;
 }
@@ -9,4 +9,4 @@ if (%varbit4137 <= 0) {
 } else {
 	%varbit4137 = 0;
 }
-~music_optionbuttons($component1, $component2, $component3);
+~music_optionbuttons($widget_239:7_1, $widget_239:9_2, $widget_239:11_3);

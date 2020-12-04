@@ -1,12 +1,12 @@
 // 2090
-[proc,trail_rewardscreen_draw](component $component0, int $size1)
-cc_deleteall($component0);
-def_int $int2 = calc(32 + (if_getwidth($component0) - 36 * 3) / 2);
+[proc,trail_rewardscreen_draw](component $widget_73:3_0, int $size1)
+cc_deleteall($widget_73:3_0);
+def_int $int2 = calc(32 + (if_getwidth($widget_73:3_0) - 36 * 3) / 2);
 def_int $int3 = 0;
 def_obj $obj4 = null;
 def_int $size5 = 0;
 while ($size5 < $size1) {
-	cc_create($component0, ^iftype_graphic, $size5);
+	cc_create($widget_73:3_0, ^iftype_graphic, $size5);
 	$obj4 = inv_getobj(inv_141, $size5);
 	if ($obj4 ! null) {
 		cc_sethide(false);

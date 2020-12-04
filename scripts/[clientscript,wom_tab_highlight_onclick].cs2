@@ -1,5 +1,5 @@
 // 16
-[clientscript,wom_tab_highlight_onclick](int $count0, component $component1, component $component2)
+[clientscript,wom_tab_highlight_onclick](int $count0, component $widget_371:27_1, component $widget_371:28_2)
 %varbit6610 = $count0;
 ~wom_tab_highlight;
-~wom_build_item_list($component1, $component2);
+~wom_build_item_list($widget_371:27_1, $widget_371:28_2);

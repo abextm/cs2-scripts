@@ -1,9 +1,9 @@
 // 3767
-[clientscript,script3767](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9)
+[clientscript,script3767](component $widget_26:0_0, component $widget_26:13_1, component $widget_26:16_2, component $widget_26:19_3, component $widget_26:14_4, component $widget_26:17_5, component $widget_26:20_6, component $widget_26:15_7, component $widget_26:18_8, component $widget_26:21_9)
 def_int $clock10 = calc(%varcint110 + 50);
 if (clientclock <= $clock10) {
-	if_setontimer(null, $component0);
-	~script3773($component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9);
+	if_setontimer(null, $widget_26:0_0);
+	~script3773($widget_26:13_1, $widget_26:16_2, $widget_26:19_3, $widget_26:14_4, $widget_26:17_5, $widget_26:20_6, $widget_26:15_7, $widget_26:18_8, $widget_26:21_9);
 } else {
-	if_setontimer("script3768($clock10, $component0, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9)", $component0);
+	if_setontimer("script3768($clock10, $widget_26:0_0, $widget_26:13_1, $widget_26:16_2, $widget_26:19_3, $widget_26:14_4, $widget_26:17_5, $widget_26:20_6, $widget_26:15_7, $widget_26:18_8, $widget_26:21_9)", $widget_26:0_0);
 }

@@ -1,4 +1,4 @@
 // 994
-[clientscript,xpdrops_vartransmit](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7)
-~xpdrops_redraw($component0, $component1, $component3, $component4, $component6, $component7);
-~xpdrops_setbar($component1, $component2, $component3, $component4, $component5, $component6, $component7);
+[clientscript,xpdrops_vartransmit](component $widget_122:0_0, component $widget_122:3_1, component $widget_122:8_2, component $widget_122:9_3, component $widget_122:10_4, component $widget_122:15_5, component $widget_122:16_6, component $widget_122:24_7)
+~xpdrops_redraw($widget_122:0_0, $widget_122:3_1, $widget_122:9_3, $widget_122:10_4, $widget_122:16_6, $widget_122:24_7);
+~xpdrops_setbar($widget_122:3_1, $widget_122:8_2, $widget_122:9_3, $widget_122:10_4, $widget_122:15_5, $widget_122:16_6, $widget_122:24_7);

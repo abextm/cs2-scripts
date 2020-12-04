@@ -1,23 +1,23 @@
 // 3309
-[proc,welcome_type_setup](int $int0, component $component1, component $component2, component $component3, component $component4, component $component5)
+[proc,welcome_type_setup](int $int0, component $widget_378:81_1, component $widget_378:85_2, component $widget_378:79_3, component $widget_378:83_4, component $widget_378:86_5)
 if ($int0 = 0) {
-	if_sethide(false, $component5);
-	if_sethide(true, $component1);
-	if_sethide(true, $component2);
-	if_setsize(220, 90, ^setsize_abs, ^setsize_abs, $component4);
-	if_setposition(29, 282, ^setpos_abs_left, ^setpos_abs_top, $component4);
-	if_setsize(220, 90, ^setsize_abs, ^setsize_abs, $component3);
-	if_setposition(29, 282, ^setpos_abs_right, ^setpos_abs_top, $component3);
-	if_setgraphic("button_brown_small", welcome_screen:74);
-	if_setgraphic("button_brown_small", welcome_screen:67);
+	if_sethide(false, $widget_378:86_5);
+	if_sethide(true, $widget_378:81_1);
+	if_sethide(true, $widget_378:85_2);
+	if_setsize(220, 90, ^setsize_abs, ^setsize_abs, $widget_378:83_4);
+	if_setposition(29, 282, ^setpos_abs_left, ^setpos_abs_top, $widget_378:83_4);
+	if_setsize(220, 90, ^setsize_abs, ^setsize_abs, $widget_378:79_3);
+	if_setposition(29, 282, ^setpos_abs_right, ^setpos_abs_top, $widget_378:79_3);
+	if_setgraphic("button_brown_small", interface_378:74);
+	if_setgraphic("button_brown_small", interface_378:67);
 } else {
-	if_sethide(true, $component5);
-	if_sethide(false, $component1);
-	if_sethide(false, $component2);
-	if_setsize(343, 90, ^setsize_abs, ^setsize_abs, $component4);
-	if_setposition(29, 64, ^setpos_abs_right, ^setpos_abs_top, $component4);
-	if_setsize(343, 90, ^setsize_abs, ^setsize_abs, $component3);
-	if_setposition(29, 173, ^setpos_abs_right, ^setpos_abs_top, $component3);
-	if_setgraphic("button_brown_big", welcome_screen:74);
-	if_setgraphic("button_brown_big", welcome_screen:67);
+	if_sethide(true, $widget_378:86_5);
+	if_sethide(false, $widget_378:81_1);
+	if_sethide(false, $widget_378:85_2);
+	if_setsize(343, 90, ^setsize_abs, ^setsize_abs, $widget_378:83_4);
+	if_setposition(29, 64, ^setpos_abs_right, ^setpos_abs_top, $widget_378:83_4);
+	if_setsize(343, 90, ^setsize_abs, ^setsize_abs, $widget_378:79_3);
+	if_setposition(29, 173, ^setpos_abs_right, ^setpos_abs_top, $widget_378:79_3);
+	if_setgraphic("button_brown_big", interface_378:74);
+	if_setgraphic("button_brown_big", interface_378:67);
 }

@@ -1,7 +1,7 @@
 // 3304
-[clientscript,wiki_icon_init](component $component0, component $component1, component $component2, boolean $boolean3)
-if_setnoclickthrough(true, $component1);
-if_setontargetenter("script3298($component1, $component2, true)", $component1);
-if_setontargetleave("script3298($component1, $component2, false)", $component1);
-if_setonvartransmit("wiki_icon_update($component0, $component1, $component2, $boolean3){var1055, var1795}", $component0);
-~wiki_icon_update($component0, $component1, $component2, $boolean3);
+[clientscript,wiki_icon_init](component $widget_311:44_0, component $widget_311:45_1, component $widget_311:2_2, boolean $boolean3)
+if_setnoclickthrough(true, $widget_311:45_1);
+if_setontargetenter("script3298($widget_311:45_1, $widget_311:2_2, true)", $widget_311:45_1);
+if_setontargetleave("script3298($widget_311:45_1, $widget_311:2_2, false)", $widget_311:45_1);
+if_setonvartransmit("wiki_icon_update($widget_311:44_0, $widget_311:45_1, $widget_311:2_2, $boolean3){var1055, var1795}", $widget_311:44_0);
+~wiki_icon_update($widget_311:44_0, $widget_311:45_1, $widget_311:2_2, $boolean3);

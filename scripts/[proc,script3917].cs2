@@ -1,28 +1,28 @@
 // 3917
 [proc,script3917](int $int0)
-if_sethide(true, new_options:4);
-if_sethide(true, new_options:9);
-if_setgraphic("tabs_tall,2", new_options:60);
-if_setgraphic("tabs_tall,3", new_options:61);
-if_setgraphic("tabs_tall,2", new_options:62);
-if_setgraphic("tabs_tall,2", new_options:65);
-if_setgraphic("tabs_tall,3", new_options:66);
-if_setgraphic("tabs_tall,2", new_options:67);
-if_setop(1, "Controls", new_options:59);
-if_setop(1, "Audio", new_options:64);
+if_sethide(true, interface_116:4);
+if_sethide(true, interface_116:9);
+if_setgraphic("tabs_tall,2", interface_116:60);
+if_setgraphic("tabs_tall,3", interface_116:61);
+if_setgraphic("tabs_tall,2", interface_116:62);
+if_setgraphic("tabs_tall,2", interface_116:65);
+if_setgraphic("tabs_tall,3", interface_116:66);
+if_setgraphic("tabs_tall,2", interface_116:67);
+if_setop(1, "Controls", interface_116:59);
+if_setop(1, "Audio", interface_116:64);
 switch_int ($int0) {
 	case 1 :
-		if_sethide(false, new_options:9);
-		if_setgraphic("tabs_tall,0", new_options:65);
-		if_setgraphic("tabs_tall,1", new_options:66);
-		if_setgraphic("tabs_tall,0", new_options:67);
-		if_settext("Audio Settings", new_options:2);
-		if_setop(1, "", new_options:64);
+		if_sethide(false, interface_116:9);
+		if_setgraphic("tabs_tall,0", interface_116:65);
+		if_setgraphic("tabs_tall,1", interface_116:66);
+		if_setgraphic("tabs_tall,0", interface_116:67);
+		if_settext("Audio Settings", interface_116:2);
+		if_setop(1, "", interface_116:64);
 	case default :
-		if_sethide(false, new_options:4);
-		if_setgraphic("tabs_tall,0", new_options:60);
-		if_setgraphic("tabs_tall,1", new_options:61);
-		if_setgraphic("tabs_tall,0", new_options:62);
-		if_settext("Controls Settings", new_options:2);
-		if_setop(1, "", new_options:59);
+		if_sethide(false, interface_116:4);
+		if_setgraphic("tabs_tall,0", interface_116:60);
+		if_setgraphic("tabs_tall,1", interface_116:61);
+		if_setgraphic("tabs_tall,0", interface_116:62);
+		if_settext("Controls Settings", interface_116:2);
+		if_setop(1, "", interface_116:59);
 }

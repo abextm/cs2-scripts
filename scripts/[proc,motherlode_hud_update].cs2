@@ -1,5 +1,5 @@
 // 1635
-[proc,motherlode_hud_update](component $component0)
+[proc,motherlode_hud_update](component $widget_382:4_0)
 cc_settext(tostring(%varbit5558));
 def_int $int1 = 81;
 if (%varbit5556 = 1) {

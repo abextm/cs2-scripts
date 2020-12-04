@@ -1,6 +1,6 @@
 // 2533
-[clientscript,gnomeball_init](component $component0, component $component1, component $component2)
-~script2249($component0, setbit(0, 2));
-~script1486($component1, ^setpos_abs_right, 1, 0);
-~gnomeball_score($component2);
-if_setonvartransmit("gnomeball_score($component2){var143}", $component2);
+[clientscript,gnomeball_init](component $widget_139:1_0, component $widget_139:2_1, component $widget_139:6_2)
+~script2249($widget_139:1_0, setbit(0, 2));
+~script1486($widget_139:2_1, ^setpos_abs_right, 1, 0);
+~gnomeball_score($widget_139:6_2);
+if_setonvartransmit("gnomeball_score($widget_139:6_2){var143}", $widget_139:6_2);

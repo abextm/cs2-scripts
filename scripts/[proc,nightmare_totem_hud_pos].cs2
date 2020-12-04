@@ -1,7 +1,7 @@
 // 3314
-[proc,nightmare_totem_hud_pos](int $int0, int $int1, component $component2, component $component3, component $component4, int $int5, component $component6, int $int7, component $component8, component $component9, component $component10, int $int11, component $component12, int $int13, component $component14, component $component15, component $component16, int $int17, component $component18, int $int19, component $component20, component $component21, component $component22, int $int23, component $component24, int $int25, component $component26, component $component27, component $component28)
+[proc,nightmare_totem_hud_pos](int $int0, int $widget_413:0_1, component $widget_413:1_2, component $widget_413:2_3, component $widget_413:3_4, int $widget_413:16_5, component $widget_413:17_6, int $widget_413:18_7, component $widget_413:19_8, component $widget_413:20_9, component $widget_413:21_10, int $widget_413:22_11, component $widget_413:23_12, int $widget_413:24_13, component $widget_413:25_14, component $widget_413:26_15, component $widget_413:27_16, int $widget_413:4_17, component $widget_413:5_18, int $widget_413:6_19, component $widget_413:7_20, component $widget_413:8_21, component $widget_413:9_22, int $widget_413:10_23, component $widget_413:11_24, int $widget_413:12_25, component $widget_413:13_26, component $widget_413:14_27, component $widget_413:15_28)
 def_int $int29 = 0;
 if (~on_mobile = true) {
 	$int29 = calc($int29 + 45);
 }
-if_setposition(if_getx($component2), $int29, ^setpos_abs_left, ^setpos_abs_top, $component2);
+if_setposition(if_getx($widget_413:1_2), $int29, ^setpos_abs_left, ^setpos_abs_top, $widget_413:1_2);

@@ -1,4 +1,4 @@
 // 654
-[clientscript,skill_guide_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8)
-~skill_guide_build($component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8);
-if_setonvartransmit("skill_guide_build($component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8){var965}", $component0);
+[clientscript,skill_guide_init](component $widget_214:0_0, component $widget_214:6_1, component $widget_214:10_2, component $widget_214:7_3, component $widget_214:8_4, component $widget_214:9_5, component $widget_214:4_6, component $widget_214:3_7, component $widget_214:5_8)
+~skill_guide_build($widget_214:6_1, $widget_214:10_2, $widget_214:7_3, $widget_214:8_4, $widget_214:9_5, $widget_214:4_6, $widget_214:3_7, $widget_214:5_8);
+if_setonvartransmit("skill_guide_build($widget_214:6_1, $widget_214:10_2, $widget_214:7_3, $widget_214:8_4, $widget_214:9_5, $widget_214:4_6, $widget_214:3_7, $widget_214:5_8){var965}", $widget_214:0_0);

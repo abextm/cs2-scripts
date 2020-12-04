@@ -1,8 +1,8 @@
 // 2534
-[clientscript,ii_scroll_init](component $component0, component $component1)
+[clientscript,ii_scroll_init](component $widget_157:1_0, component $widget_157:2_1)
 if (~on_mobile = true) {
-	if_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_bottom, $component1);
+	if_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_bottom, $widget_157:2_1);
 } else {
-	if_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_top, $component1);
+	if_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_top, $widget_157:2_1);
 }
-~script2249($component0, setbit(0, 1));
+~script2249($widget_157:1_0, setbit(0, 1));

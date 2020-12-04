@@ -1,11 +1,11 @@
 // 2276
-[proc,script2276](int $size0, int $int1, int $int2, component $component3, component $component4)
+[proc,script2276](int $size0, int $int1, int $int2, component $widget_616:3_3, component $widget_616:4_4)
 def_int $int5 = 0;
 def_obj $obj6 = null;
-cc_deleteall($component3);
+cc_deleteall($widget_616:3_3);
 def_int $size7 = 0;
 while ($size7 < $size0) {
-	cc_create($component3, ^iftype_graphic, $size7);
+	cc_create($widget_616:3_3, ^iftype_graphic, $size7);
 	$obj6 = inv_getobj(inv_390, $size7);
 	if ($obj6 ! null) {
 		cc_sethide(false);
@@ -26,9 +26,9 @@ while ($size7 < $size0) {
 if ($int5 ! -1) {
 	$int5 = calc($int5 + 32);
 }
-if (if_getheight($component3) < $int5) {
-	if_setscrollsize(0, $int5, $component3);
+if (if_getheight($widget_616:3_3) < $int5) {
+	if_setscrollsize(0, $int5, $widget_616:3_3);
 } else {
-	if_setscrollsize(0, 0, $component3);
+	if_setscrollsize(0, 0, $widget_616:3_3);
 }
-~scrollbar_resize($component4, $component3, 0);
+~scrollbar_resize($widget_616:4_4, $widget_616:3_3, 0);

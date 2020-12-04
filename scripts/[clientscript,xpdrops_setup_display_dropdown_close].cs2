@@ -1,3 +1,3 @@
 // 1037
-[clientscript,xpdrops_setup_display_dropdown_close](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10)
-~xpdrops_setup_display_dropdown_close($component0, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10);
+[clientscript,xpdrops_setup_display_dropdown_close](component $widget_137:47_0, component $widget_137:61_1, component $widget_137:6_2, component $widget_137:7_3, component $widget_137:9_4, component $widget_137:10_5, component $widget_137:11_6, component $widget_137:12_7, component $widget_137:13_8, component $widget_137:8_9, component $widget_137:14_10)
+~xpdrops_setup_display_dropdown_close($widget_137:47_0, $widget_137:61_1, $widget_137:6_2, $widget_137:7_3, $widget_137:9_4, $widget_137:10_5, $widget_137:11_6, $widget_137:12_7, $widget_137:13_8, $widget_137:8_9, $widget_137:14_10);

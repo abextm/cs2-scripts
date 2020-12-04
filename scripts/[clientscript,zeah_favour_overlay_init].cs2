@@ -1,17 +1,17 @@
 // 1215
-[clientscript,zeah_favour_overlay_init](component $component0, component $component1, component $component2, component $component3, component $component4)
-~zeah_favour_overlay_hideshow($component1);
-if_setonsubchange("zeah_favour_overlay_hideshow($component1)", $component0);
-if_setonvartransmit("zeah_favour_overlay_hideshow($component1){var1227, var1055}", $component0);
-if_setnoclickthrough(false, $component4);
+[clientscript,zeah_favour_overlay_init](component $widget_246:0_0, component $widget_246:1_1, component $widget_246:5_2, component $widget_246:2_3, component $widget_246:40_4)
+~zeah_favour_overlay_hideshow($widget_246:1_1);
+if_setonsubchange("zeah_favour_overlay_hideshow($widget_246:1_1)", $widget_246:0_0);
+if_setonvartransmit("zeah_favour_overlay_hideshow($widget_246:1_1){var1227, var1055}", $widget_246:0_0);
+if_setnoclickthrough(false, $widget_246:40_4);
 if (~on_mobile = true) {
-	if_setonmouseover(null, $component1);
-	if_setonmouseleave(null, $component1);
-	if_setonclick("zeah_overlay_grow($component1, $component2, $component4, true)", $component2);
-	if_setnoclickthrough(true, $component3);
+	if_setonmouseover(null, $widget_246:1_1);
+	if_setonmouseleave(null, $widget_246:1_1);
+	if_setonclick("zeah_overlay_grow($widget_246:1_1, $widget_246:5_2, $widget_246:40_4, true)", $widget_246:5_2);
+	if_setnoclickthrough(true, $widget_246:2_3);
 } else {
-	if_setonmouseover("zeah_overlay_grow($component1, $component2, $component4, false)", $component1);
-	if_setonmouseleave("zeah_overlay_shrink($component1, $component2, $component4, 0, false)", $component1);
-	if_setonclick(null, $component2);
-	if_setnoclickthrough(false, $component3);
+	if_setonmouseover("zeah_overlay_grow($widget_246:1_1, $widget_246:5_2, $widget_246:40_4, false)", $widget_246:1_1);
+	if_setonmouseleave("zeah_overlay_shrink($widget_246:1_1, $widget_246:5_2, $widget_246:40_4, 0, false)", $widget_246:1_1);
+	if_setonclick(null, $widget_246:5_2);
+	if_setnoclickthrough(false, $widget_246:2_3);
 }

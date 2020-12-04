@@ -1,4 +1,4 @@
 // 2374
-[clientscript,fade_init](component $component0, component $component1)
-~script1490($component0);
-~hud_clamp_init($component1);
+[clientscript,fade_init](component $widget_174:2_0, component $widget_174:3_1)
+~script1490($widget_174:2_0);
+~hud_clamp_init($widget_174:3_1);

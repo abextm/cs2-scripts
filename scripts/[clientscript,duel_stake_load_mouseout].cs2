@@ -1,4 +1,4 @@
 // 2481
-[clientscript,duel_stake_load_mouseout](component $component0, component $component1)
-if_setoutline(0, $component0);
-~deltooltip_action($component1);
+[clientscript,duel_stake_load_mouseout](component $widget_481:14_0, component $widget_481:83_1)
+if_setoutline(0, $widget_481:14_0);
+~deltooltip_action($widget_481:83_1);

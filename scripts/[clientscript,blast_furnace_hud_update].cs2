@@ -1,5 +1,5 @@
 // 1423
-[clientscript,blast_furnace_hud_update](component $component0, int $comsubid1)
-if (.cc_find($component0, $comsubid1) = ^true) {
-	~blast_furnace_hud_update($component0);
+[clientscript,blast_furnace_hud_update](component $widget_474:3_0, int $comsubid1)
+if (.cc_find($widget_474:3_0, $comsubid1) = ^true) {
+	~blast_furnace_hud_update($widget_474:3_0);
 }

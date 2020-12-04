@@ -1,6 +1,6 @@
 // 3919
-[proc,instance_journal_jewellery_maybe](component $component0, component $component1)
-if_setonop("script3921($component0, $component1)", $component0);
-if_setonvartransmit("script3920($component0, $component1){var427, var499}", $component0);
-if_setonmouseleave("deltooltip($component1)", $component0);
-~script3922($component0, $component1);
+[proc,instance_journal_jewellery_maybe](component $widget_116:24_0, component $widget_116:34_1)
+if_setonop("script3921($widget_116:24_0, $widget_116:34_1)", $widget_116:24_0);
+if_setonvartransmit("script3920($widget_116:24_0, $widget_116:34_1){var427, var499}", $widget_116:24_0);
+if_setonmouseleave("deltooltip($widget_116:34_1)", $widget_116:24_0);
+~script3922($widget_116:24_0, $widget_116:34_1);

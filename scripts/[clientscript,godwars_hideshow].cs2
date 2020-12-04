@@ -1,3 +1,3 @@
 // 335
-[clientscript,godwars_hideshow](component $component0, component $component1)
-~godwars_hideshow($component0, $component1);
+[clientscript,godwars_hideshow](component $widget_406:1_0, component $widget_406:17_1)
+~godwars_hideshow($widget_406:1_0, $widget_406:17_1);

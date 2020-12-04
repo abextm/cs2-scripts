@@ -1,8 +1,8 @@
 // 3290
-[proc,league_reward_shop_showpoints](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11)
+[proc,league_reward_shop_showpoints](component $widget_658:1_0, component $widget_658:10_1, component $widget_658:6_2, component $widget_658:8_3, component $widget_658:11_4, component $widget_658:12_5, component $widget_658:5_6, component $widget_658:15_7, component $widget_658:16_8, component $widget_658:17_9, component $widget_658:18_10, component $widget_658:9_11)
 def_string $string0 = ",";
-if_settext("League Points: <col=ffffff><~tostring_spacer(%var2613, $string0)>", $component1);
-if_settextfont(p12_full, $component1);
-if_settextshadow(true, $component1);
-if_settextalign(^settextalign_centre, ^settextalign_centre, 0, $component1);
-~league_rewards_draw(-1, $component0, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11);
+if_settext("League Points: <col=ffffff><~tostring_spacer(%var2613, $string0)>", $widget_658:10_1);
+if_settextfont(p12_full, $widget_658:10_1);
+if_settextshadow(true, $widget_658:10_1);
+if_settextalign(^settextalign_centre, ^settextalign_centre, 0, $widget_658:10_1);
+~league_rewards_draw(-1, $widget_658:1_0, $widget_658:10_1, $widget_658:6_2, $widget_658:8_3, $widget_658:11_4, $widget_658:12_5, $widget_658:5_6, $widget_658:15_7, $widget_658:16_8, $widget_658:17_9, $widget_658:18_10, $widget_658:9_11);

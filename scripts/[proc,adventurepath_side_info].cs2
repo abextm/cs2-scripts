@@ -1,9 +1,9 @@
 // 3022
-[proc,adventurepath_side_info](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7)
-cc_deleteall($component1);
-cc_deleteall($component0);
-cc_deleteall($component3);
-cc_deleteall($component2);
+[proc,adventurepath_side_info](component $widget_644:16_0, component $widget_644:17_1, component $widget_644:9_2, component $widget_644:11_3, component $widget_644:13_4, component $widget_644:6_5, component $widget_644:14_6, component $widget_644:15_7)
+cc_deleteall($widget_644:17_1);
+cc_deleteall($widget_644:16_0);
+cc_deleteall($widget_644:11_3);
+cc_deleteall($widget_644:9_2);
 def_int $int8 = 0;
 def_enum $enum9 = enum(int, enum, enum_2620, %varbit9324);
 def_struct $struct10 = enum(int, struct, enum_2619, %varbit9324);
@@ -23,12 +23,12 @@ while ($count11 < $count12) {
 	}
 	$count11 = calc($count11 + 1);
 }
-cc_create($component1, ^iftype_graphic, $int8);
+cc_create($widget_644:17_1, ^iftype_graphic, $int8);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setgraphic(struct_param($struct10, param_831));
 $int8 = 0;
-cc_create($component0, ^iftype_text, $int8);
+cc_create($widget_644:16_0, ^iftype_text, $int8);
 cc_setsize(4, 4, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 if ($struct13 ! null) {
@@ -40,14 +40,14 @@ cc_settextfont(b12_full);
 cc_settextshadow(true);
 cc_setcolour(0xff981f);
 cc_settextalign(^settextalign_centre, ^settextalign_centre, 17);
-if_setop(1, "Show<col=ff9040> Paths", $component0);
-if_setonop("button_select_sound", $component0);
+if_setop(1, "Show<col=ff9040> Paths", $widget_644:16_0);
+if_setonop("button_select_sound", $widget_644:16_0);
 if (~on_mobile = false) {
-	cc_setonmouserepeat("cc_colour_swapper($component0, cc_getid, 0xbebebe)");
-	cc_setonmouseleave("cc_colour_swapper($component0, cc_getid, 0xff981f)");
+	cc_setonmouserepeat("cc_colour_swapper($widget_644:16_0, cc_getid, 0xbebebe)");
+	cc_setonmouseleave("cc_colour_swapper($widget_644:16_0, cc_getid, 0xff981f)");
 }
 $int8 = 0;
-cc_create($component2, ^iftype_text, $int8);
+cc_create($widget_644:9_2, ^iftype_text, $int8);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 if ($struct13 ! null) {
@@ -59,14 +59,14 @@ cc_settextfont(p12_full);
 cc_settextshadow(true);
 cc_setcolour(0xff981f);
 cc_settextalign(^settextalign_centre, ^settextalign_centre, 15);
-if_setop(1, "Show<col=ff9040> Task information", $component2);
-if_setonop("button_select_sound", $component2);
+if_setop(1, "Show<col=ff9040> Task information", $widget_644:9_2);
+if_setonop("button_select_sound", $widget_644:9_2);
 if (~on_mobile = false) {
-	cc_setonmouserepeat("cc_colour_swapper($component2, cc_getid, 0xbebebe)");
-	cc_setonmouseleave("cc_colour_swapper($component2, cc_getid, 0xff981f)");
+	cc_setonmouserepeat("cc_colour_swapper($widget_644:9_2, cc_getid, 0xbebebe)");
+	cc_setonmouseleave("cc_colour_swapper($widget_644:9_2, cc_getid, 0xff981f)");
 }
 $int8 = 0;
-cc_create($component3, ^iftype_text, $int8);
+cc_create($widget_644:11_3, ^iftype_text, $int8);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 if ($struct13 ! null) {
@@ -78,11 +78,11 @@ cc_settextfont(p11_full);
 cc_settextshadow(true);
 cc_setcolour(0xff981f);
 cc_settextalign(^settextalign_left, ^settextalign_top, 15);
-if_setop(1, "Show<col=ff9040> Task information", $component3);
-if_setonop("button_select_sound", $component3);
+if_setop(1, "Show<col=ff9040> Task information", $widget_644:11_3);
+if_setonop("button_select_sound", $widget_644:11_3);
 if (~on_mobile = false) {
-	cc_setonmouserepeat("cc_colour_swapper($component3, cc_getid, 0xbebebe)");
-	cc_setonmouseleave("cc_colour_swapper($component3, cc_getid, 0xff981f)");
+	cc_setonmouserepeat("cc_colour_swapper($widget_644:11_3, cc_getid, 0xbebebe)");
+	cc_setonmouseleave("cc_colour_swapper($widget_644:11_3, cc_getid, 0xff981f)");
 }
 $count11 = 0;
 $int8 = 0;
@@ -95,61 +95,61 @@ if ($struct13 ! null) {
 		$int16 = stat_xp($stat17);
 		$int15 = enum(int, int, enum_256, struct_param($struct13, param_816));
 	}
-	$int8 = ~script2990($component4, $int8, if_getwidth($component4), if_getheight($component4), 0, 0, $int16, $int15, 0, " XP");
+	$int8 = ~script2990($widget_644:13_4, $int8, if_getwidth($widget_644:13_4), if_getheight($widget_644:13_4), 0, 0, $int16, $int15, 0, " XP");
 } else {
-	$int8 = ~script2990($component4, $int8, if_getwidth($component4), if_getheight($component4), 0, 0, 0, 0, 0, "");
+	$int8 = ~script2990($widget_644:13_4, $int8, if_getwidth($widget_644:13_4), if_getheight($widget_644:13_4), 0, 0, 0, 0, 0, "");
 }
 $int8 = 0;
 if ($struct13 ! null & ~adventurepath_return_task_status($index14) = ^false & struct_param($struct13, param_927) ! null) {
-	$int8 = ~v2_stone_button_filled($component6);
-	cc_create($component6, ^iftype_graphic, $int8);
+	$int8 = ~v2_stone_button_filled($widget_644:14_6);
+	cc_create($widget_644:14_6, ^iftype_graphic, $int8);
 	cc_setgraphic("worldmap_icon,0");
 	cc_setposition(5, 0, ^setpos_abs_right, ^setpos_abs_centre);
 	cc_setsize(22, 22, ^setsize_abs, ^setsize_abs);
 	$int8 = calc($int8 + 1);
-	cc_create($component6, ^iftype_text, $int8);
-	cc_setsize(calc(if_getwidth($component6) - 32), 0, ^setsize_abs, ^setsize_minus);
+	cc_create($widget_644:14_6, ^iftype_text, $int8);
+	cc_setsize(calc(if_getwidth($widget_644:14_6) - 32), 0, ^setsize_abs, ^setsize_minus);
 	cc_setposition(5, 0, ^setpos_abs_left, ^setpos_abs_centre);
 	cc_settext("Show hint");
 	cc_settextfont(p12_full);
 	cc_settextshadow(true);
 	cc_setcolour(0xff981f);
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 17);
-	if_setop(1, "Show<col=ff9040> Hint", $component6);
-	if_setop(2, "Remove<col=ff9040> Hint arrow", $component6);
-	if_setonmouseover("adventurepath_side_hint_mouseover($component6, $int8)", $component6);
-	if_setonmouseleave("adventurepath_side_hint_mouseleave($component6, $int8)", $component6);
-	if_setonop("button_select_sound", $component6);
+	if_setop(1, "Show<col=ff9040> Hint", $widget_644:14_6);
+	if_setop(2, "Remove<col=ff9040> Hint arrow", $widget_644:14_6);
+	if_setonmouseover("adventurepath_side_hint_mouseover($widget_644:14_6, $int8)", $widget_644:14_6);
+	if_setonmouseleave("adventurepath_side_hint_mouseleave($widget_644:14_6, $int8)", $widget_644:14_6);
+	if_setonop("button_select_sound", $widget_644:14_6);
 } else {
-	$int8 = ~v2_stone_button_in_filled($component6);
-	cc_create($component6, ^iftype_graphic, $int8);
+	$int8 = ~v2_stone_button_in_filled($widget_644:14_6);
+	cc_create($widget_644:14_6, ^iftype_graphic, $int8);
 	cc_setgraphic("worldmap_icon,0");
 	cc_setposition(5, 0, ^setpos_abs_right, ^setpos_abs_centre);
 	cc_setsize(22, 22, ^setsize_abs, ^setsize_abs);
 	$int8 = calc($int8 + 1);
-	cc_create($component6, ^iftype_text, $int8);
-	cc_setsize(calc(if_getwidth($component6) - 32), 0, ^setsize_abs, ^setsize_minus);
+	cc_create($widget_644:14_6, ^iftype_text, $int8);
+	cc_setsize(calc(if_getwidth($widget_644:14_6) - 32), 0, ^setsize_abs, ^setsize_minus);
 	cc_setposition(5, 0, ^setpos_abs_left, ^setpos_abs_centre);
 	cc_settext("Show hint");
 	cc_settextfont(p12_full);
 	cc_settextshadow(true);
 	cc_setcolour(0xff981f);
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 17);
-	if_setop(1, "", $component6);
-	if_setop(2, "", $component6);
-	if_setonmouseover(null, $component6);
-	if_setonmouseleave(null, $component6);
-	if_setonop(null, $component6);
+	if_setop(1, "", $widget_644:14_6);
+	if_setop(2, "", $widget_644:14_6);
+	if_setonmouseover(null, $widget_644:14_6);
+	if_setonmouseleave(null, $widget_644:14_6);
+	if_setonop(null, $widget_644:14_6);
 	$int8 = calc($int8 + 1);
-	cc_create($component6, ^iftype_graphic, $int8);
+	cc_create($widget_644:14_6, ^iftype_graphic, $int8);
 	cc_setposition(2, 2, ^setpos_abs_centre, ^setpos_abs_centre);
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 	cc_setgraphic("tradebacking_dark");
 	cc_settrans(90);
 }
 $int8 = 0;
-$int8 = ~v2_stone_button_filled($component7);
-cc_create($component7, ^iftype_text, $int8);
+$int8 = ~v2_stone_button_filled($widget_644:15_7);
+cc_create($widget_644:15_7, ^iftype_text, $int8);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 cc_settext("Show Paths");
@@ -157,7 +157,7 @@ cc_settextfont(p12_full);
 cc_settextshadow(true);
 cc_setcolour(0xff981f);
 cc_settextalign(^settextalign_centre, ^settextalign_centre, 17);
-if_setop(1, "Show<col=ff9040> Paths", $component7);
-if_setonmouseover("script3335($component7, $int8)", $component7);
-if_setonmouseleave("script3336($component7, $int8)", $component7);
-if_setonop("button_select_sound", $component7);
+if_setop(1, "Show<col=ff9040> Paths", $widget_644:15_7);
+if_setonmouseover("script3335($widget_644:15_7, $int8)", $widget_644:15_7);
+if_setonmouseleave("script3336($widget_644:15_7, $int8)", $widget_644:15_7);
+if_setonop("button_select_sound", $widget_644:15_7);

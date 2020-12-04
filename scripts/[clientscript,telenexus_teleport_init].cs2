@@ -1,7 +1,7 @@
 // 2672
-[clientscript,telenexus_teleport_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13)
-~script2674($component3, $component4, $component6, $component7, $component8, $component5, $component9, $component10, $component11, $component12, $component13);
-~telenexus_options($component2, $component1);
-if_setonvartransmit("telenexus_scry_vartrans($component2, $component1){var1806}", $component2);
-~poh_nexus_model($component0);
-if_setonvartransmit("poh_nexus_model($component0){var1806}", $component0);
+[clientscript,telenexus_teleport_init](component $widget_17:3_0, component $widget_17:4_1, component $widget_17:10_2, component $widget_17:6_3, component $widget_17:12_4, component $widget_17:13_5, component $widget_17:15_6, component $widget_17:11_7, component $widget_17:14_8, component $widget_17:16_9, component $widget_17:17_10, component $widget_17:18_11, component $widget_17:8_12, component $widget_17:7_13)
+~script2674($widget_17:6_3, $widget_17:12_4, $widget_17:15_6, $widget_17:11_7, $widget_17:14_8, $widget_17:13_5, $widget_17:16_9, $widget_17:17_10, $widget_17:18_11, $widget_17:8_12, $widget_17:7_13);
+~telenexus_options($widget_17:10_2, $widget_17:4_1);
+if_setonvartransmit("telenexus_scry_vartrans($widget_17:10_2, $widget_17:4_1){var1806}", $widget_17:10_2);
+~poh_nexus_model($widget_17:3_0);
+if_setonvartransmit("poh_nexus_model($widget_17:3_0){var1806}", $widget_17:3_0);

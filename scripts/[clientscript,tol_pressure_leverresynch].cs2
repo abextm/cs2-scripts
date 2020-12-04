@@ -1,3 +1,3 @@
 // 459
-[clientscript,tol_pressure_leverresynch](int $int0, component $component1, component $component2, component $component3)
-~tol_pressure_leverresynch($int0, $component1, $component2, $component3);
+[clientscript,tol_pressure_leverresynch](int $int0, component $widget_510:141_1, component $widget_510:142_2, component $widget_510:144_3)
+~tol_pressure_leverresynch($int0, $widget_510:141_1, $widget_510:142_2, $widget_510:144_3);

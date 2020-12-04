@@ -1,11 +1,11 @@
 // 3199
-[proc,league_relic_display](component $component0, component $component1)
+[proc,league_relic_display](component $widget_651:1_0, component $widget_651:2_1)
 if (~league_world = 0) {
 	return;
 }
 switch_int (%varbit10032) {
 	case 1 :
-		~league_relic_display_core($component0, $component1, 0x00bb00);
+		~league_relic_display_core($widget_651:1_0, $widget_651:2_1, 0x00bb00);
 	case 2 :
-		~league_relic_display_core($component0, $component1, 0x0098b1);
+		~league_relic_display_core($widget_651:1_0, $widget_651:2_1, 0x0098b1);
 }

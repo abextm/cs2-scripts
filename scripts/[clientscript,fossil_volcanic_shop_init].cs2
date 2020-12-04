@@ -1,7 +1,7 @@
 // 2010
-[clientscript,fossil_volcanic_shop_init](int $int0, component $component1, component $component2, component $component3)
-def_int $int4 = calc(if_getwidth($component1) / 2);
-cc_deleteall($component1);
+[clientscript,fossil_volcanic_shop_init](int $widget_612:0_0, component $widget_612:3_1, component $widget_612:4_2, component $widget_612:5_3)
+def_int $int4 = calc(if_getwidth($widget_612:3_1) / 2);
+cc_deleteall($widget_612:3_1);
 def_int $int5 = 0;
 def_int $int6 = 0;
 def_int $height7 = 0;
@@ -9,7 +9,7 @@ def_int $trans8 = 0;
 def_int $int9 = 0;
 def_namedobj $namedobj10 = enum(int, namedobj, enum_1779, $int9);
 while ($namedobj10 ! null) {
-	cc_create($component1, ^iftype_rectangle, $int5);
+	cc_create($widget_612:3_1, ^iftype_rectangle, $int5);
 	$int5 = calc($int5 + 1);
 	cc_setcolour(^white);
 	cc_setfill(true);
@@ -61,7 +61,7 @@ while ($namedobj10 ! null) {
 }
 if ($int9 > 0) {
 	if (calc($int9 % 2) = 1) {
-		cc_create($component1, ^iftype_rectangle, $int5);
+		cc_create($widget_612:3_1, ^iftype_rectangle, $int5);
 		$int5 = calc($int5 + 1);
 		cc_setsize($int4, 40, ^setsize_minus, ^setsize_abs);
 		cc_setposition(0, $height7, ^setpos_abs_right, ^setpos_abs_top);
@@ -75,12 +75,12 @@ if ($int9 > 0) {
 	}
 	$height7 = calc($height7 + 40);
 }
-if_setscrollpos(0, 0, $component1);
-if ($height7 > if_getheight($component1)) {
-	if_setscrollsize(0, $height7, $component1);
+if_setscrollpos(0, 0, $widget_612:3_1);
+if ($height7 > if_getheight($widget_612:3_1)) {
+	if_setscrollsize(0, $height7, $widget_612:3_1);
 } else {
-	if_setscrollsize(0, 0, $component1);
-	cc_create($component1, ^iftype_rectangle, $int5);
+	if_setscrollsize(0, 0, $widget_612:3_1);
+	cc_create($widget_612:3_1, ^iftype_rectangle, $int5);
 	$int5 = calc($int5 + 1);
 	cc_setsize(0, $height7, ^setsize_minus, ^setsize_minus);
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom);
@@ -88,23 +88,23 @@ if ($height7 > if_getheight($component1)) {
 	cc_setfill(true);
 	cc_settrans(245);
 }
-~scrollbar_vertical($component2, $component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+~scrollbar_vertical($widget_612:4_2, $widget_612:3_1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
 def_int $int11 = calc((40 - 32) / 2);
 def_int $int12 = calc(3 + 36 + 3);
 def_int $width13 = calc($int4 - $int12);
 def_int $int14 = 0;
 while ($int9 > 0) {
 	$int9 = calc($int9 - 1);
-	if (cc_find($component1, $int9) = ^true) {
+	if (cc_find($widget_612:3_1, $int9) = ^true) {
 		$namedobj10 = enum(int, namedobj, enum_1779, $int9);
-		.cc_create($component1, ^iftype_graphic, $int5);
+		.cc_create($widget_612:3_1, ^iftype_graphic, $int5);
 		$int5 = calc($int5 + 1);
 		.cc_setsize(36, 32, ^setsize_abs, ^setsize_abs);
 		.cc_setposition(calc(cc_getx + 3), calc(cc_gety + $int11), ^setpos_abs_left, ^setpos_abs_top);
 		.cc_setobject_nonum(oc_uncert($namedobj10), 1);
 		.cc_setoutline(1);
 		.cc_setgraphicshadow(0x333333);
-		.cc_create($component1, ^iftype_text, $int5);
+		.cc_create($widget_612:3_1, ^iftype_text, $int5);
 		$int5 = calc($int5 + 1);
 		.cc_setsize($width13, 27, ^setsize_abs, ^setsize_abs);
 		.cc_setposition(calc(cc_getx + $int12), cc_gety, ^setpos_abs_left, ^setpos_abs_top);
@@ -119,7 +119,7 @@ while ($int9 > 0) {
 		} else {
 			.cc_settext(oc_name($namedobj10));
 		}
-		.cc_create($component1, ^iftype_text, $int5);
+		.cc_create($widget_612:3_1, ^iftype_text, $int5);
 		$int5 = calc($int5 + 1);
 		.cc_setsize($width13, calc(40 - 27), ^setsize_abs, ^setsize_abs);
 		.cc_setposition(calc(cc_getx + $int12), calc(cc_gety + 27), ^setpos_abs_left, ^setpos_abs_top);
@@ -145,5 +145,5 @@ while ($int9 > 0) {
 		}
 	}
 }
-~fossil_volcanic_shop_points($component3, 0);
-if_setonvartransmit("fossil_volcanic_shop_points($component3){var261}", $component3);
+~fossil_volcanic_shop_points($widget_612:5_3, 0);
+if_setonvartransmit("fossil_volcanic_shop_points($widget_612:5_3){var261}", $widget_612:5_3);

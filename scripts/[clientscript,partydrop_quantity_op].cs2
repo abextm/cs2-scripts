@@ -1,8 +1,8 @@
 // 3610
-[clientscript,partydrop_quantity_op](int $opindex0, int $int1, int $int2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8)
+[clientscript,partydrop_quantity_op](int $opindex0, int $int1, int $int2, component $widget_265:13_3, component $widget_265:4_4, component $widget_265:5_5, component $widget_265:6_6, component $widget_265:7_7, component $widget_265:14_8)
 if ($opindex0 ! 1) {
 	return;
 }
 sound_synth(synth_2266, 1, 0);
 %varbit7792 = $int1;
-~partydrop_main_offeritems($int2, $component3, $component4, $component5, $component6, $component7, $component8);
+~partydrop_main_offeritems($int2, $widget_265:13_3, $widget_265:4_4, $widget_265:5_5, $widget_265:6_6, $widget_265:7_7, $widget_265:14_8);

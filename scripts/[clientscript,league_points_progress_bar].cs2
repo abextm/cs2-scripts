@@ -1,3 +1,3 @@
 // 3181
-[clientscript,league_points_progress_bar](component $component0, component $component1, int $int2, int $int3)
-~league_points_progress_bar($component0, $component1, $int2, $int3);
+[clientscript,league_points_progress_bar](component $widget_657:3_0, component $widget_657:36_1, int $int2, int $int3)
+~league_points_progress_bar($widget_657:3_0, $widget_657:36_1, $int2, $int3);

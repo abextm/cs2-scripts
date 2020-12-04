@@ -1,5 +1,5 @@
 // 2131
-[proc,script2131](component $component0)
+[proc,script2131](component $widget_287:10_0)
 def_int $int1 = inv_total(inv, glistening_tear_22207);
 def_string $string0 = "";
 if ($int1 > 700) {
@@ -9,7 +9,7 @@ if ($int1 > 700) {
 }
 cc_setobject_nonum(glistening_tear_22207, $int1);
 .cc_settext($string0);
-def_int $width2 = if_getwidth($component0);
+def_int $width2 = if_getwidth($widget_287:10_0);
 def_int $int3 = parawidth($string0, $width2, p12_full);
 .cc_setsize($int3, 32, ^setsize_abs, ^setsize_abs);
 $int3 = calc(36 + 3 + $int3);

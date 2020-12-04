@@ -1,4 +1,4 @@
 // 1492
-[clientscript,orbs_worldmap_init](component $component0, component $component1, component $component2)
-~orbs_worldmap_setup($component0, $component1, $component2);
-if_setonsubchange("orbs_worldmap_setup($component0, $component1, $component2)", $component0);
+[clientscript,orbs_worldmap_init](component $widget_311:43_0, component $widget_311:46_1, component $widget_311:47_2)
+~orbs_worldmap_setup($widget_311:43_0, $widget_311:46_1, $widget_311:47_2);
+if_setonsubchange("orbs_worldmap_setup($widget_311:43_0, $widget_311:46_1, $widget_311:47_2)", $widget_311:43_0);

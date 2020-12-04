@@ -1,5 +1,5 @@
 // 1023
-[clientscript,script1023](int $opindex0, int $int1, stat $stat2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20, component $component21, component $component22, component $component23, component $component24)
+[clientscript,script1023](int $opindex0, int $int1, stat $stat2, component $widget_137:4_3, component $widget_137:15_4, component $widget_137:17_5, component $widget_137:18_6, component $widget_137:19_7, component $widget_137:21_8, component $widget_137:25_9, component $widget_137:33_10, component $widget_137:22_11, component $widget_137:26_12, component $widget_137:34_13, component $widget_137:30_14, component $widget_137:38_15, component $widget_137:42_16, component $widget_137:29_17, component $widget_137:37_18, component $widget_137:41_19, component $widget_137:31_20, component $widget_137:39_21, component $widget_137:43_22, component $widget_137:45_23, component $widget_137:46_24)
 if ($opindex0 ! 1) {
 	return;
 }
@@ -20,4 +20,4 @@ if ($int1 = -1) {
 	}
 	%var261, %var262 = $int25, $int26;
 }
-~script1026($component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24);
+~script1026($widget_137:4_3, $widget_137:15_4, $widget_137:17_5, $widget_137:18_6, $widget_137:19_7, $widget_137:21_8, $widget_137:25_9, $widget_137:33_10, $widget_137:22_11, $widget_137:26_12, $widget_137:34_13, $widget_137:30_14, $widget_137:38_15, $widget_137:42_16, $widget_137:29_17, $widget_137:37_18, $widget_137:41_19, $widget_137:31_20, $widget_137:39_21, $widget_137:43_22, $widget_137:45_23, $widget_137:46_24);

@@ -1,10 +1,10 @@
 // 3662
-[proc,league_areas_onclick](int $int0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14)
+[proc,league_areas_onclick](int $int0, component $component1, component $component2, component $widget_512:22_3, component $widget_512:23_4, component $widget_512:24_5, component $widget_512:55_6, component $widget_512:56_7, component $widget_512:57_8, component $widget_512:58_9, component $widget_512:53_10, component $widget_512:59_11, component $widget_512:60_12, component $widget_512:65_13, component $widget_512:21_14)
 def_string $string0 = enum(int, string, enum_3330, $int0);
 if ($int0 ! 2 & %varbit10037 < 9 & ~script3681(2) = 0) {
 	sound_synth(pillory_wrong, 1, 0);
 	return;
 }
 sound_synth(synth_2266, 1, 0);
-if_sethide(false, $component14);
+if_sethide(false, $widget_512:21_14);
 ~league_areas_mouseleave($int0, $component1, $component2);

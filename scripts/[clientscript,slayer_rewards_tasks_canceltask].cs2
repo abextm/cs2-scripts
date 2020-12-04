@@ -1,11 +1,11 @@
 // 423
-[clientscript,slayer_rewards_tasks_canceltask](string $string0, boolean $boolean0, component $component1, component $component2, component $component3, component $component4, component $component5)
+[clientscript,slayer_rewards_tasks_canceltask](string $string0, boolean $boolean0, component $widget_426:11_1, component $widget_426:2_2, component $widget_426:4_3, component $widget_426:8_4, component $widget_426:5_5)
 sound_synth(synth_2266, 1, 0);
-if_sethide(true, $component1);
-if_sethide(false, $component2);
-cc_deleteall($component4);
-if_setposition(33, 165, ^setpos_abs_left, ^setpos_abs_top, $component5);
-if_sethide(false, $component4);
+if_sethide(true, $widget_426:11_1);
+if_sethide(false, $widget_426:2_2);
+cc_deleteall($widget_426:8_4);
+if_setposition(33, 165, ^setpos_abs_left, ^setpos_abs_top, $widget_426:5_5);
+if_sethide(false, $widget_426:8_4);
 def_string $text1 = "";
 def_int $comsubid6 = 0;
 if ($boolean0 = true) {
@@ -15,19 +15,19 @@ if ($boolean0 = true) {
 	$comsubid6 = calc(50 + 1);
 	$text1 = "<u=ff981f><$string0></u><br><br>Your current task will be cancelled. The Slayer Masters may assign this category to you again in future.<br><br><col=ff0000>Cost: <tostring(30)> points</col>";
 }
-if_settext($text1, $component3);
+if_settext($text1, $widget_426:4_3);
 def_int $comsubid7 = 0;
 while ($comsubid7 < $comsubid6) {
-	cc_create($component4, ^iftype_rectangle, $comsubid7);
+	cc_create($widget_426:8_4, ^iftype_rectangle, $comsubid7);
 	cc_sethide(true);
 	$comsubid7 = calc($comsubid7 + 1);
 }
-cc_create($component4, ^iftype_rectangle, $comsubid6);
+cc_create($widget_426:8_4, ^iftype_rectangle, $comsubid6);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 cc_setfill(true);
 cc_settrans(255);
 cc_setop(1, "Confirm");
-cc_setonop("slayer_rewards_confirm_back(true, event_opindex, $component1, $component2, $component3, $component4, $component5)");
-if_setop(1, "Back", $component5);
-if_setonop("slayer_rewards_confirm_back(false, event_opindex, $component1, $component2, $component3, $component4, $component5)", $component5);
+cc_setonop("slayer_rewards_confirm_back(true, event_opindex, $widget_426:11_1, $widget_426:2_2, $widget_426:4_3, $widget_426:8_4, $widget_426:5_5)");
+if_setop(1, "Back", $widget_426:5_5);
+if_setonop("slayer_rewards_confirm_back(false, event_opindex, $widget_426:11_1, $widget_426:2_2, $widget_426:4_3, $widget_426:8_4, $widget_426:5_5)", $widget_426:5_5);

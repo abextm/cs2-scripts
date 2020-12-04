@@ -1,4 +1,4 @@
 // 3167
-[proc,buff_bar_setup](component $component0, component $component1)
-cc_deleteall($component0);
-~league_relic_display($component0, $component1);
+[proc,buff_bar_setup](component $widget_651:1_0, component $widget_651:2_1)
+cc_deleteall($widget_651:1_0);
+~league_relic_display($widget_651:1_0, $widget_651:2_1);

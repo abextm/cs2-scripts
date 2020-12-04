@@ -1,4 +1,4 @@
 // 2122
-[clientscript,script2122](boolean $boolean0, component $component1)
+[clientscript,script2122](boolean $boolean0, component $widget_215:19_1)
 sound_synth(synth_2266, 1, 0);
-if_sethide($boolean0, $component1);
+if_sethide($boolean0, $widget_215:19_1);

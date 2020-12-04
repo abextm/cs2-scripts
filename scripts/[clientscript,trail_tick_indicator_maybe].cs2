@@ -1,4 +1,4 @@
 // 3521
-[clientscript,trail_tick_indicator_maybe](component $component0, component $component1)
-~script3522($component0, $component1);
-if_setonvartransmit("trail_tick_indicator_maybe($component0, $component1){var2743}", $component0);
+[clientscript,trail_tick_indicator_maybe](component $widget_84:45_0, component $widget_84:46_1)
+~script3522($widget_84:45_0, $widget_84:46_1);
+if_setonvartransmit("trail_tick_indicator_maybe($widget_84:45_0, $widget_84:46_1){var2743}", $widget_84:45_0);

@@ -1,14 +1,14 @@
 // 123
-[clientscript,friend_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11)
-~friends_appearance($component1);
-if_settext("Friends List - World <tostring(map_world)>", $component2);
-cc_deleteall($component9);
-~scrollbar_vertical($component9, $component8, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+[clientscript,friend_init](component $widget_429:0_0, component $widget_429:1_1, component $widget_429:3_2, component $widget_429:5_3, component $widget_429:7_4, component $widget_429:8_5, component $widget_429:9_6, component $widget_429:10_7, component $widget_429:11_8, component $widget_429:12_9, component $widget_429:13_10, component $widget_429:18_11)
+~friends_appearance($widget_429:1_1);
+if_settext("Friends List - World <tostring(map_world)>", $widget_429:3_2);
+cc_deleteall($widget_429:12_9);
+~scrollbar_vertical($widget_429:12_9, $widget_429:11_8, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
 switch_int (%varcint183) {
 	case 0, 1, 2, 3, 8, 9, 4, 5 :
 	case default :
 		%varcint183 = 0;
 }
-~friend_update($component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11);
-if_setonfriendtransmit("friend_update($component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11)", $component0);
-if_setonvartransmit("friend_update($component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11){var1737}", $component0);
+~friend_update($widget_429:5_3, $widget_429:7_4, $widget_429:8_5, $widget_429:9_6, $widget_429:10_7, $widget_429:11_8, $widget_429:12_9, $widget_429:13_10, $widget_429:18_11);
+if_setonfriendtransmit("friend_update($widget_429:5_3, $widget_429:7_4, $widget_429:8_5, $widget_429:9_6, $widget_429:10_7, $widget_429:11_8, $widget_429:12_9, $widget_429:13_10, $widget_429:18_11)", $widget_429:0_0);
+if_setonvartransmit("friend_update($widget_429:5_3, $widget_429:7_4, $widget_429:8_5, $widget_429:9_6, $widget_429:10_7, $widget_429:11_8, $widget_429:12_9, $widget_429:13_10, $widget_429:18_11){var1737}", $widget_429:0_0);

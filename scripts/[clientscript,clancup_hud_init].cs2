@@ -1,6 +1,6 @@
 // 1183
-[clientscript,clancup_hud_init](component $component0, component $component1, component $component2, component $component3)
-~script2249($component2, setbit(0, 3));
-~script1486($component3, ^setpos_abs_left, 1, 0);
-~clancup_hud_update($component0, $component1);
-if_setonvartransmit("clancup_hud_update($component0, $component1){var431, var430}", $component0);
+[clientscript,clancup_hud_init](component $widget_208:4_0, component $widget_208:5_1, component $widget_208:1_2, component $widget_208:2_3)
+~script2249($widget_208:1_2, setbit(0, 3));
+~script1486($widget_208:2_3, ^setpos_abs_left, 1, 0);
+~clancup_hud_update($widget_208:4_0, $widget_208:5_1);
+if_setonvartransmit("clancup_hud_update($widget_208:4_0, $widget_208:5_1){var431, var430}", $widget_208:4_0);

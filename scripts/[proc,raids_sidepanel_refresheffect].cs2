@@ -1,10 +1,10 @@
 // 1546
-[proc,raids_sidepanel_refresheffect](int $int0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6)
+[proc,raids_sidepanel_refresheffect](int $int0, component $widget_500:0_1, component $widget_500:10_2, component $widget_500:11_3, component $widget_500:2_4, component $widget_500:5_5, component $widget_500:6_6)
 if ($int0 = 1) {
 	sound_synth(synth_2266, 1, 0);
 }
-if_sethide(true, $component2);
-if_sethide(true, $component3);
-if_sethide(true, $component4);
-if_sethide(true, $component6);
-if_sethide(false, $component5);
+if_sethide(true, $widget_500:10_2);
+if_sethide(true, $widget_500:11_3);
+if_sethide(true, $widget_500:2_4);
+if_sethide(true, $widget_500:6_6);
+if_sethide(false, $widget_500:5_5);

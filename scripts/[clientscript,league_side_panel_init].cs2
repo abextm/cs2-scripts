@@ -1,34 +1,34 @@
 // 3225
-[clientscript,league_side_panel_init](component $component0, component $component1, component $component2, component $component3, component $component4)
-cc_deleteall($component0);
-cc_deleteall($component1);
-cc_deleteall($component2);
-cc_deleteall($component3);
-if_settext(~league_get_league_name, $component4);
-~v2_stone_button_filled($component0);
+[clientscript,league_side_panel_init](component $widget_656:20_0, component $widget_656:24_1, component $widget_656:32_2, component $widget_656:28_3, component $widget_656:2_4)
+cc_deleteall($widget_656:20_0);
+cc_deleteall($widget_656:24_1);
+cc_deleteall($widget_656:32_2);
+cc_deleteall($widget_656:28_3);
+if_settext(~league_get_league_name, $widget_656:2_4);
+~v2_stone_button_filled($widget_656:20_0);
 if (~on_mobile = false) {
-	if_setonmouseleave("league_side_panel_button_hover($component0, 0)", $component0);
-	if_setonmouseover("league_side_panel_button_hover($component0, 1)", $component0);
+	if_setonmouseleave("league_side_panel_button_hover($widget_656:20_0, 0)", $widget_656:20_0);
+	if_setonmouseover("league_side_panel_button_hover($widget_656:20_0, 1)", $widget_656:20_0);
 }
-if_setonop("button_select_sound", $component0);
-~v2_stone_button_filled($component1);
+if_setonop("button_select_sound", $widget_656:20_0);
+~v2_stone_button_filled($widget_656:24_1);
 if (~on_mobile = false) {
-	if_setonmouseleave("league_side_panel_button_hover($component1, 0)", $component1);
-	if_setonmouseover("league_side_panel_button_hover($component1, 1)", $component1);
+	if_setonmouseleave("league_side_panel_button_hover($widget_656:24_1, 0)", $widget_656:24_1);
+	if_setonmouseover("league_side_panel_button_hover($widget_656:24_1, 1)", $widget_656:24_1);
 }
-if_setonop("button_select_sound", $component1);
-~v2_stone_button_filled($component2);
+if_setonop("button_select_sound", $widget_656:24_1);
+~v2_stone_button_filled($widget_656:32_2);
 if (~on_mobile = false) {
-	if_setonmouseleave("league_side_panel_button_hover($component2, 0)", $component2);
-	if_setonmouseover("league_side_panel_button_hover($component2, 1)", $component2);
+	if_setonmouseleave("league_side_panel_button_hover($widget_656:32_2, 0)", $widget_656:32_2);
+	if_setonmouseover("league_side_panel_button_hover($widget_656:32_2, 1)", $widget_656:32_2);
 }
-if_setonop("button_select_sound", $component2);
-~v2_stone_button_filled($component3);
+if_setonop("button_select_sound", $widget_656:32_2);
+~v2_stone_button_filled($widget_656:28_3);
 if (~on_mobile = false) {
-	if_setonmouseleave("league_side_panel_button_hover($component3, 0)", $component3);
-	if_setonmouseover("league_side_panel_button_hover($component3, 1)", $component3);
+	if_setonmouseleave("league_side_panel_button_hover($widget_656:28_3, 0)", $widget_656:28_3);
+	if_setonmouseover("league_side_panel_button_hover($widget_656:28_3, 1)", $widget_656:28_3);
 }
-if_setonop("button_select_sound", $component3);
+if_setonop("button_select_sound", $widget_656:28_3);
 def_struct $struct5 = enum(int, struct, enum_2670, %varbit10032);
 def_int $colour6 = 0xff981f;
 if ($struct5 ! null) {

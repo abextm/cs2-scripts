@@ -1,7 +1,7 @@
 // 3172
-[proc,buff_bar_buff_position](component $component0, int $int1)(int, int)
-def_int $width2 = if_getwidth($component0);
-def_int $height3 = if_getheight($component0);
+[proc,buff_bar_buff_position](component $widget_651:1_0, int $int1)(int, int)
+def_int $width2 = if_getwidth($widget_651:1_0);
+def_int $height3 = if_getheight($widget_651:1_0);
 def_int $int4 = calc($width2 / 31);
 def_int $int5 = calc($height3 / 31);
 def_int $int6 = calc($int4 * $int5);

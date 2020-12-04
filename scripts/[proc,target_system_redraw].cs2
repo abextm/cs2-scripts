@@ -1,49 +1,49 @@
 // 3144
-[proc,target_system_redraw](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7)
+[proc,target_system_redraw](component $widget_90:6_0, component $widget_90:7_1, component $widget_90:8_2, component $widget_90:13_3, component $widget_90:15_4, component $widget_90:16_5, component $widget_90:17_6, component $widget_90:18_7)
 if (%varbit6704 = 1) {
-	if_sethide(true, $component2);
-	if_sethide(false, $component1);
+	if_sethide(true, $widget_90:8_2);
+	if_sethide(false, $widget_90:7_1);
 } else {
-	if_sethide(false, $component2);
-	if_sethide(true, $component1);
+	if_sethide(false, $widget_90:8_2);
+	if_sethide(true, $widget_90:7_1);
 }
 if (~on_mobile = true) {
 	~script1486(interface_90:5, ^setpos_abs_right, 1, 0);
 } else if (%varbit6715 = 2) {
 	if (%varbit4143 = 1) {
-		if_setposition(106, 2, ^setpos_abs_left, ^setpos_abs_top, $component0);
+		if_setposition(106, 2, ^setpos_abs_left, ^setpos_abs_top, $widget_90:6_0);
 	} else {
-		if_setposition(5, 2, ^setpos_abs_left, ^setpos_abs_top, $component0);
+		if_setposition(5, 2, ^setpos_abs_left, ^setpos_abs_top, $widget_90:6_0);
 	}
 	~script1486(interface_90:5, ^setpos_abs_left, 1, 0);
 } else if (%varbit6715 = 3) {
-	if_setposition(0, 2, ^setpos_abs_centre, ^setpos_abs_top, $component0);
+	if_setposition(0, 2, ^setpos_abs_centre, ^setpos_abs_top, $widget_90:6_0);
 	~script1486(interface_90:5, ^setpos_abs_centre, 1, 0);
 } else {
-	if_setposition(0, 2, ^setpos_abs_right, ^setpos_abs_top, $component0);
+	if_setposition(0, 2, ^setpos_abs_right, ^setpos_abs_top, $widget_90:6_0);
 	~script1486(interface_90:5, ^setpos_abs_right, 1, 0);
 }
 if (%varbit9495 = 0) {
-	if_settext("---", $component4);
-	if_setcolour(^white, $component4);
-	if_sethide(true, $component3);
-	if_sethide(true, $component6);
+	if_settext("---", $widget_90:15_4);
+	if_setcolour(^white, $widget_90:15_4);
+	if_sethide(true, $widget_90:13_3);
+	if_sethide(true, $widget_90:17_6);
 	return;
 }
 def_int $int8 = 0;
 if (%varbit9493 > 0) {
 	$int8 = calc((%varbit9493 - 1) * 5);
 	if ($int8 > 0) {
-		if_settext("<tostring($int8)>-<tostring(calc($int8 + 4))>", $component4);
+		if_settext("<tostring($int8)>-<tostring(calc($int8 + 4))>", $widget_90:15_4);
 	} else {
-		if_settext("1-<tostring(calc($int8 + 4))>", $component4);
+		if_settext("1-<tostring(calc($int8 + 4))>", $widget_90:15_4);
 	}
 } else {
-	if_settext("Safe", $component4);
+	if_settext("Safe", $widget_90:15_4);
 }
 if (%varbit9494 = 1) {
-	if_sethide(false, $component3);
+	if_sethide(false, $widget_90:13_3);
 } else {
-	if_sethide(true, $component3);
+	if_sethide(true, $widget_90:13_3);
 }
-if_sethide(false, $component6);
+if_sethide(false, $widget_90:17_6);

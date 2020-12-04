@@ -1,5 +1,5 @@
 // 1143
-[proc,script1143](component $component0, int $int1)
+[proc,script1143](component $widget_226:44_0, int $int1)
 def_int $int2 = 0;
 def_int $int3 = 0;
 $int2, $int3 = ~deadmanprotect_xp_counts;
@@ -13,7 +13,7 @@ if (enum(int, int, enum_1239, $int1) = 1) {
 	return;
 }
 %var1295 = setbit(%var1295, calc($int1 - 1));
-~deadman_stats_set_protect($component0, $int1);
+~deadman_stats_set_protect($widget_226:44_0, $int1);
 $int2, $int3 = ~deadmanprotect_xp_counts;
 if_settext("Combat <tostring($int2)>/2", interface_226:46);
 if_settext("Other <tostring($int3)>/3", interface_226:47);

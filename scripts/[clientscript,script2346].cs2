@@ -1,10 +1,10 @@
 // 2346
-[clientscript,script2346](component $component0, component $component1, component $component2)
-if_settext("Points Available: <col=ffffff><tostring(%varbit6460)></col>", $component0);
-if_setonvartransmit("script2349($component0){var1746}", $component0);
-if_setoninvtransmit("script2347($component2){inv_612}", $component2);
-~script2348($component2);
-cc_deleteall($component1);
+[clientscript,script2346](component $widget_405:4_0, component $widget_405:8_1, component $widget_405:3_2)
+if_settext("Points Available: <col=ffffff><tostring(%varbit6460)></col>", $widget_405:4_0);
+if_setonvartransmit("script2349($widget_405:4_0){var1746}", $widget_405:4_0);
+if_setoninvtransmit("script2347($widget_405:3_2){inv_612}", $widget_405:3_2);
+~script2348($widget_405:3_2);
+cc_deleteall($widget_405:8_1);
 def_int $int3 = 14;
 def_int $int4 = 43;
 def_int $count5 = 0;
@@ -15,7 +15,7 @@ def_string $opbase0 = "";
 while ($count5 < $count6) {
 	$namedobj7 = enum(int, namedobj, enum_1952, $count5);
 	if ($namedobj7 ! null) {
-		cc_create($component1, ^iftype_graphic, $int8);
+		cc_create($widget_405:8_1, ^iftype_graphic, $int8);
 		$int8 = calc($int8 + 1);
 		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs);
 		cc_setposition(calc((36 + $int3) * ($count5 % 4)), calc($count5 / 4 * (32 + $int4)), ^setpos_abs_left, ^setpos_abs_top);
@@ -37,7 +37,7 @@ def_int $int9 = 0;
 while ($count5 < $count6) {
 	$namedobj7 = enum(int, namedobj, enum_1952, $count5);
 	if ($namedobj7 ! null) {
-		cc_create($component1, ^iftype_text, $int8);
+		cc_create($widget_405:8_1, ^iftype_text, $int8);
 		$int8 = calc($int8 + 1);
 		cc_setsize(36, 20, ^setsize_abs, ^setsize_abs);
 		cc_setposition(calc((36 + $int3) * ($count5 % 4)), calc(38 + $count5 / 4 * (36 + $int4)), ^setpos_abs_left, ^setpos_abs_top);

@@ -1,5 +1,5 @@
 // 1351
-[proc,questlist_sectioninit](string $text0, component $component0, enum $enum1, int $count2, component $component3, component $component4, component $component5)(int)
+[proc,questlist_sectioninit](string $text0, component $component0, enum $enum1, int $count2, component $widget_399:6_3, component $widget_399:7_4, component $widget_399:8_5)(int)
 cc_deleteall($component0);
 if ($count2 <= 0) {
 	return(0);

@@ -1,5 +1,5 @@
 // 2094
-[proc,script2094](component $component0, int $int1, string $op0, string $string1, component $component2, component $component3, component $component4, component $component5)
+[proc,script2094](component $component0, int $int1, string $op0, string $string1, component $widget_215:10_2, component $widget_215:11_3, component $widget_215:12_4, component $widget_215:13_5)
 cc_deleteall($component0);
 def_int $int6 = 0;
 .cc_create($component0, ^iftype_rectangle, $int6);
@@ -28,6 +28,6 @@ def_int $int8 = $int6;
 $int6 = calc($int6 + 1);
 cc_setsize(17, 17, ^setsize_abs, ^setsize_abs);
 cc_setposition(5, 0, ^setpos_abs_left, ^setpos_abs_centre);
-~script2096($component0, $int7, $int8, $int1, $component2, $component3, $component4, $component5);
-if_setonvartransmit("script2095($component0, $int7, $int8, $int1, $component2, $component3, $component4, $component5){var499, var281}", $component0);
+~script2096($component0, $int7, $int8, $int1, $widget_215:10_2, $widget_215:11_3, $widget_215:12_4, $widget_215:13_5);
+if_setonvartransmit("script2095($component0, $int7, $int8, $int1, $widget_215:10_2, $widget_215:11_3, $widget_215:12_4, $widget_215:13_5){var499, var281}", $component0);
 if_setop(1, $op0, $component0);

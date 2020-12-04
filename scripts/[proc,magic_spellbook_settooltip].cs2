@@ -1,6 +1,6 @@
 // 2623
-[proc,magic_spellbook_settooltip](boolean $boolean0, obj $obj1, component $component2, int $comsubid3, component $component4, int $int5)
-cc_deleteall($component4);
+[proc,magic_spellbook_settooltip](boolean $boolean0, obj $obj1, component $component2, int $comsubid3, component $widget_218:189_4, int $int5)
+cc_deleteall($widget_218:189_4);
 if ($boolean0 = false) {
 	return;
 }
@@ -76,23 +76,23 @@ if ($comsubid3 ! -1 & cc_find($component2, $comsubid3) = ^true) {
 		$int18 = calc($int18 - 5);
 	}
 }
-cc_create($component4, ^iftype_rectangle, 0);
+cc_create($widget_218:189_4, ^iftype_rectangle, 0);
 cc_setposition(5, $int18, ^setpos_abs_left, ^setpos_abs_top);
 cc_setsize(180, $int17, ^setsize_abs, ^setsize_abs);
 cc_setfill(true);
 cc_setcolour(^black);
 cc_settrans(42);
-cc_create($component4, ^iftype_rectangle, 1);
+cc_create($widget_218:189_4, ^iftype_rectangle, 1);
 cc_setposition(6, calc($int18 + 1), ^setpos_abs_left, ^setpos_abs_top);
 cc_setsize(179, calc($int17 - 1), ^setsize_abs, ^setsize_abs);
 cc_setfill(false);
 cc_setcolour(0x2e2b23);
-cc_create($component4, ^iftype_rectangle, 2);
+cc_create($widget_218:189_4, ^iftype_rectangle, 2);
 cc_setposition(5, $int18, ^setpos_abs_left, ^setpos_abs_top);
 cc_setsize(179, calc($int17 - 1), ^setsize_abs, ^setsize_abs);
 cc_setfill(false);
 cc_setcolour(0x726451);
-cc_create($component4, ^iftype_text, 3);
+cc_create($widget_218:189_4, ^iftype_text, 3);
 cc_setposition(7, calc($int18 + 2), ^setpos_abs_left, ^setpos_abs_top);
 cc_setsize(177, $int15, ^setsize_abs, ^setsize_abs);
 cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
@@ -100,7 +100,7 @@ cc_settextfont(p12_full);
 cc_setcolour(0xff981f);
 cc_settextshadow(false);
 cc_settext("Level <tostring($int6)>: <$string0>");
-cc_create($component4, ^iftype_text, 4);
+cc_create($widget_218:189_4, ^iftype_text, 4);
 cc_setposition(7, calc($int18 + 2 + $int15), ^setpos_abs_left, ^setpos_abs_top);
 cc_setsize(177, $int16, ^setsize_abs, ^setsize_abs);
 cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
@@ -121,11 +121,11 @@ if ($obj13 ! null) {
 def_int $int20 = calc((190 - $int19 * 35) / ($int19 + 1));
 def_int $int21 = 0;
 if ($obj7 ! null) {
-	cc_create($component4, ^iftype_graphic, 5);
+	cc_create($widget_218:189_4, ^iftype_graphic, 5);
 	cc_setposition($int20, calc($int18 + 2 + $int15 + $int16), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 32, ^setsize_abs, ^setsize_abs);
 	cc_setobject($obj7, -1);
-	cc_create($component4, ^iftype_text, 6);
+	cc_create($widget_218:189_4, ^iftype_text, 6);
 	cc_setposition($int20, calc($int18 + 2 + $int15 + $int16 + 32), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 14, ^setsize_abs, ^setsize_abs);
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
@@ -140,11 +140,11 @@ if ($obj7 ! null) {
 	cc_settext("<~magic_tostring($int21)>/<tostring($int8)>");
 }
 if ($obj9 ! null) {
-	cc_create($component4, ^iftype_graphic, 7);
+	cc_create($widget_218:189_4, ^iftype_graphic, 7);
 	cc_setposition(calc($int20 * 2 + 35), calc($int18 + 2 + $int15 + $int16), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 32, ^setsize_abs, ^setsize_abs);
 	cc_setobject($obj9, -1);
-	cc_create($component4, ^iftype_text, 8);
+	cc_create($widget_218:189_4, ^iftype_text, 8);
 	cc_setposition(calc($int20 * 2 + 35), calc($int18 + 2 + $int15 + $int16 + 32), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 14, ^setsize_abs, ^setsize_abs);
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
@@ -159,11 +159,11 @@ if ($obj9 ! null) {
 	cc_settext("<~magic_tostring($int21)>/<tostring($int10)>");
 }
 if ($obj11 ! null) {
-	cc_create($component4, ^iftype_graphic, 9);
+	cc_create($widget_218:189_4, ^iftype_graphic, 9);
 	cc_setposition(calc($int20 * 3 + 70), calc($int18 + 2 + $int15 + $int16), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 32, ^setsize_abs, ^setsize_abs);
 	cc_setobject($obj11, -1);
-	cc_create($component4, ^iftype_text, 10);
+	cc_create($widget_218:189_4, ^iftype_text, 10);
 	cc_setposition(calc($int20 * 3 + 70), calc($int18 + 2 + $int15 + $int16 + 32), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 14, ^setsize_abs, ^setsize_abs);
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
@@ -178,11 +178,11 @@ if ($obj11 ! null) {
 	cc_settext("<~magic_tostring($int21)>/<tostring($int12)>");
 }
 if ($obj13 ! null) {
-	cc_create($component4, ^iftype_graphic, 11);
+	cc_create($widget_218:189_4, ^iftype_graphic, 11);
 	cc_setposition(calc($int20 * 4 + 105), calc($int18 + 2 + $int15 + $int16), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 32, ^setsize_abs, ^setsize_abs);
 	cc_setobject($obj13, -1);
-	cc_create($component4, ^iftype_text, 12);
+	cc_create($widget_218:189_4, ^iftype_text, 12);
 	cc_setposition(calc($int20 * 4 + 105), calc($int18 + 2 + $int15 + $int16 + 32), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(35, 14, ^setsize_abs, ^setsize_abs);
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);

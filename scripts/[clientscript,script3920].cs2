@@ -1,4 +1,4 @@
 // 3920
-[clientscript,script3920](component $component0, component $component1)
+[clientscript,script3920](component $widget_116:24_0, component $widget_116:34_1)
 %varcint2 = 0;
-~script3922($component0, $component1);
+~script3922($widget_116:24_0, $widget_116:34_1);

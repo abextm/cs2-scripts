@@ -1,5 +1,5 @@
 // 313
-[clientscript,music_vartransmit](component $component0, component $component1, int $count2)
+[clientscript,music_vartransmit](component $component0, component $widget_239:13_1, int $count2)
 def_int $flagsarray0(calc(20 + 1));
 $flagsarray0(1) = %var20;
 $flagsarray0(2) = %var21;
@@ -46,4 +46,4 @@ while ($count6 < $count2) {
 	}
 	$count6 = calc($count6 + 1);
 }
-if_settext("<~tostring_spacer(~min($int5, $count2), ",")> / <~tostring_spacer($count2, ",")>", $component1);
+if_settext("<~tostring_spacer(~min($int5, $count2), ",")> / <~tostring_spacer($count2, ",")>", $widget_239:13_1);

@@ -1,8 +1,8 @@
 // 315
-[clientscript,music_optionbuttons_setmode](int $opindex0, int $int1, component $component2, component $component3, component $component4)
+[clientscript,music_optionbuttons_setmode](int $opindex0, int $int1, component $widget_239:7_2, component $widget_239:9_3, component $widget_239:11_4)
 if ($opindex0 ! 1) {
 	return;
 }
 sound_synth(synth_2266, 1, 0);
 %var18 = $int1;
-~music_optionbuttons($component2, $component3, $component4);
+~music_optionbuttons($widget_239:7_2, $widget_239:9_3, $widget_239:11_4);

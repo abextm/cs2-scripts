@@ -1,16 +1,16 @@
 // 2944
-[clientscript,script2944](int $int0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20, component $component21, component $component22, component $component23, component $component24, component $component25, component $component26, component $component27)
-cc_deleteall($component3);
-def_int $int28 = ~adventurepath_init($component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25, $component26, $component27);
+[clientscript,script2944](int $int0, component $widget_642:3_1, component $widget_642:34_2, component $widget_642:35_3, component $widget_642:5_4, component $widget_642:7_5, component $widget_642:27_6, component $widget_642:28_7, component $widget_642:30_8, component $widget_642:31_9, component $widget_642:29_10, component $widget_642:32_11, component $widget_642:21_12, component $widget_642:23_13, component $widget_642:24_14, component $widget_642:25_15, component $widget_642:0_16, component $widget_642:1_17, component $widget_642:4_18, component $widget_642:33_19, component $widget_642:8_20, component $widget_642:11_21, component $widget_642:13_22, component $widget_642:16_23, component $widget_642:17_24, component $widget_642:19_25, component $widget_642:12_26, component $widget_642:26_27)
+cc_deleteall($widget_642:35_3);
+def_int $int28 = ~adventurepath_init($widget_642:3_1, $widget_642:34_2, $widget_642:35_3, $widget_642:5_4, $widget_642:7_5, $widget_642:27_6, $widget_642:28_7, $widget_642:30_8, $widget_642:31_9, $widget_642:29_10, $widget_642:32_11, $widget_642:21_12, $widget_642:23_13, $widget_642:24_14, $widget_642:25_15, $widget_642:0_16, $widget_642:1_17, $widget_642:4_18, $widget_642:33_19, $widget_642:8_20, $widget_642:11_21, $widget_642:13_22, $widget_642:16_23, $widget_642:17_24, $widget_642:19_25, $widget_642:12_26, $widget_642:26_27);
 if ($int28 ! $int0) {
-	if ($int28 > if_getheight($component3)) {
-		if_setscrollsize(0, $int28, $component3);
-		if_setscrollpos(0, ~min(if_getscrolly($component3), calc($int28 - if_getheight($component3))), $component3);
+	if ($int28 > if_getheight($widget_642:35_3)) {
+		if_setscrollsize(0, $int28, $widget_642:35_3);
+		if_setscrollpos(0, ~min(if_getscrolly($widget_642:35_3), calc($int28 - if_getheight($widget_642:35_3))), $widget_642:35_3);
 	} else {
-		if_setscrollsize(0, 0, $component3);
-		if_setscrollpos(0, 0, $component3);
+		if_setscrollsize(0, 0, $widget_642:35_3);
+		if_setscrollpos(0, 0, $widget_642:35_3);
 	}
-	~scrollbar_vertical($component2, $component3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+	~scrollbar_vertical($widget_642:34_2, $widget_642:35_3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
 	$int0 = $int28;
 }
-if_setonvartransmit("script2944($int0, $component1, $component2, $component3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25, $component26, $component27){var2360, var2357}", $component3);
+if_setonvartransmit("script2944($int0, $widget_642:3_1, $widget_642:34_2, $widget_642:35_3, $widget_642:5_4, $widget_642:7_5, $widget_642:27_6, $widget_642:28_7, $widget_642:30_8, $widget_642:31_9, $widget_642:29_10, $widget_642:32_11, $widget_642:21_12, $widget_642:23_13, $widget_642:24_14, $widget_642:25_15, $widget_642:0_16, $widget_642:1_17, $widget_642:4_18, $widget_642:33_19, $widget_642:8_20, $widget_642:11_21, $widget_642:13_22, $widget_642:16_23, $widget_642:17_24, $widget_642:19_25, $widget_642:12_26, $widget_642:26_27){var2360, var2357}", $widget_642:35_3);

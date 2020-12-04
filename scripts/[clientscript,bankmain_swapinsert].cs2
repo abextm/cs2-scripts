@@ -1,3 +1,3 @@
 // 286
-[clientscript,bankmain_swapinsert](component $component0, component $component1)
-~bankmain_swapinsert($component0, $component1);
+[clientscript,bankmain_swapinsert](component $widget_12:16_0, component $widget_12:18_1)
+~bankmain_swapinsert($widget_12:16_0, $widget_12:18_1);

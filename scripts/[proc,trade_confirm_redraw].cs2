@@ -1,13 +1,13 @@
 // 768
-[proc,trade_confirm_redraw](int $size0, int $width1, int $x2, component $component3, component $component4, component $component5, component $component6)
+[proc,trade_confirm_redraw](int $size0, int $width1, int $x2, component $widget_334:28_3, component $widget_334:29_4, component $widget_334:27_5, component $widget_334:31_6)
 if (%varbit4375 = 1) {
-	if_settext("Trade modified", $component6);
+	if_settext("Trade modified", $widget_334:31_6);
 } else {
-	if_settext("", $component6);
+	if_settext("", $widget_334:31_6);
 }
-cc_deleteall($component3);
-cc_deleteall($component4);
-cc_deleteall($component5);
+cc_deleteall($widget_334:28_3);
+cc_deleteall($widget_334:29_4);
+cc_deleteall($widget_334:27_5);
 def_int $int7 = calc(($size0 + 1) / 2);
 def_int $int8 = calc(clientclock - 750);
 def_int $int9 = 0;
@@ -46,7 +46,7 @@ $size11 = 0;
 while ($size11 < $size0) {
 	$obj12 = inv_getobj(inv_90, $size11);
 	if ($obj12 ! null) {
-		cc_create($component3, ^iftype_text, $int17);
+		cc_create($widget_334:28_3, ^iftype_text, $int17);
 		cc_setsize($width13, 17, ^setsize_abs, ^setsize_abs);
 		cc_setcolour(0xff9040);
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
@@ -79,7 +79,7 @@ while ($size11 < $size0) {
 	$obj12 = invother_getobj(inv_90, $size11);
 	$int20 = ~script148($size11);
 	if ($obj12 ! null) {
-		cc_create($component4, ^iftype_text, $int18);
+		cc_create($widget_334:29_4, ^iftype_text, $int18);
 		cc_setsize($width14, 17, ^setsize_abs, ^setsize_abs);
 		cc_setcolour(0xff9040);
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
@@ -113,7 +113,7 @@ while ($size11 < $size0) {
 		}
 		cc_settext($string0);
 		if ($int20 > $int8) {
-			.cc_create($component5, ^iftype_rectangle, $int19);
+			.cc_create($widget_334:27_5, ^iftype_rectangle, $int19);
 			.cc_setsize($width14, 12, ^setsize_abs, ^setsize_abs);
 			.cc_setposition($x15, $y16, ^setpos_abs_left, ^setpos_abs_top);
 			.cc_setcolour(^red);
@@ -121,7 +121,7 @@ while ($size11 < $size0) {
 			.cc_settrans(255);
 			.cc_setontimer("trade_slot_flasher(event_com, event_comsubid, $int20)");
 			$int19 = calc($int19 + 1);
-			.cc_create($component5, ^iftype_rectangle, $int19);
+			.cc_create($widget_334:27_5, ^iftype_rectangle, $int19);
 			.cc_setsize($width14, 12, ^setsize_abs, ^setsize_abs);
 			.cc_setposition($x15, $y16, ^setpos_abs_left, ^setpos_abs_top);
 			.cc_setcolour(0x990000);
@@ -140,7 +140,7 @@ while ($size11 < $size0) {
 	$size11 = calc($size11 + 1);
 }
 if ($int17 <= 0) {
-	cc_create($component3, ^iftype_text, 0);
+	cc_create($widget_334:28_3, ^iftype_text, 0);
 	cc_setsize($width1, 17, ^setsize_abs, ^setsize_abs);
 	cc_setposition($x2, 0, ^setpos_abs_left, ^setpos_abs_top);
 	cc_setcolour(^white);
@@ -151,7 +151,7 @@ if ($int17 <= 0) {
 	$int17 = calc($int17 + 1);
 }
 if ($int18 <= 0) {
-	cc_create($component4, ^iftype_text, 0);
+	cc_create($widget_334:29_4, ^iftype_text, 0);
 	cc_setsize($width1, 17, ^setsize_abs, ^setsize_abs);
 	cc_setposition($x2, 0, ^setpos_abs_left, ^setpos_abs_top);
 	cc_setcolour(^white);
@@ -163,9 +163,9 @@ if ($int18 <= 0) {
 }
 while ($int21 > 0) {
 	$int21 = calc($int21 - 1);
-	cc_create($component5, ^iftype_rectangle, $int19);
+	cc_create($widget_334:27_5, ^iftype_rectangle, $int19);
 	$int19 = calc($int19 + 1);
-	.cc_create($component5, ^iftype_rectangle, $int19);
+	.cc_create($widget_334:27_5, ^iftype_rectangle, $int19);
 	$int19 = calc($int19 + 1);
 	cc_setsize($width14, 12, ^setsize_abs, ^setsize_abs);
 	.cc_setsize($width14, 12, ^setsize_abs, ^setsize_abs);

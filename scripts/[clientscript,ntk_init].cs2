@@ -1,8 +1,8 @@
 // 971
-[clientscript,ntk_init](int $int0, component $component1, component $component2, component $component3, component $component4)
-~script2249($component1, setbit(0, 3));
-~ntk_layout($component2);
-if_setonsubchange("ntk_layout($component2)", $component2);
-if_setonvartransmit("ntk_layout($component2){var1055, var1227}", $component2);
-~ntk_timer_resynch($component3, $component4);
-if_setonvartransmit("ntk_timer_resynch($component3, $component4){var821}", $component3);
+[clientscript,ntk_init](int $widget_428:0_0, component $widget_428:1_1, component $widget_428:2_2, component $widget_428:3_3, component $widget_428:7_4)
+~script2249($widget_428:1_1, setbit(0, 3));
+~ntk_layout($widget_428:2_2);
+if_setonsubchange("ntk_layout($widget_428:2_2)", $widget_428:2_2);
+if_setonvartransmit("ntk_layout($widget_428:2_2){var1055, var1227}", $widget_428:2_2);
+~ntk_timer_resynch($widget_428:3_3, $widget_428:7_4);
+if_setonvartransmit("ntk_timer_resynch($widget_428:3_3, $widget_428:7_4){var821}", $widget_428:3_3);

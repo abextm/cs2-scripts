@@ -1,7 +1,7 @@
 // 1144
-[proc,script1144](component $component0, int $int1)
+[proc,script1144](component $widget_226:44_0, int $int1)
 %var1295 = clearbit(%var1295, calc($int1 - 1));
-~deadman_stats_set_unprotect($component0, $int1);
+~deadman_stats_set_unprotect($widget_226:44_0, $int1);
 def_int $int2 = 0;
 def_int $int3 = 0;
 $int2, $int3 = ~deadmanprotect_xp_counts;

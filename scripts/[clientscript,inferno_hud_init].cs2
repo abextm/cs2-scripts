@@ -1,7 +1,7 @@
 // 735
-[clientscript,inferno_hud_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7)
-~script2249($component0, setbit(0, 3));
-~script1486($component1, ^setpos_abs_left, 1, 0);
-if_setonvartransmit("inferno_hud_update($component5, $component6){var1575}", $component5);
-~inferno_hud_pos(0, $component2, $component3, $component4, $component7, $component5, $component6);
-~inferno_hud_update($component5, $component6);
+[clientscript,inferno_hud_init](component $widget_596:1_0, component $widget_596:2_1, component $widget_596:3_2, component $widget_596:4_3, component $widget_596:7_4, component $widget_596:10_5, component $widget_596:9_6, component $widget_596:6_7)
+~script2249($widget_596:1_0, setbit(0, 3));
+~script1486($widget_596:2_1, ^setpos_abs_left, 1, 0);
+if_setonvartransmit("inferno_hud_update($widget_596:10_5, $widget_596:9_6){var1575}", $widget_596:10_5);
+~inferno_hud_pos(0, $widget_596:3_2, $widget_596:4_3, $widget_596:7_4, $widget_596:6_7, $widget_596:10_5, $widget_596:9_6);
+~inferno_hud_update($widget_596:10_5, $widget_596:9_6);

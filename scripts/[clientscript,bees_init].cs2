@@ -1,6 +1,6 @@
 // 3063
-[clientscript,bees_init](component $component0, component $component1)
-if_setontimer("bees($component0, calc(random(6) - 3), calc(random(6) - 3), $component1, 0)", $component0);
-if_setonmouseover("bees_mouseover($component0)", $component0);
-if_setonmouserepeat("bees_mouserepeat($component0, event_mousex, event_mousey)", $component0);
-if_setonmouseleave("bees_mouseleave($component0)", $component0);
+[clientscript,bees_init](component $widget_420:28_0, component $widget_420:27_1)
+if_setontimer("bees($widget_420:28_0, calc(random(6) - 3), calc(random(6) - 3), $widget_420:27_1, 0)", $widget_420:28_0);
+if_setonmouseover("bees_mouseover($widget_420:28_0)", $widget_420:28_0);
+if_setonmouserepeat("bees_mouserepeat($widget_420:28_0, event_mousex, event_mousey)", $widget_420:28_0);
+if_setonmouseleave("bees_mouseleave($widget_420:28_0)", $widget_420:28_0);

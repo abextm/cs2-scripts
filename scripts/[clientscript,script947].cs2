@@ -1,5 +1,5 @@
 // 947
-[clientscript,script947](component $component0, component $component1, component $component2)
-if_settext("<tostring(%var343)>%", $component0);
-if_settext("<tostring(%var344)>%", $component1);
-if_settext("<tostring(%var345)>%", $component2);
+[clientscript,script947](component $widget_171:6_0, component $widget_171:8_1, component $widget_171:10_2)
+if_settext("<tostring(%var343)>%", $widget_171:6_0);
+if_settext("<tostring(%var344)>%", $widget_171:8_1);
+if_settext("<tostring(%var345)>%", $widget_171:10_2);

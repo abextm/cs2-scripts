@@ -1,11 +1,11 @@
 // 1354
-[proc,questlist_showprogress](component $component0, component $component1, component $component2)
+[proc,questlist_showprogress](component $widget_399:6_0, component $widget_399:7_1, component $widget_399:8_2)
 def_int $int3 = 0;
 def_int $colour4 = ^black;
 def_int $count5 = 0;
 def_int $count6 = ~quest_f2p_count;
 while ($count5 < $count6) {
-	if (cc_find($component0, $count5) = ^true) {
+	if (cc_find($widget_399:6_0, $count5) = ^true) {
 		$int3 = ~questlist_f2p_progress($count5);
 		if (~questlist_f2p_progress_grey($count5) = 1) {
 			$colour4 = 0x9f9f9f;
@@ -26,7 +26,7 @@ while ($count5 < $count6) {
 }
 $count5, $count6 = 0, ~quest_members_count;
 while ($count5 < $count6) {
-	if (cc_find($component1, $count5) = ^true) {
+	if (cc_find($widget_399:7_1, $count5) = ^true) {
 		$int3 = ~questlist_members_progress($count5);
 		if (~questlist_members_progress_grey($count5) = 1) {
 			$colour4 = 0x9f9f9f;
@@ -47,7 +47,7 @@ while ($count5 < $count6) {
 }
 $count5, $count6 = 0, ~miniquest_count;
 while ($count5 < $count6) {
-	if (cc_find($component2, $count5) = ^true) {
+	if (cc_find($widget_399:8_2, $count5) = ^true) {
 		$int3 = ~questlist_miniquests_progress($count5);
 		if (~questlist_miniquests_progress_grey($count5) = 1) {
 			$colour4 = 0x9f9f9f;

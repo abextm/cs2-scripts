@@ -1,5 +1,5 @@
 // 2075
-[proc,sailing_menu_filter](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11)
+[proc,sailing_menu_filter](component $widget_72:2_0, component $widget_72:5_1, component $widget_72:8_2, component $widget_72:11_3, component $widget_72:14_4, component $widget_72:17_5, component $widget_72:20_6, component $widget_72:23_7, component $widget_72:26_8, component $widget_72:29_9, component $widget_72:32_10, component $widget_72:33_11)
 def_int $index12 = ~script2076(coord);
 def_int $flags13 = setbit(0, $index12);
 switch_int ($index12) {
@@ -31,15 +31,15 @@ if (%var176 < 2 | %var176 > 9) {
 if (%varbit9016 < 200) {
 	$flags13 = setbit($flags13, 11);
 }
-if_sethide(~int_to_bool(testbit($flags13, 1)), $component5);
-if_sethide(~int_to_bool(testbit($flags13, 2)), $component2);
-if_sethide(~int_to_bool(testbit($flags13, 3)), $component8);
-if_sethide(~int_to_bool(testbit($flags13, 4)), $component4);
-if_sethide(~int_to_bool(testbit($flags13, 5)), $component6);
-if_sethide(~int_to_bool(testbit($flags13, 6)), $component1);
-if_sethide(~int_to_bool(testbit($flags13, 7)), $component7);
-if_sethide(~int_to_bool(testbit($flags13, 8)), $component3);
-if_sethide(~int_to_bool(testbit($flags13, 9)), $component0);
-if_sethide(~int_to_bool(testbit($flags13, 0)), $component9);
-if_sethide(~int_to_bool(testbit($flags13, 10)), $component10);
-if_sethide(~int_to_bool(testbit($flags13, 11)), $component11);
+if_sethide(~int_to_bool(testbit($flags13, 1)), $widget_72:17_5);
+if_sethide(~int_to_bool(testbit($flags13, 2)), $widget_72:8_2);
+if_sethide(~int_to_bool(testbit($flags13, 3)), $widget_72:26_8);
+if_sethide(~int_to_bool(testbit($flags13, 4)), $widget_72:14_4);
+if_sethide(~int_to_bool(testbit($flags13, 5)), $widget_72:20_6);
+if_sethide(~int_to_bool(testbit($flags13, 6)), $widget_72:5_1);
+if_sethide(~int_to_bool(testbit($flags13, 7)), $widget_72:23_7);
+if_sethide(~int_to_bool(testbit($flags13, 8)), $widget_72:11_3);
+if_sethide(~int_to_bool(testbit($flags13, 9)), $widget_72:2_0);
+if_sethide(~int_to_bool(testbit($flags13, 0)), $widget_72:29_9);
+if_sethide(~int_to_bool(testbit($flags13, 10)), $widget_72:32_10);
+if_sethide(~int_to_bool(testbit($flags13, 11)), $widget_72:33_11);

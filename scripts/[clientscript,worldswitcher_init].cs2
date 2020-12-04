@@ -1,30 +1,30 @@
 // 747
-[clientscript,worldswitcher_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17)
+[clientscript,worldswitcher_init](component $widget_69:0_0, component $widget_69:2_1, component $widget_69:4_2, component $widget_69:15_3, component $widget_69:18_4, component $widget_69:17_5, component $widget_69:16_6, component $widget_69:9_7, component $widget_69:10_8, component $widget_69:11_9, component $widget_69:12_10, component $widget_69:13_11, component $widget_69:14_12, component $widget_69:19_13, component $widget_69:21_14, component $widget_69:22_15, component $widget_69:20_16, component $widget_69:24_17)
 def_int $int18 = 16;
 def_int $int19 = 11;
 if (~on_mobile = true) {
-	if_setsize(0, 190, ^setsize_minus, ^setsize_abs, $component2);
-	if_setsize(0, 48, ^setsize_minus, ^setsize_abs, $component13);
+	if_setsize(0, 190, ^setsize_minus, ^setsize_abs, $widget_69:4_2);
+	if_setsize(0, 48, ^setsize_minus, ^setsize_abs, $widget_69:19_13);
 	$int18, $int19 = 24, 21;
 } else {
-	if_setsize(0, 206, ^setsize_minus, ^setsize_abs, $component2);
-	if_setsize(0, 32, ^setsize_minus, ^setsize_abs, $component13);
+	if_setsize(0, 206, ^setsize_minus, ^setsize_abs, $widget_69:4_2);
+	if_setsize(0, 32, ^setsize_minus, ^setsize_abs, $widget_69:19_13);
 }
-if_settext(~text_device("Right-click on worlds to<br>set them as Favourites.", "Long press on worlds to<br>set them as Favourites."), $component16);
-if_settext("Loading...", $component1);
-if_setscrollpos(0, 0, $component3);
-if_sethide(true, $component3);
-cc_deleteall($component4);
-~scrollbar_vertical($component4, $component3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
-if_sethide(true, $component8);
-if_sethide(true, $component9);
-if_sethide(true, $component10);
-if_sethide(true, $component11);
-if_sethide(true, $component12);
-cc_deleteall($component6);
+if_settext(~text_device("Right-click on worlds to<br>set them as Favourites.", "Long press on worlds to<br>set them as Favourites."), $widget_69:20_16);
+if_settext("Loading...", $widget_69:2_1);
+if_setscrollpos(0, 0, $widget_69:15_3);
+if_sethide(true, $widget_69:15_3);
+cc_deleteall($widget_69:18_4);
+~scrollbar_vertical($widget_69:18_4, $widget_69:15_3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+if_sethide(true, $widget_69:10_8);
+if_sethide(true, $widget_69:11_9);
+if_sethide(true, $widget_69:12_10);
+if_sethide(true, $widget_69:13_11);
+if_sethide(true, $widget_69:14_12);
+cc_deleteall($widget_69:16_6);
 def_int $int20 = 0;
 while ($int20 <= 600) {
-	cc_create($component6, ^iftype_graphic, $int20);
+	cc_create($widget_69:16_6, ^iftype_graphic, $int20);
 	cc_setsize(0, $int18, ^setsize_minus, ^setsize_abs);
 	cc_setop(1, "Switch");
 	cc_setop(2, "Favourite");
@@ -32,4 +32,4 @@ while ($int20 <= 600) {
 	cc_sethide(true);
 	$int20 = calc($int20 + 1);
 }
-if_setontimer("worldswitcher_loading($component0, $component1, $component3, $component4, $component5, $component6, $int18, $int19, $component7, $component8, $component9, $component10, $component11, $component12, $component14, $component15, $component16, $component17)", $component0);
+if_setontimer("worldswitcher_loading($widget_69:0_0, $widget_69:2_1, $widget_69:15_3, $widget_69:18_4, $widget_69:17_5, $widget_69:16_6, $int18, $int19, $widget_69:9_7, $widget_69:10_8, $widget_69:11_9, $widget_69:12_10, $widget_69:13_11, $widget_69:14_12, $widget_69:21_14, $widget_69:22_15, $widget_69:20_16, $widget_69:24_17)", $widget_69:0_0);

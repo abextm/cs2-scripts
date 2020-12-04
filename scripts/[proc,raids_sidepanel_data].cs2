@@ -1,5 +1,5 @@
 // 1540
-[proc,raids_sidepanel_data](component $component0, component $component1)
+[proc,raids_sidepanel_data](component $widget_500:12_0, component $widget_500:14_1)
 cc_settext("Party size: <col=ffffff><tostring(%varbit5424)></col>");
 if (%varbit5425 = 0) {
 	if (%varbit5423 = 1) {
@@ -24,20 +24,20 @@ if (%varbit5425 = 0) {
 }
 def_string $string0 = "Start raid";
 if (%varbit5423 = 1 & %varbit5425 = 0) {
-	if_setsize(calc(parawidth($string0, 190, p12_full) + 20), if_getheight($component1), ^setsize_abs, ^setsize_abs, $component1);
-	if_sethide(false, $component1);
-	~raids_sidepanel_drawbutton(false, $string0, $component1);
-	if_setonmouserepeat("raids_sidepanel_drawbutton(true, $string0, $component1)", $component1);
-	if_setonmouseleave("raids_sidepanel_drawbutton(false, $string0, $component1)", $component1);
-	if_setonop("raids_sidepanel_opbutton(event_opindex, $string0, $component1)", $component1);
-	if_setontimer(null, $component1);
-	if_setop(1, $string0, $component1);
+	if_setsize(calc(parawidth($string0, 190, p12_full) + 20), if_getheight($widget_500:14_1), ^setsize_abs, ^setsize_abs, $widget_500:14_1);
+	if_sethide(false, $widget_500:14_1);
+	~raids_sidepanel_drawbutton(false, $string0, $widget_500:14_1);
+	if_setonmouserepeat("raids_sidepanel_drawbutton(true, $string0, $widget_500:14_1)", $widget_500:14_1);
+	if_setonmouseleave("raids_sidepanel_drawbutton(false, $string0, $widget_500:14_1)", $widget_500:14_1);
+	if_setonop("raids_sidepanel_opbutton(event_opindex, $string0, $widget_500:14_1)", $widget_500:14_1);
+	if_setontimer(null, $widget_500:14_1);
+	if_setop(1, $string0, $widget_500:14_1);
 } else {
-	if_sethide(true, $component1);
-	cc_deleteall($component1);
-	if_clearops($component1);
-	if_setonmouserepeat(null, $component1);
-	if_setonmouseleave(null, $component1);
-	if_setonop(null, $component1);
-	if_setontimer(null, $component1);
+	if_sethide(true, $widget_500:14_1);
+	cc_deleteall($widget_500:14_1);
+	if_clearops($widget_500:14_1);
+	if_setonmouserepeat(null, $widget_500:14_1);
+	if_setonmouseleave(null, $widget_500:14_1);
+	if_setonop(null, $widget_500:14_1);
+	if_setontimer(null, $widget_500:14_1);
 }

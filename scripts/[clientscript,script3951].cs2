@@ -1,3 +1,3 @@
 // 3951
-[clientscript,script3951](component $component0, component $component1, component $component2, component $component3)
-~script3952($component0, $component1, $component2, $component3);
+[clientscript,script3951](component $widget_116:27_0, component $widget_116:34_1, component $widget_116:6_2, component $widget_116:7_3)
+~script3952($widget_116:27_0, $widget_116:34_1, $widget_116:6_2, $widget_116:7_3);

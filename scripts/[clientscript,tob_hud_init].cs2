@@ -1,25 +1,25 @@
 // 2087
-[clientscript,tob_hud_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20, component $component21, component $component22, component $component23)
-~script2249($component3, setbit(0, 3));
-~script1486($component4, ^setpos_abs_left, 1, 0);
-~script1486($component5, ^setpos_abs_centre, 1, 0);
-~script1490($component1);
-cc_deleteall($component9);
-cc_create($component9, ^iftype_rectangle, 0);
-.cc_create($component9, ^iftype_rectangle, 1);
+[clientscript,tob_hud_init](component $widget_28:0_0, component $widget_28:2_1, component $widget_28:3_2, component $widget_28:4_3, component $widget_28:5_4, component $widget_28:34_5, component $widget_28:6_6, component $widget_28:8_7, component $widget_28:35_8, component $widget_28:36_9, component $widget_28:37_10, component $widget_28:10_11, component $widget_28:14_12, component $widget_28:17_13, component $widget_28:18_14, component $widget_28:21_15, component $widget_28:22_16, component $widget_28:25_17, component $widget_28:26_18, component $widget_28:29_19, component $widget_28:30_20, component $widget_28:33_21, component $widget_28:11_22, component $widget_28:38_23)
+~script2249($widget_28:4_3, setbit(0, 3));
+~script1486($widget_28:5_4, ^setpos_abs_left, 1, 0);
+~script1486($widget_28:34_5, ^setpos_abs_centre, 1, 0);
+~script1490($widget_28:2_1);
+cc_deleteall($widget_28:36_9);
+cc_create($widget_28:36_9, ^iftype_rectangle, 0);
+.cc_create($widget_28:36_9, ^iftype_rectangle, 1);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 .cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre);
 .cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_centre);
 cc_setfill(true);
 .cc_setfill(true);
-~tob_hud_status_init($component12, $component13);
-~tob_hud_status_init($component14, $component15);
-~tob_hud_status_init($component16, $component17);
-~tob_hud_status_init($component18, $component19);
-~tob_hud_status_init($component20, $component21);
-~tob_hud_draw($component0, $component2, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23);
-if_setonvartransmit("tob_hud_draw(true, $component0, $component2, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23){var1745, var1737, var1227, var1055}", $component0);
-if_setonresize("tob_hud_draw(true, $component0, $component2, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23)", $component0);
-if_setonsubchange("tob_hud_draw(true, $component0, $component2, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23)", $component0);
-if_setontimer("tob_hud_draw(false, $component0, $component2, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23)", $component0);
+~tob_hud_status_init($widget_28:14_12, $widget_28:17_13);
+~tob_hud_status_init($widget_28:18_14, $widget_28:21_15);
+~tob_hud_status_init($widget_28:22_16, $widget_28:25_17);
+~tob_hud_status_init($widget_28:26_18, $widget_28:29_19);
+~tob_hud_status_init($widget_28:30_20, $widget_28:33_21);
+~tob_hud_draw($widget_28:0_0, $widget_28:3_2, $widget_28:6_6, $widget_28:8_7, $widget_28:35_8, $widget_28:36_9, $widget_28:37_10, $widget_28:10_11, $widget_28:14_12, $widget_28:17_13, $widget_28:18_14, $widget_28:21_15, $widget_28:22_16, $widget_28:25_17, $widget_28:26_18, $widget_28:29_19, $widget_28:30_20, $widget_28:33_21, $widget_28:11_22, $widget_28:38_23);
+if_setonvartransmit("tob_hud_draw(true, $widget_28:0_0, $widget_28:3_2, $widget_28:6_6, $widget_28:8_7, $widget_28:35_8, $widget_28:36_9, $widget_28:37_10, $widget_28:10_11, $widget_28:14_12, $widget_28:17_13, $widget_28:18_14, $widget_28:21_15, $widget_28:22_16, $widget_28:25_17, $widget_28:26_18, $widget_28:29_19, $widget_28:30_20, $widget_28:33_21, $widget_28:11_22, $widget_28:38_23){var1745, var1737, var1227, var1055}", $widget_28:0_0);
+if_setonresize("tob_hud_draw(true, $widget_28:0_0, $widget_28:3_2, $widget_28:6_6, $widget_28:8_7, $widget_28:35_8, $widget_28:36_9, $widget_28:37_10, $widget_28:10_11, $widget_28:14_12, $widget_28:17_13, $widget_28:18_14, $widget_28:21_15, $widget_28:22_16, $widget_28:25_17, $widget_28:26_18, $widget_28:29_19, $widget_28:30_20, $widget_28:33_21, $widget_28:11_22, $widget_28:38_23)", $widget_28:0_0);
+if_setonsubchange("tob_hud_draw(true, $widget_28:0_0, $widget_28:3_2, $widget_28:6_6, $widget_28:8_7, $widget_28:35_8, $widget_28:36_9, $widget_28:37_10, $widget_28:10_11, $widget_28:14_12, $widget_28:17_13, $widget_28:18_14, $widget_28:21_15, $widget_28:22_16, $widget_28:25_17, $widget_28:26_18, $widget_28:29_19, $widget_28:30_20, $widget_28:33_21, $widget_28:11_22, $widget_28:38_23)", $widget_28:0_0);
+if_setontimer("tob_hud_draw(false, $widget_28:0_0, $widget_28:3_2, $widget_28:6_6, $widget_28:8_7, $widget_28:35_8, $widget_28:36_9, $widget_28:37_10, $widget_28:10_11, $widget_28:14_12, $widget_28:17_13, $widget_28:18_14, $widget_28:21_15, $widget_28:22_16, $widget_28:25_17, $widget_28:26_18, $widget_28:29_19, $widget_28:30_20, $widget_28:33_21, $widget_28:11_22, $widget_28:38_23)", $widget_28:0_0);

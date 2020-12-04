@@ -1,5 +1,5 @@
 // 1011
-[proc,xpdrops_setup_init_display](component $component0, component $component1, string $text0, string $string1, int $width2, component $layer3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20, component $component21, component $component22, component $component23, component $component24, component $component25)
+[proc,xpdrops_setup_init_display](component $component0, component $component1, string $text0, string $string1, int $width2, component $widget_137:1_3, component $widget_137:47_4, component $widget_137:49_5, component $widget_137:60_6, component $widget_137:61_7, component $widget_137:6_8, component $widget_137:51_9, component $widget_137:7_10, component $widget_137:52_11, component $widget_137:9_12, component $widget_137:53_13, component $widget_137:10_14, component $widget_137:54_15, component $widget_137:11_16, component $widget_137:55_17, component $widget_137:12_18, component $widget_137:56_19, component $widget_137:13_20, component $widget_137:57_21, component $widget_137:8_22, component $widget_137:58_23, component $widget_137:14_24, component $widget_137:59_25)
 cc_deleteall($component0);
 def_int $int26 = 0;
 cc_create($component0, ^iftype_graphic, $int26);
@@ -8,15 +8,15 @@ cc_setsize(0, 20, ^setsize_minus, ^setsize_abs);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom);
 cc_setgraphic("tradebacking");
 cc_settiling(true);
-cc_setonclick("xpdrops_setup_display_open($component0, $component1, $layer3, $component4, $component5, $component6, $component7, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25)");
+cc_setonclick("xpdrops_setup_display_open($component0, $component1, $widget_137:1_3, $widget_137:47_4, $widget_137:49_5, $widget_137:60_6, $widget_137:61_7, $widget_137:6_8, $widget_137:51_9, $widget_137:7_10, $widget_137:52_11, $widget_137:9_12, $widget_137:53_13, $widget_137:10_14, $widget_137:54_15, $widget_137:11_16, $widget_137:55_17, $widget_137:12_18, $widget_137:56_19, $widget_137:13_20, $widget_137:57_21, $widget_137:8_22, $widget_137:58_23, $widget_137:14_24, $widget_137:59_25)");
 cc_create($component0, ^iftype_rectangle, $int26);
 $int26 = calc($int26 + 1);
 cc_setsize(0, 20, ^setsize_minus, ^setsize_abs);
 cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom);
 cc_setfill(false);
 cc_setcolour(0x0e0e0c);
-cc_setonmouserepeat("tooltip_mouserepeat(event_com, event_comsubid, $component7, $string1, 25, $width2)");
-cc_setonmouseleave("deltooltip($component7)");
+cc_setonmouserepeat("tooltip_mouserepeat(event_com, event_comsubid, $widget_137:61_7, $string1, 25, $width2)");
+cc_setonmouseleave("deltooltip($widget_137:61_7)");
 cc_create($component0, ^iftype_rectangle, $int26);
 $int26 = calc($int26 + 1);
 cc_setsize(2, 18, ^setsize_minus, ^setsize_abs);

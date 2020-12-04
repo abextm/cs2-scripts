@@ -1,4 +1,4 @@
 // 3092
 [clientscript,script3092](graphic $graphic0, string $op0)
-if_setgraphic($graphic0, welcome_screen:89);
-if_setop(1, $op0, welcome_screen:86);
+if_setgraphic($graphic0, interface_378:89);
+if_setop(1, $op0, interface_378:86);

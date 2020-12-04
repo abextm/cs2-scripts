@@ -1,5 +1,5 @@
 // 3517
-[clientscript,script3517](component $component0, component $component1, component $component2, boolean $boolean3, component $component4, component $component5)
+[clientscript,script3517](component $widget_84:47_0, component $widget_84:21_1, component $widget_84:43_2, boolean $boolean3, component $widget_84:45_4, component $widget_84:46_5)
 if (map_members = ^false) {
 	return;
 }
@@ -9,11 +9,11 @@ if ($boolean3 = true) {
 } else if ($boolean3 = false) {
 	$op0 = "Stat Bonus";
 }
-~script3519($component0, $component1, $component2, $boolean3, $op0, false, $component4, $component5);
+~script3519($widget_84:47_0, $widget_84:21_1, $widget_84:43_2, $boolean3, $op0, false, $widget_84:45_4, $widget_84:46_5);
 if (~on_mobile = false) {
-	if_setonmouseover("script3518($component0, $component1, $component2, $boolean3, $op0, true, $component4, $component5)", $component0);
-	if_setonmouseleave("script3518($component0, $component1, $component2, $boolean3, $op0, false, $component4, $component5)", $component0);
+	if_setonmouseover("script3518($widget_84:47_0, $widget_84:21_1, $widget_84:43_2, $boolean3, $op0, true, $widget_84:45_4, $widget_84:46_5)", $widget_84:47_0);
+	if_setonmouseleave("script3518($widget_84:47_0, $widget_84:21_1, $widget_84:43_2, $boolean3, $op0, false, $widget_84:45_4, $widget_84:46_5)", $widget_84:47_0);
 }
-if_setop(1, $op0, $component0);
-if_setonop("script3520($component0, $component1, $component2, $boolean3)", $component0);
-if_setoninvtransmit("script3518($component0, $component1, $component2, $boolean3, $op0, false, $component4, $component5){worn}", $component0);
+if_setop(1, $op0, $widget_84:47_0);
+if_setonop("script3520($widget_84:47_0, $widget_84:21_1, $widget_84:43_2, $boolean3)", $widget_84:47_0);
+if_setoninvtransmit("script3518($widget_84:47_0, $widget_84:21_1, $widget_84:43_2, $boolean3, $op0, false, $widget_84:45_4, $widget_84:46_5){worn}", $widget_84:47_0);

@@ -1,6 +1,6 @@
 // 3784
-[clientscript,script3784](component $component0, component $component1, component $component2, component $component3, enum $enum4)
-~script3785($component0, $component1, $component2, $component3, $enum4);
+[clientscript,script3784](component $widget_49:3_0, component $widget_49:4_1, component $widget_49:8_2, component $widget_49:6_3, enum $enum4)
+~script3785($widget_49:3_0, $widget_49:4_1, $widget_49:8_2, $widget_49:6_3, $enum4);
 def_int $count5 = 0;
 def_int $count6 = enum_getoutputcount($enum4);
 def_struct $struct7 = null;
@@ -17,4 +17,4 @@ if ($struct7 = null) {
 	if_close;
 	return;
 }
-~script3787($component2, $struct7, $component3);
+~script3787($widget_49:8_2, $struct7, $widget_49:6_3);

@@ -1,7 +1,7 @@
 // 1350
-[clientscript,questlist_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6)
-~questlist_qp($component3);
-if_setonvartransmit("questlist_qp($component3){var101}", $component3);
-cc_deleteall($component0);
-~steelbox($component0, 0);
-~questlist_draw_maybe($component0, $component1, $component2, $component4, $component5, $component6);
+[clientscript,questlist_init](component $widget_399:2_0, component $widget_399:5_1, component $widget_399:4_2, component $widget_399:1_3, component $widget_399:6_4, component $widget_399:7_5, component $widget_399:8_6)
+~questlist_qp($widget_399:1_3);
+if_setonvartransmit("questlist_qp($widget_399:1_3){var101}", $widget_399:1_3);
+cc_deleteall($widget_399:2_0);
+~steelbox($widget_399:2_0, 0);
+~questlist_draw_maybe($widget_399:2_0, $widget_399:5_1, $widget_399:4_2, $widget_399:6_4, $widget_399:7_5, $widget_399:8_6);

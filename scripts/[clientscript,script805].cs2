@@ -1,5 +1,5 @@
 // 805
-[clientscript,script805](int $opindex0, int $int1, int $int2, component $component3, int $comsubid4, component $component5, component $component6, component $component7, component $component8, component $component9)
+[clientscript,script805](int $opindex0, int $int1, int $int2, component $widget_465:2_3, int $comsubid4, component $widget_465:4_5, component $widget_465:5_6, component $widget_465:15_7, component $widget_465:24_8, component $widget_465:29_9)
 if ($opindex0 ! 1 & $opindex0 ! 2) {
 	return;
 }
@@ -19,4 +19,4 @@ if ($inv10 = null) {
 		%varbit4397 = $int2;
 	}
 }
-~ge_offers_switchpanel($component3, $comsubid4, $component5, $component6, $component7, $component8, $component9);
+~ge_offers_switchpanel($widget_465:2_3, $comsubid4, $widget_465:4_5, $widget_465:5_6, $widget_465:15_7, $widget_465:24_8, $widget_465:29_9);

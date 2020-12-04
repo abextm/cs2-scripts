@@ -1,7 +1,7 @@
 // 3923
-[proc,settings_side_runmode_maybe](component $component0, component $component1)
-if_setonmouseleave("deltooltip($component1)", $component0);
-if_setonvartransmit("script3924($component0, $component1){var173}", $component0);
-if_setonmisctransmit("script3924($component0, $component1)", $component0);
-if_setonop("script3925($component0, $component1)", $component0);
-~script3926($component0, $component1);
+[proc,settings_side_runmode_maybe](component $widget_116:25_0, component $widget_116:34_1)
+if_setonmouseleave("deltooltip($widget_116:34_1)", $widget_116:25_0);
+if_setonvartransmit("script3924($widget_116:25_0, $widget_116:34_1){var173}", $widget_116:25_0);
+if_setonmisctransmit("script3924($widget_116:25_0, $widget_116:34_1)", $widget_116:25_0);
+if_setonop("script3925($widget_116:25_0, $widget_116:34_1)", $widget_116:25_0);
+~script3926($widget_116:25_0, $widget_116:34_1);

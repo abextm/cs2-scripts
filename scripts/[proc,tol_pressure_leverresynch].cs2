@@ -1,5 +1,5 @@
 // 460
-[proc,tol_pressure_leverresynch](int $int0, component $component1, component $component2, component $component3)
+[proc,tol_pressure_leverresynch](int $int0, component $widget_510:141_1, component $widget_510:142_2, component $widget_510:144_3)
 def_boolean $boolean4 = false;
 if ($int0 = 1) {
 	$boolean4 = ~int_to_bool(%varbit3356);
@@ -7,9 +7,9 @@ if ($int0 = 1) {
 	$boolean4 = ~int_to_bool(%varbit3357);
 }
 if ($boolean4 = true) {
-	if_sethide(true, $component2);
-	if_sethide(false, $component3);
+	if_sethide(true, $widget_510:142_2);
+	if_sethide(false, $widget_510:144_3);
 } else {
-	if_sethide(false, $component2);
-	if_sethide(true, $component3);
+	if_sethide(false, $widget_510:142_2);
+	if_sethide(true, $widget_510:144_3);
 }

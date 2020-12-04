@@ -1,24 +1,24 @@
 // 3658
-[proc,league_areas_draw_interface](component $component0, component $component1, component $component2, component $component3, int $comsubid4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20, component $component21, component $component22, component $component23, component $component24, component $component25, component $component26, component $component27, component $component28, component $component29, component $component30, component $component31, component $component32, component $component33, component $component34, component $component35)
-cc_deleteall($component35);
+[proc,league_areas_draw_interface](component $widget_512:36_0, component $widget_512:38_1, component $widget_512:37_2, component $widget_512:35_3, int $comsubid4, component $widget_512:25_5, component $widget_512:27_6, component $widget_512:28_7, component $widget_512:29_8, component $widget_512:30_9, component $widget_512:31_10, component $widget_512:32_11, component $widget_512:33_12, component $widget_512:34_13, component $widget_512:68_14, component $widget_512:70_15, component $widget_512:71_16, component $widget_512:72_17, component $widget_512:73_18, component $widget_512:74_19, component $widget_512:75_20, component $widget_512:76_21, component $widget_512:77_22, component $widget_512:22_23, component $widget_512:23_24, component $widget_512:24_25, component $widget_512:55_26, component $widget_512:56_27, component $widget_512:57_28, component $widget_512:58_29, component $widget_512:53_30, component $widget_512:59_31, component $widget_512:60_32, component $widget_512:65_33, component $widget_512:21_34, component $widget_512:7_35)
+cc_deleteall($widget_512:7_35);
 def_struct $struct36 = enum(int, struct, enum_2670, %varbit10032);
 if ($struct36 = null) {
 	return;
 }
 def_int $colour37 = struct_param($struct36, param_1027);
-if (cc_find(inventory_ranging:2, $comsubid4) = ^true) {
+if (cc_find(interface_512:2, $comsubid4) = ^true) {
 	cc_setcolour($colour37);
 }
 ~script3659;
-~league_areas_setup_events(1, $component5, $component14, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(2, $component6, $component15, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(6, $component7, $component16, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(5, $component8, $component17, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(3, $component9, $component18, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(4, $component10, $component19, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(8, $component11, $component20, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(7, $component12, $component21, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
-~league_areas_setup_events(11, $component13, $component22, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31, $component32, $component33, $component34);
+~league_areas_setup_events(1, $widget_512:25_5, $widget_512:68_14, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(2, $widget_512:27_6, $widget_512:70_15, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(6, $widget_512:28_7, $widget_512:71_16, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(5, $widget_512:29_8, $widget_512:72_17, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(3, $widget_512:30_9, $widget_512:73_18, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(4, $widget_512:31_10, $widget_512:74_19, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(8, $widget_512:32_11, $widget_512:75_20, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(7, $widget_512:33_12, $widget_512:76_21, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
+~league_areas_setup_events(11, $widget_512:34_13, $widget_512:77_22, $widget_512:22_23, $widget_512:23_24, $widget_512:24_25, $widget_512:55_26, $widget_512:56_27, $widget_512:57_28, $widget_512:58_29, $widget_512:53_30, $widget_512:59_31, $widget_512:60_32, $widget_512:65_33, $widget_512:21_34);
 def_struct $struct38 = ~script3682(0);
 def_int $int39 = 0;
 def_string $text0 = "";
@@ -50,11 +50,11 @@ if ($struct38 ! null) {
 if ($int40 = 5) {
 	$text0 = "You have unlocked 5/5 areas!";
 }
-cc_create($component35, ^iftype_graphic, 0);
+cc_create($widget_512:7_35, ^iftype_graphic, 0);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top);
 cc_setgraphic("tradebacking_light");
-cc_create($component35, ^iftype_text, 1);
+cc_create($widget_512:7_35, ^iftype_text, 1);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top);
 cc_settextfont(p11_full);

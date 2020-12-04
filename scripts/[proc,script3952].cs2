@@ -1,10 +1,10 @@
 // 3952
-[proc,script3952](component $component0, component $component1, component $component2, component $component3)
-if (if_gethide($component0) = false) {
+[proc,script3952](component $widget_116:27_0, component $widget_116:34_1, component $widget_116:6_2, component $widget_116:7_3)
+if (if_gethide($widget_116:27_0) = false) {
 	sound_synth(synth_2266, 1, 0);
 }
-if_sethide(true, $component0);
-if_sethide(false, $component1);
-~deltooltip_action($component1);
-~xpdrops_setup_display_hoveroff($component2);
-~xpdrops_setup_display_hoveroff($component3);
+if_sethide(true, $widget_116:27_0);
+if_sethide(false, $widget_116:34_1);
+~deltooltip_action($widget_116:34_1);
+~xpdrops_setup_display_hoveroff($widget_116:6_2);
+~xpdrops_setup_display_hoveroff($widget_116:7_3);

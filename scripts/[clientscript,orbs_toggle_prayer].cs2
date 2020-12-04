@@ -1,8 +1,8 @@
 // 455
-[clientscript,orbs_toggle_prayer](int $opindex0, component $component1, component $component2, component $component3)
+[clientscript,orbs_toggle_prayer](int $opindex0, component $widget_311:18_1, component $widget_311:21_2, component $widget_311:16_3)
 if ($opindex0 ! 1) {
 	return;
 }
 sound_synth(synth_2266, 1, 0);
 %varbit4103 = calc(1 - %varbit4103);
-~orbs_update_prayer($component1, $component2, $component3);
+~orbs_update_prayer($widget_311:18_1, $widget_311:21_2, $widget_311:16_3);

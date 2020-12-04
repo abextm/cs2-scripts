@@ -1,9 +1,9 @@
 // 2814
-[clientscript,script2814](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9)
-cc_deleteall($component0);
-cc_deleteall($component1);
-cc_deleteall($component6);
-~seed_vault_size_check($component8, $component9, ^min_32bit_int, ^min_32bit_int, $component3, $component4, $component5, $component6, $component7);
+[clientscript,script2814](component $widget_631:8_0, component $widget_631:7_1, component $widget_631:13_2, component $widget_631:11_3, component $widget_631:10_4, component $widget_631:6_5, component $widget_631:5_6, component $widget_631:2_7, component $widget_631:1_8, component $widget_631:0_9)
+cc_deleteall($widget_631:8_0);
+cc_deleteall($widget_631:7_1);
+cc_deleteall($widget_631:5_6);
+~seed_vault_size_check($widget_631:1_8, $widget_631:0_9, ^min_32bit_int, ^min_32bit_int, $widget_631:11_3, $widget_631:10_4, $widget_631:6_5, $widget_631:5_6, $widget_631:2_7);
 def_int $int10 = 0;
 def_int $count11 = 0;
 def_int $int12 = 0;
@@ -13,7 +13,7 @@ if (~on_mobile = true) {
 }
 while ($count11 <= enum_getoutputcount(enum_2304)) {
 	$int10 = enum(int, int, enum_2304, $count11);
-	cc_create($component0, ^iftype_text, $count11);
+	cc_create($widget_631:8_0, ^iftype_text, $count11);
 	cc_setsize(5, calc(20 + $int12), ^setsize_minus, ^setsize_abs);
 	cc_setposition(5, $y13, ^setpos_abs_left, ^setpos_abs_top);
 	cc_setcolour(0xff981f);
@@ -21,12 +21,12 @@ while ($count11 <= enum_getoutputcount(enum_2304)) {
 	cc_settextshadow(true);
 	cc_settext(enum(int, string, enum_2305, $int10));
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 0);
-	cc_setonmouseover("cc_colour_swapper($component0, $count11, ^white)");
-	cc_setonmouseleave("cc_colour_swapper($component0, $count11, 0xff981f)");
-	cc_setonop("seed_vault_catop($component2, $int10, $component3, $component4)");
-	cc_setonvartransmit("seed_vault_catvar($component2, $component3, $component4){var2194}");
+	cc_setonmouseover("cc_colour_swapper($widget_631:8_0, $count11, ^white)");
+	cc_setonmouseleave("cc_colour_swapper($widget_631:8_0, $count11, 0xff981f)");
+	cc_setonop("seed_vault_catop($widget_631:13_2, $int10, $widget_631:11_3, $widget_631:10_4)");
+	cc_setonvartransmit("seed_vault_catvar($widget_631:13_2, $widget_631:11_3, $widget_631:10_4){var2194}");
 	cc_setop(1, "Select");
-	.cc_create($component1, ^iftype_rectangle, $count11);
+	.cc_create($widget_631:7_1, ^iftype_rectangle, $count11);
 	.cc_setsize(0, calc(20 + $int12), ^setsize_minus, ^setsize_abs);
 	.cc_setposition(0, $y13, ^setpos_abs_left, ^setpos_abs_top);
 	.cc_setfill(true);
@@ -41,12 +41,12 @@ while ($count11 <= enum_getoutputcount(enum_2304)) {
 	$count11 = calc($count11 + 1);
 }
 def_int $int14 = 0;
-if ($y13 > if_getheight($component5)) {
-	$int14 = if_getscrolly($component5);
-	if_setscrollsize(0, $y13, $component5);
+if ($y13 > if_getheight($widget_631:6_5)) {
+	$int14 = if_getscrolly($widget_631:6_5);
+	if_setscrollsize(0, $y13, $widget_631:6_5);
 } else {
-	if_setscrollsize(0, 0, $component5);
+	if_setscrollsize(0, 0, $widget_631:6_5);
 	$int14 = 0;
 }
-~scrollbar_vertical($component6, $component5, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
-~scrollbar_resize($component6, $component5, $int14);
+~scrollbar_vertical($widget_631:5_6, $widget_631:6_5, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+~scrollbar_resize($widget_631:5_6, $widget_631:6_5, $int14);

@@ -1,5 +1,5 @@
 // 818
-[proc,skillmulti_start_noclick_maybe](component $component0)
+[proc,skillmulti_start_noclick_maybe](component $widget_465:23_0)
 cc_clearops;
 .cc_clearops;
 def_inv $inv1 = enum(int, inv, enum_150, calc(%varbit4439 - 1));

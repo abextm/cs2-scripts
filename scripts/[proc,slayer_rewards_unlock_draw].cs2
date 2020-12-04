@@ -1,5 +1,5 @@
 // 1090
-[proc,slayer_rewards_unlock_draw](enum $enum0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7)
+[proc,slayer_rewards_unlock_draw](enum $enum0, component $component1, component $component2, component $widget_426:11_3, component $widget_426:2_4, component $widget_426:4_5, component $widget_426:8_6, component $widget_426:5_7)
 cc_deleteall($component1);
 def_int $width8 = if_getwidth($component1);
 def_int $int9 = calc(($width8 - 4) / 2);
@@ -70,8 +70,8 @@ while ($int20 ! -1 & $int20 <= 50) {
 	cc_setsize(16, 16, ^setsize_abs, ^setsize_abs);
 	cc_settiling(true);
 	cc_setposition(calc($int14 + 5 + 36), calc($height13 + 14), ^setpos_abs_left, ^setpos_abs_top);
-	~script413($int20, $string2, $component3, $component4, $component5, $component6, $component7);
-	.cc_setonvartransmit("script412(event_com, .cc_getid, cc_getid, $int20, $string2, $component3, $component4, $component5, $component6, $component7){var1076, var1344, var695}");
+	~script413($int20, $string2, $widget_426:11_3, $widget_426:2_4, $widget_426:4_5, $widget_426:8_6, $widget_426:5_7);
+	.cc_setonvartransmit("script412(event_com, .cc_getid, cc_getid, $int20, $string2, $widget_426:11_3, $widget_426:2_4, $widget_426:4_5, $widget_426:8_6, $widget_426:5_7){var1076, var1344, var695}");
 	cc_create($component1, ^iftype_text, $int12);
 	$int12 = calc($int12 + 1);
 	cc_setposition(calc($int14 + 21 + 36), calc($height13 + 6), ^setpos_abs_left, ^setpos_abs_top);

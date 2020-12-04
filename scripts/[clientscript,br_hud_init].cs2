@@ -1,10 +1,10 @@
 // 1347
-[clientscript,br_hud_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5)
-~script1490($component1);
-~br_hud_clamp($component0, $component2, $component5);
-~script2249($component3, setbit(0, 2));
-~script1486($component4, ^setpos_abs_right, 1, 0);
-if_setonresize("br_hud_clamp($component0, $component2, $component5)", $component0);
-if_setonsubchange("br_hud_clamp($component0, $component2, $component5)", $component0);
-~br_hud_writetimer($component5);
-if_setonvartransmit("br_hud_writetimer($component5){var1377}", $component5);
+[clientscript,br_hud_init](component $widget_328:0_0, component $widget_328:1_1, component $widget_328:2_2, component $widget_328:3_3, component $widget_328:4_4, component $widget_328:14_5)
+~script1490($widget_328:1_1);
+~br_hud_clamp($widget_328:0_0, $widget_328:2_2, $widget_328:14_5);
+~script2249($widget_328:3_3, setbit(0, 2));
+~script1486($widget_328:4_4, ^setpos_abs_right, 1, 0);
+if_setonresize("br_hud_clamp($widget_328:0_0, $widget_328:2_2, $widget_328:14_5)", $widget_328:0_0);
+if_setonsubchange("br_hud_clamp($widget_328:0_0, $widget_328:2_2, $widget_328:14_5)", $widget_328:0_0);
+~br_hud_writetimer($widget_328:14_5);
+if_setonvartransmit("br_hud_writetimer($widget_328:14_5){var1377}", $widget_328:14_5);

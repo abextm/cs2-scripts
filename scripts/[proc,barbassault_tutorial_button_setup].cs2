@@ -1,18 +1,18 @@
 // 485
-[proc,barbassault_tutorial_button_setup](component $component0, int $int1)
+[proc,barbassault_tutorial_button_setup](component $widget_496:11_0, int $int1)
 if (%varbit3264 < $int1) {
-	if_setcolour(^red, $component0);
-	if_setonmouserepeat(null, $component0);
-	if_setonmouseleave(null, $component0);
-	if_setonop(null, $component0);
+	if_setcolour(^red, $widget_496:11_0);
+	if_setonmouserepeat(null, $widget_496:11_0);
+	if_setonmouseleave(null, $widget_496:11_0);
+	if_setonop(null, $widget_496:11_0);
 } else {
 	if (%varbit3264 = $int1) {
-		if_setcolour(^yellow, $component0);
-		if_setonmouseleave("text_colour_swapper($component0, ^yellow)", $component0);
+		if_setcolour(^yellow, $widget_496:11_0);
+		if_setonmouseleave("text_colour_swapper($widget_496:11_0, 16776960)", $widget_496:11_0);
 	} else {
-		if_setcolour(^green, $component0);
-		if_setonmouseleave("text_colour_swapper($component0, ^green)", $component0);
+		if_setcolour(^green, $widget_496:11_0);
+		if_setonmouseleave("text_colour_swapper($widget_496:11_0, 65280)", $widget_496:11_0);
 	}
-	if_setonmouserepeat("text_colour_swapper($component0, ^white)", $component0);
-	if_setonop("opsound(event_opindex, 2)", $component0);
+	if_setonmouserepeat("text_colour_swapper($widget_496:11_0, 16777215)", $widget_496:11_0);
+	if_setonop("opsound(event_opindex, 2)", $widget_496:11_0);
 }

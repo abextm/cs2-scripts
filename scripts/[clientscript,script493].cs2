@@ -1,3 +1,3 @@
 // 493
-[clientscript,script493](int $size0, int $int1, int $int2, component $component3, component $component4)
-~script2276($size0, $int1, $int2, $component3, $component4);
+[clientscript,script493](int $size0, int $int1, int $int2, component $widget_616:3_3, component $widget_616:4_4)
+~script2276($size0, $int1, $int2, $widget_616:3_3, $widget_616:4_4);

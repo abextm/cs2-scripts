@@ -1,5 +1,5 @@
 // 6
-[clientscript,wom_tab_init](component $component0, component $component1, component $component2)
+[clientscript,wom_tab_init](component $widget_371:0_0, component $widget_371:27_1, component $widget_371:28_2)
 def_int $count3 = 0;
 def_component $component4 = null;
 def_component $component5 = null;
@@ -25,11 +25,11 @@ while ($count3 <= $count9) {
 		if_sethide(true, $component4);
 	} else {
 		$int7 = ~max(40, calc(40 + parawidth($string0, 400, p11_full)));
-		if_setonmouseover("text_colour_swapper($component5, ^white)", $component4);
-		if_setonmouseleave("text_colour_swapper($component5, 0xff981f)", $component4);
-		if_setonop("wom_tab_highlight_onclick($count3, $component1, $component2)", $component4);
-		if_setonvartransmit("wom_tab_highlight($component1, $component2){var279}", $component0);
-		if_setoninvtransmit("wom_item_update($component1, $component2){inv, worn, bank}", $component1);
+		if_setonmouseover("text_colour_swapper($component5, 16777215)", $component4);
+		if_setonmouseleave("text_colour_swapper($component5, 16750623)", $component4);
+		if_setonop("wom_tab_highlight_onclick($count3, $widget_371:27_1, $widget_371:28_2)", $component4);
+		if_setonvartransmit("wom_tab_highlight($widget_371:27_1, $widget_371:28_2){var279}", $widget_371:0_0);
+		if_setoninvtransmit("wom_item_update($widget_371:27_1, $widget_371:28_2){inv, worn, bank}", $widget_371:27_1);
 		if_sethide(false, $component4);
 		if_setsize($int7, 0, ^setsize_abs, ^setsize_minus, $component4);
 		if_settext($string0, $component5);
@@ -38,6 +38,6 @@ while ($count3 <= $count9) {
 	}
 	$count3 = calc($count3 + 1);
 }
-~wom_build_item_list($component1, $component2);
-if_setscrollpos(0, 0, $component1);
-~scrollbar_vertical($component2, $component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");
+~wom_build_item_list($widget_371:27_1, $widget_371:28_2);
+if_setscrollpos(0, 0, $widget_371:27_1);
+~scrollbar_vertical($widget_371:28_2, $widget_371:27_1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1");

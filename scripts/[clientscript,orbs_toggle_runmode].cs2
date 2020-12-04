@@ -1,5 +1,5 @@
 // 457
-[clientscript,orbs_toggle_runmode](int $opindex0, component $component1, component $component2)
+[clientscript,orbs_toggle_runmode](int $opindex0, component $widget_311:26_1, component $widget_311:29_2)
 if ($opindex0 ! 1) {
 	return;
 }
@@ -8,4 +8,4 @@ if (%var173 <= 0) {
 } else {
 	%var173 = 0;
 }
-~orbs_update_runmode($component1, $component2);
+~orbs_update_runmode($widget_311:26_1, $widget_311:29_2);

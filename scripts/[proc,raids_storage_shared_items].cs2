@@ -1,13 +1,13 @@
 // 1592
-[proc,raids_storage_shared_items](component $component0, component $component1, component $component2)
+[proc,raids_storage_shared_items](component $widget_550:7_0, component $widget_550:8_1, component $widget_550:2_2)
 def_int $int3 = 0;
 def_int $num4 = 0;
 def_int $height5 = 0;
-cc_deleteall($component0);
+cc_deleteall($widget_550:7_0);
 def_int $int6 = 0;
 def_obj $obj7 = enum(int, obj, enum_1666, $int6);
 while ($obj7 ! null) {
-	cc_create($component0, ^iftype_graphic, $int6);
+	cc_create($widget_550:7_0, ^iftype_graphic, $int6);
 	$num4 = invother_total(inv_582, $obj7);
 	if ($num4 > 0) {
 		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs);
@@ -34,13 +34,13 @@ while ($obj7 ! null) {
 }
 def_int $int8 = 0;
 $height5 = calc($height5 + 32);
-if ($height5 > if_getheight($component0)) {
-	$int8 = if_getscrolly($component0);
-	if_setscrollsize(0, $height5, $component0);
+if ($height5 > if_getheight($widget_550:7_0)) {
+	$int8 = if_getscrolly($widget_550:7_0);
+	if_setscrollsize(0, $height5, $widget_550:7_0);
 } else {
-	if_setscrollsize(0, 0, $component0);
+	if_setscrollsize(0, 0, $widget_550:7_0);
 }
-~scrollbar_resize($component1, $component0, $int8);
+~scrollbar_resize($widget_550:8_1, $widget_550:7_0, $int8);
 $int3 = 0;
 $int6 = inv_size(inv_582);
 while ($int6 > 0) {
@@ -49,4 +49,4 @@ while ($int6 > 0) {
 		$int3 = calc($int3 + 1);
 	}
 }
-if_settext(tostring($int3), $component2);
+if_settext(tostring($int3), $widget_550:2_2);

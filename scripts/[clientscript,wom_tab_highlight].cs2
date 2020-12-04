@@ -1,4 +1,4 @@
 // 11
-[clientscript,wom_tab_highlight](component $component0, component $component1)
+[clientscript,wom_tab_highlight](component $widget_371:27_0, component $widget_371:28_1)
 ~wom_tab_highlight;
-~wom_build_item_list($component0, $component1);
+~wom_build_item_list($widget_371:27_0, $widget_371:28_1);

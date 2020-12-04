@@ -1,22 +1,22 @@
 // 3427
-[proc,hp_hud_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20)
+[proc,hp_hud_init](component $widget_303:0_0, component $widget_303:2_1, component $widget_303:3_2, component $widget_303:4_3, component $widget_303:5_4, component $widget_303:7_5, component $widget_303:21_6, component $widget_303:6_7, component $widget_303:10_8, component $widget_303:12_9, component $widget_303:20_10, component $widget_303:14_11, component $widget_303:15_12, component $widget_303:11_13, component $widget_303:8_14, component $widget_303:9_15, component $widget_303:13_16, component $widget_303:18_17, component $widget_303:19_18, component $widget_303:16_19, component $widget_303:17_20)
 def_int $int21 = 255;
 if (nc_param(%var1683, param_945) = 1) {
 	$int21 = 0;
 }
-~script2249($component3, setbit(0, 3));
-~script1486($component4, ^setpos_abs_centre, 1, 0);
-~script2249($component5, setbit(setbit(0, 3), 4));
-~script1486($component6, ^setpos_abs_left, 1, 0);
-~script1490($component1);
-~hud_clamp_init($component2);
-~hp_hud_fade_in($component14, $component15, $component13, $component16, $component11, $component12, $component10, $component17, $component18, $component19, $component20, $int21);
-if_setonsubchange("hp_hud_pos(0, $component0, $component7, $component8, $component9, $component13, $component10, $component11, $component12, $component17, $component18, $component19, $component20)", $component0);
-if_setonvartransmit("hp_hud_update($component10, $component11, $component12, $component8, $component13, $component17, $component18, $component19, $component20, false){var1682, var1683}", $component10);
-~hp_hud_pos(0, $component0, $component7, $component8, $component9, $component13, $component10, $component11, $component12, $component17, $component18, $component19, $component20);
-~hp_hud_update($component10, $component11, $component12, $component8, $component13, $component17, $component18, $component19, $component20, true);
+~script2249($widget_303:4_3, setbit(0, 3));
+~script1486($widget_303:5_4, ^setpos_abs_centre, 1, 0);
+~script2249($widget_303:7_5, setbit(setbit(0, 3), 4));
+~script1486($widget_303:21_6, ^setpos_abs_left, 1, 0);
+~script1490($widget_303:2_1);
+~hud_clamp_init($widget_303:3_2);
+~hp_hud_fade_in($widget_303:8_14, $widget_303:9_15, $widget_303:11_13, $widget_303:13_16, $widget_303:14_11, $widget_303:15_12, $widget_303:20_10, $widget_303:18_17, $widget_303:19_18, $widget_303:16_19, $widget_303:17_20, $int21);
+if_setonsubchange("hp_hud_pos(0, $widget_303:0_0, $widget_303:6_7, $widget_303:10_8, $widget_303:12_9, $widget_303:11_13, $widget_303:20_10, $widget_303:14_11, $widget_303:15_12, $widget_303:18_17, $widget_303:19_18, $widget_303:16_19, $widget_303:17_20)", $widget_303:0_0);
+if_setonvartransmit("hp_hud_update($widget_303:20_10, $widget_303:14_11, $widget_303:15_12, $widget_303:10_8, $widget_303:11_13, $widget_303:18_17, $widget_303:19_18, $widget_303:16_19, $widget_303:17_20, false){var1682, var1683}", $widget_303:20_10);
+~hp_hud_pos(0, $widget_303:0_0, $widget_303:6_7, $widget_303:10_8, $widget_303:12_9, $widget_303:11_13, $widget_303:20_10, $widget_303:14_11, $widget_303:15_12, $widget_303:18_17, $widget_303:19_18, $widget_303:16_19, $widget_303:17_20);
+~hp_hud_update($widget_303:20_10, $widget_303:14_11, $widget_303:15_12, $widget_303:10_8, $widget_303:11_13, $widget_303:18_17, $widget_303:19_18, $widget_303:16_19, $widget_303:17_20, true);
 if (%varbit10345 = 1) {
-	if_sethide(true, $component7);
+	if_sethide(true, $widget_303:6_7);
 } else if (%varbit10345 = 0) {
-	if_sethide(false, $component7);
+	if_sethide(false, $widget_303:6_7);
 }

@@ -1,6 +1,6 @@
 // 3308
-[clientscript,welcome_type_setup_op](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8)
+[clientscript,welcome_type_setup_op](component $widget_378:81_0, component $widget_378:85_1, component $widget_378:79_2, component $widget_378:83_3, component $widget_378:86_4, component $widget_378:70_5, component $widget_378:68_6, component $widget_378:77_7, component $widget_378:75_8)
 %varbit10116 = calc(1 - %varbit10116);
-~welcome_type_setup(%varbit10116, $component0, $component1, $component2, $component3, $component4);
-~welcome_screen_messages($component3, $component5, $component6, %varbit10116);
-~welcome_screen_credit($component2, $component7, $component8, %varbit10116);
+~welcome_type_setup(%varbit10116, $widget_378:81_0, $widget_378:85_1, $widget_378:79_2, $widget_378:83_3, $widget_378:86_4);
+~welcome_screen_messages($widget_378:83_3, $widget_378:70_5, $widget_378:68_6, %varbit10116);
+~welcome_screen_credit($widget_378:79_2, $widget_378:77_7, $widget_378:75_8, %varbit10116);

@@ -1,5 +1,5 @@
 // 2709
-[proc,1v1arena_review_draw](component $component0)
+[proc,1v1arena_review_draw](component $widget_619:12_0)
 def_component $component1 = null;
 def_obj $obj2 = null;
 def_int $size3 = 0;
@@ -37,14 +37,14 @@ while ($size3 < $size4) {
 	}
 	$size3 = calc($size3 + 1);
 }
-cc_deleteall($component0);
-def_int $int5 = calc((if_getwidth($component0) - 4 - 4 * 36) / 3 + 36);
-def_int $int6 = calc((if_getheight($component0) - 4 - 7 * 32) / 6 + 32);
+cc_deleteall($widget_619:12_0);
+def_int $int5 = calc((if_getwidth($widget_619:12_0) - 4 - 4 * 36) / 3 + 36);
+def_int $int6 = calc((if_getheight($widget_619:12_0) - 4 - 7 * 32) / 6 + 32);
 def_int $size7 = 0;
 def_int $size8 = inv_size(inv);
 while ($size7 < $size8) {
 	$obj2 = inv_getobj(inv_207, $size3);
-	cc_create($component0, ^iftype_graphic, $size7);
+	cc_create($widget_619:12_0, ^iftype_graphic, $size7);
 	if ($obj2 ! null) {
 		cc_sethide(false);
 		cc_setposition(calc(2 + $int5 * ($size7 % 4)), calc(2 + $int6 * ($size7 / 4)), ^setpos_abs_left, ^setpos_abs_top);

@@ -1,63 +1,63 @@
 // 3178
-[proc,side_journal_additional](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, component $component13, component $component14, component $component15, component $component16, component $component17, component $component18, component $component19, component $component20, component $component21, component $component22, component $component23, component $component24, component $component25, component $component26, component $component27, component $component28, component $component29, component $component30, component $component31, component $component32)
+[proc,side_journal_additional](component $widget_629:0_0, component $widget_629:1_1, component $widget_629:3_2, component $widget_629:8_3, component $widget_629:13_4, component $widget_629:18_5, component $widget_629:23_6, component $widget_629:28_7, component $widget_629:7_8, component $widget_629:4_9, component $widget_629:5_10, component $widget_629:6_11, component $widget_629:12_12, component $widget_629:9_13, component $widget_629:10_14, component $widget_629:11_15, component $widget_629:17_16, component $widget_629:14_17, component $widget_629:15_18, component $widget_629:16_19, component $widget_629:22_20, component $widget_629:19_21, component $widget_629:20_22, component $widget_629:21_23, component $widget_629:27_24, component $widget_629:24_25, component $widget_629:25_26, component $widget_629:26_27, component $widget_629:32_28, component $widget_629:29_29, component $widget_629:30_30, component $widget_629:31_31, component $widget_629:33_32)
 def_int $width33 = 34;
 if (~league_world = 1 & %varbit10037 >= 3) {
-	if_clearops($component6);
-	if_sethide(true, $component6);
+	if_clearops($widget_629:23_6);
+	if_sethide(true, $widget_629:23_6);
 	if (%varbit8168 = 4) {
 		%varbit8168 = 0;
 	}
-	~side_journal_switchtab($component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31);
-	if_setop(1, "Leagues", $component7);
+	~side_journal_switchtab($widget_629:7_8, $widget_629:4_9, $widget_629:5_10, $widget_629:6_11, $widget_629:12_12, $widget_629:9_13, $widget_629:10_14, $widget_629:11_15, $widget_629:17_16, $widget_629:14_17, $widget_629:15_18, $widget_629:16_19, $widget_629:22_20, $widget_629:19_21, $widget_629:20_22, $widget_629:21_23, $widget_629:27_24, $widget_629:24_25, $widget_629:25_26, $widget_629:26_27, $widget_629:32_28, $widget_629:29_29, $widget_629:30_30, $widget_629:31_31);
+	if_setop(1, "Leagues", $widget_629:28_7);
 	if (~on_mobile = false) {
-		if_setonmouserepeat("script2803($component29, $component30, $component31, 5)", $component7);
-		if_setonmouseleave("script2804($component29, $component30, $component31, 5)", $component7);
+		if_setonmouserepeat("script2803($widget_629:29_29, $widget_629:30_30, $widget_629:31_31, 5)", $widget_629:28_7);
+		if_setonmouseleave("script2804($widget_629:29_29, $widget_629:30_30, $widget_629:31_31, 5)", $widget_629:28_7);
 	}
-	if_setonop("side_journal_switchtab_onop(event_opindex, 5, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31)", $component7);
-	if_sethide(false, $component7);
+	if_setonop("side_journal_switchtab_onop(event_opindex, 5, $widget_629:7_8, $widget_629:4_9, $widget_629:5_10, $widget_629:6_11, $widget_629:12_12, $widget_629:9_13, $widget_629:10_14, $widget_629:11_15, $widget_629:17_16, $widget_629:14_17, $widget_629:15_18, $widget_629:16_19, $widget_629:22_20, $widget_629:19_21, $widget_629:20_22, $widget_629:21_23, $widget_629:27_24, $widget_629:24_25, $widget_629:25_26, $widget_629:26_27, $widget_629:32_28, $widget_629:29_29, $widget_629:30_30, $widget_629:31_31)", $widget_629:28_7);
+	if_sethide(false, $widget_629:28_7);
 	$width33 = 34;
-	if_setposition(-74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component2);
-	if_setposition(-37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component3);
-	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component4);
-	if_setposition(37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component5);
-	if_setposition(74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component7);
+	if_setposition(-74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:3_2);
+	if_setposition(-37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:8_3);
+	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:13_4);
+	if_setposition(37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:18_5);
+	if_setposition(74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:28_7);
 } else if (%varbit9340 = 1 & ~league_world = 0) {
-	if_clearops($component7);
-	if_sethide(true, $component7);
+	if_clearops($widget_629:28_7);
+	if_sethide(true, $widget_629:28_7);
 	if (%varbit8168 = 5) {
 		%varbit8168 = 0;
 	}
-	~side_journal_switchtab($component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31);
-	if_setop(1, "Adventure Paths", $component6);
-	if_setop(2, "Disable Adventure Paths", $component6);
+	~side_journal_switchtab($widget_629:7_8, $widget_629:4_9, $widget_629:5_10, $widget_629:6_11, $widget_629:12_12, $widget_629:9_13, $widget_629:10_14, $widget_629:11_15, $widget_629:17_16, $widget_629:14_17, $widget_629:15_18, $widget_629:16_19, $widget_629:22_20, $widget_629:19_21, $widget_629:20_22, $widget_629:21_23, $widget_629:27_24, $widget_629:24_25, $widget_629:25_26, $widget_629:26_27, $widget_629:32_28, $widget_629:29_29, $widget_629:30_30, $widget_629:31_31);
+	if_setop(1, "Adventure Paths", $widget_629:23_6);
+	if_setop(2, "Disable Adventure Paths", $widget_629:23_6);
 	if (~on_mobile = false) {
-		if_setonmouserepeat("script2803($component25, $component26, $component27, 4)", $component6);
-		if_setonmouseleave("script2804($component25, $component26, $component27, 4)", $component6);
+		if_setonmouserepeat("script2803($widget_629:24_25, $widget_629:25_26, $widget_629:26_27, 4)", $widget_629:23_6);
+		if_setonmouseleave("script2804($widget_629:24_25, $widget_629:25_26, $widget_629:26_27, 4)", $widget_629:23_6);
 	}
-	if_setonop("side_journal_switchtab_onop(event_opindex, 4, $component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31)", $component6);
-	if_sethide(false, $component6);
+	if_setonop("side_journal_switchtab_onop(event_opindex, 4, $widget_629:7_8, $widget_629:4_9, $widget_629:5_10, $widget_629:6_11, $widget_629:12_12, $widget_629:9_13, $widget_629:10_14, $widget_629:11_15, $widget_629:17_16, $widget_629:14_17, $widget_629:15_18, $widget_629:16_19, $widget_629:22_20, $widget_629:19_21, $widget_629:20_22, $widget_629:21_23, $widget_629:27_24, $widget_629:24_25, $widget_629:25_26, $widget_629:26_27, $widget_629:32_28, $widget_629:29_29, $widget_629:30_30, $widget_629:31_31)", $widget_629:23_6);
+	if_sethide(false, $widget_629:23_6);
 	$width33 = 34;
-	if_setposition(-74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component2);
-	if_setposition(-37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component3);
-	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component4);
-	if_setposition(37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component5);
-	if_setposition(74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component6);
+	if_setposition(-74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:3_2);
+	if_setposition(-37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:8_3);
+	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:13_4);
+	if_setposition(37, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:18_5);
+	if_setposition(74, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:23_6);
 } else {
-	if_clearops($component6);
-	if_sethide(true, $component6);
-	if_clearops($component7);
-	if_sethide(true, $component7);
+	if_clearops($widget_629:23_6);
+	if_sethide(true, $widget_629:23_6);
+	if_clearops($widget_629:28_7);
+	if_sethide(true, $widget_629:28_7);
 	if (%varbit8168 = 4 | %varbit8168 = 5) {
 		%varbit8168 = 0;
 	}
-	~side_journal_switchtab($component8, $component9, $component10, $component11, $component12, $component13, $component14, $component15, $component16, $component17, $component18, $component19, $component20, $component21, $component22, $component23, $component24, $component25, $component26, $component27, $component28, $component29, $component30, $component31);
+	~side_journal_switchtab($widget_629:7_8, $widget_629:4_9, $widget_629:5_10, $widget_629:6_11, $widget_629:12_12, $widget_629:9_13, $widget_629:10_14, $widget_629:11_15, $widget_629:17_16, $widget_629:14_17, $widget_629:15_18, $widget_629:16_19, $widget_629:22_20, $widget_629:19_21, $widget_629:20_22, $widget_629:21_23, $widget_629:27_24, $widget_629:24_25, $widget_629:25_26, $widget_629:26_27, $widget_629:32_28, $widget_629:29_29, $widget_629:30_30, $widget_629:31_31);
 	$width33 = 44;
-	if_setposition(-69, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component2);
-	if_setposition(-23, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component3);
-	if_setposition(23, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component4);
-	if_setposition(69, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $component5);
+	if_setposition(-69, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:3_2);
+	if_setposition(-23, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:8_3);
+	if_setposition(23, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:13_4);
+	if_setposition(69, 0, ^setpos_abs_centre, ^setpos_abs_bottom, $widget_629:18_5);
 }
-if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $component2);
-if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $component3);
-if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $component4);
-if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $component5);
+if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $widget_629:3_2);
+if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $widget_629:8_3);
+if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $widget_629:13_4);
+if_setsize($width33, 0, ^setsize_abs, ^setsize_minus, $widget_629:18_5);

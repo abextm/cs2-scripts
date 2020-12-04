@@ -1,11 +1,11 @@
 // 694
-[clientscript,makeovermage_gender](component $component0, component $component1, int $int2, boolean $boolean3)
+[clientscript,makeovermage_gender](component $widget_205:6_0, component $widget_205:8_1, int $int2, boolean $boolean3)
 if ($boolean3 = true) {
-	if_setonop("opsound(event_opindex, 2)", $component0);
-	if_setonvartransmit("makeovermage_gender($component0, $component1, $int2, false){var261}", $component0);
+	if_setonop("opsound(event_opindex, 2)", $widget_205:6_0);
+	if_setonvartransmit("makeovermage_gender($widget_205:6_0, $widget_205:8_1, $int2, false){var261}", $widget_205:6_0);
 }
 if (%var261 = $int2) {
-	if_setcolour(^green, $component1);
+	if_setcolour(^green, $widget_205:8_1);
 } else {
-	if_setcolour(^black, $component1);
+	if_setcolour(^black, $widget_205:8_1);
 }

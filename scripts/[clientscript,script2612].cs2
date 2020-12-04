@@ -1,11 +1,11 @@
 // 2612
-[clientscript,script2612](obj $obj0, component $component1, component $component2, int $int3)
+[clientscript,script2612](obj $obj0, component $widget_218:180_1, component $widget_218:189_2, int $int3)
 sound_synth(synth_2266, 1, 0);
-cc_deleteall($component2);
+cc_deleteall($widget_218:189_2);
 if (%varcint225 = $obj0) {
 	%varcint225 = null;
-	if_setontimer(null, $component1);
+	if_setontimer(null, $widget_218:180_1);
 	return;
 }
 %varcint225 = $obj0;
-if_setontimer("script2613($component1, $component2, $int3)", $component1);
+if_setontimer("script2613($widget_218:180_1, $widget_218:189_2, $int3)", $widget_218:180_1);

@@ -1,13 +1,13 @@
 // 3189
-[proc,league_relics_draw_selections](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9, component $component10, component $component11, component $component12, int $comsubid13)
-cc_deleteall($component1);
-cc_deleteall($component2);
-cc_deleteall($component3);
-cc_deleteall($component4);
-cc_deleteall($component5);
-cc_deleteall($component0);
-cc_deleteall($component10);
-cc_deleteall($component11);
+[proc,league_relics_draw_selections](component $widget_655:7_0, component $widget_655:8_1, component $widget_655:9_2, component $widget_655:10_3, component $widget_655:11_4, component $widget_655:12_5, component $widget_655:6_6, component $widget_655:16_7, component $widget_655:33_8, component $widget_655:13_9, component $widget_655:30_10, component $widget_655:32_11, component $widget_655:31_12, int $comsubid13)
+cc_deleteall($widget_655:8_1);
+cc_deleteall($widget_655:9_2);
+cc_deleteall($widget_655:10_3);
+cc_deleteall($widget_655:11_4);
+cc_deleteall($widget_655:12_5);
+cc_deleteall($widget_655:7_0);
+cc_deleteall($widget_655:30_10);
+cc_deleteall($widget_655:32_11);
 def_struct $struct14 = enum(int, struct, enum_2670, %varbit10032);
 def_int $colour15 = 0xff981f;
 def_enum $enum16 = null;
@@ -19,26 +19,26 @@ if ($struct14 ! null) {
 	$enum16 = struct_param($struct14, param_870);
 	$colour15 = struct_param($struct14, param_1027);
 }
-cc_create($component0, ^iftype_graphic, 0);
+cc_create($widget_655:7_0, ^iftype_graphic, 0);
 cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top);
 cc_setgraphic("tradebacking_light");
-if_sethide(false, $component6);
-if_sethide(true, $component7);
-if_sethide(true, $component9);
-if_sethide(true, $component8);
+if_sethide(false, $widget_655:6_6);
+if_sethide(true, $widget_655:16_7);
+if_sethide(true, $widget_655:13_9);
+if_sethide(true, $widget_655:33_8);
 if ($enum16 ! null) {
 	$int18 = enum_getoutputcount($enum16);
 }
 def_int $int21 = 0;
-~leagues_menu_button($component10, $int21, $component11, $component12);
+~leagues_menu_button($widget_655:30_10, $int21, $widget_655:32_11, $widget_655:31_12);
 $int21 = 0;
-~league_create_dropdown($component10, $component11, $component12, $int21, 2);
+~league_create_dropdown($widget_655:30_10, $widget_655:32_11, $widget_655:31_12, $int21, 2);
 if (cc_find(interface_655:2, $comsubid13) = ^true) {
 	cc_setcolour($colour15);
 }
-def_int $width22 = if_getwidth($component6);
-def_int $int23 = calc(if_getheight($component6) - 5);
+def_int $width22 = if_getwidth($widget_655:6_6);
+def_int $int23 = calc(if_getheight($widget_655:6_6) - 5);
 def_int $int24 = 0;
 def_int $int25 = 0;
 def_int $int26 = 0;
@@ -87,14 +87,14 @@ while ($int42 < $int18) {
 	}
 	$struct41 = enum(int, struct, $enum20, $int40);
 	if ($enum20 ! null & $struct41 ! null) {
-		cc_create($component1, ^iftype_graphic, $int42);
+		cc_create($widget_655:8_1, ^iftype_graphic, $int42);
 		cc_setsize($int24, 0, ^setsize_abs, ^setsize_minus);
 		cc_setposition($int27, 0, ^setpos_abs_left, ^setpos_abs_top);
 		cc_setgraphic("tradebacking_dark");
 		cc_settiling(true);
 		$int29, $string0, $int30, $int31, $int37, $colour33, $colour35 = 255, "", 1, 0, 1, 0xaaaaaa, 0xdddddd;
 	} else if ($int28 = 0 & $enum20 ! null & %var2615 >= struct_param($struct17, param_877)) {
-		cc_create($component1, ^iftype_graphic, $int42);
+		cc_create($widget_655:8_1, ^iftype_graphic, $int42);
 		cc_setsize($int24, 0, ^setsize_abs, ^setsize_minus);
 		cc_setposition($int27, 0, ^setpos_abs_left, ^setpos_abs_top);
 		cc_setgraphic("tradebacking_light");
@@ -102,14 +102,14 @@ while ($int42 < $int18) {
 		$int29, $string0, $int30, $int31, $int37, $colour33, $colour35 = 127, "", 1, 1, 1, null, null;
 		$int28 = 1;
 	} else {
-		cc_create($component1, ^iftype_graphic, $int42);
+		cc_create($widget_655:8_1, ^iftype_graphic, $int42);
 		cc_setsize($int24, 0, ^setsize_abs, ^setsize_minus);
 		cc_setposition($int27, 0, ^setpos_abs_left, ^setpos_abs_top);
 		cc_setgraphic("tradebacking_dark");
 		cc_settiling(true);
 		$int29, $string0, $int30, $int31, $int37, $colour33, $colour35 = 255, "", 1, 0, 1, null, null;
 	}
-	cc_create($component0, ^iftype_text, calc($int42 + 1));
+	cc_create($widget_655:7_0, ^iftype_text, calc($int42 + 1));
 	cc_setsize($int24, 0, ^setsize_abs, ^setsize_minus);
 	cc_setposition($int27, 0, ^setpos_abs_left, ^setpos_abs_top);
 	cc_settextfont(p11_full);
@@ -129,7 +129,7 @@ while ($int42 < $int18) {
 	$int43 = 0;
 	while ($int43 < $int19) {
 		$struct38 = enum(int, struct, $enum20, calc($int43 + 1));
-		cc_create($component4, ^iftype_text, $int44);
+		cc_create($widget_655:11_4, ^iftype_text, $int44);
 		if (string_length($string0) > 0) {
 			$text1 = $string0;
 		} else {
@@ -156,7 +156,7 @@ while ($int42 < $int18) {
 		cc_setcolour($colour32);
 		cc_settextshadow(true);
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0);
-		cc_create($component2, ^iftype_graphic, $int44);
+		cc_create($widget_655:9_2, ^iftype_graphic, $int44);
 		cc_setsize(30, 30, ^setsize_abs, ^setsize_abs);
 		cc_setposition(calc($int27 + $int24 / 2 - 15), calc($int26 + $int25 / 2 - 31), ^setpos_abs_left, ^setpos_abs_top);
 		if ($struct38 = $struct41) {
@@ -165,7 +165,7 @@ while ($int42 < $int18) {
 			$graphic39, $trans36 = struct_param($struct38, param_883), calc($int29 - 128);
 		}
 		cc_setgraphic($graphic39);
-		cc_create($component3, ^iftype_graphic, $int44);
+		cc_create($widget_655:10_3, ^iftype_graphic, $int44);
 		cc_setsize(34, 34, ^setsize_abs, ^setsize_abs);
 		cc_setposition(calc($int27 + $int24 / 2 - 17), calc($int26 + $int25 / 2 - 33), ^setpos_abs_left, ^setpos_abs_top);
 		cc_setgraphic(struct_param($struct14, param_1026));
@@ -174,7 +174,7 @@ while ($int42 < $int18) {
 		} else {
 			cc_settrans(255);
 		}
-		cc_create($component5, ^iftype_rectangle, $int44);
+		cc_create($widget_655:12_5, ^iftype_rectangle, $int44);
 		cc_setsize($int24, $int25, ^setsize_abs, ^setsize_abs);
 		cc_setposition($int27, $int26, ^setpos_abs_left, ^setpos_abs_top);
 		cc_setfill(true);
@@ -182,15 +182,15 @@ while ($int42 < $int18) {
 		if ($int37 = 1) {
 			cc_setop(1, "View");
 			cc_setopbase("<col=ff981f><$text1></col>");
-			cc_setonop("league_relics_loading($component9, $int44, $component3, $int29, $component2, $graphic39, $component4, $colour32)");
+			cc_setonop("league_relics_loading($widget_655:13_9, $int44, $widget_655:10_3, $int29, $widget_655:9_2, $graphic39, $widget_655:11_4, $colour32)");
 		}
 		if ($int30 = 1 & ~on_mobile = false) {
 			if ($int31 = 1) {
-				cc_setonmouserepeat("league_relic_hover($component3, $trans36, $component2, struct_param($struct38, param_881), $component4, $colour34, $int44)");
+				cc_setonmouserepeat("league_relic_hover($widget_655:10_3, $trans36, $widget_655:9_2, struct_param($struct38, param_881), $widget_655:11_4, $colour34, $int44)");
 			} else {
-				cc_setonmouserepeat("league_relic_hover($component3, $trans36, $component2, $graphic39, $component4, $colour34, $int44)");
+				cc_setonmouserepeat("league_relic_hover($widget_655:10_3, $trans36, $widget_655:9_2, $graphic39, $widget_655:11_4, $colour34, $int44)");
 			}
-			cc_setonmouseleave("league_relic_hover($component3, $int29, $component2, $graphic39, $component4, $colour32, $int44)");
+			cc_setonmouseleave("league_relic_hover($widget_655:10_3, $int29, $widget_655:9_2, $graphic39, $widget_655:11_4, $colour32, $int44)");
 		}
 		$int44 = calc($int44 + 1);
 		$int26 = calc($int26 + $int25);
@@ -200,12 +200,12 @@ while ($int42 < $int18) {
 	$int42 = calc($int42 + 1);
 }
 if ($int28 = 1) {
-	cc_deleteall($component0);
-	cc_create($component0, ^iftype_graphic, 0);
+	cc_deleteall($widget_655:7_0);
+	cc_create($widget_655:7_0, ^iftype_graphic, 0);
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top);
 	cc_setgraphic("tradebacking_light");
-	cc_create($component0, ^iftype_text, 1);
+	cc_create($widget_655:7_0, ^iftype_text, 1);
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus);
 	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top);
 	cc_settextfont(p11_full);

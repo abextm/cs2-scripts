@@ -1,12 +1,12 @@
 // 3833
-[clientscript,script3833](component $component0, component $component1, int $clock2)
+[clientscript,script3833](component $widget_134:0_0, component $widget_134:1_1, int $clock2)
 if (%varcint222 = $clock2) {
 	return;
 }
 def_enum $enum3 = ~toplevel_getcomponents;
 if ($enum3 = enum_1745) {
-	~trailblazer_achievement_sendpublic_maybe($component1, $enum3);
+	~trailblazer_achievement_sendpublic_maybe($widget_134:1_1, $enum3);
 } else {
-	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, $component1);
+	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, $widget_134:1_1);
 }
-if_setontimer("script3833($component0, $component1, %varcint222)", $component0);
+if_setontimer("script3833($widget_134:0_0, $widget_134:1_1, %varcint222)", $widget_134:0_0);

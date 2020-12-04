@@ -1,9 +1,9 @@
 // 334
-[clientscript,godwars_hideshow_init](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6)
-~script2249($component1, setbit(0, 2));
-~script1486($component6, ^setpos_abs_right, 1, 0);
+[clientscript,godwars_hideshow_init](component $widget_406:0_0, component $widget_406:5_1, component $widget_406:1_2, component $widget_406:17_3, component $widget_406:3_4, component $widget_406:4_5, component $widget_406:6_6)
+~script2249($widget_406:5_1, setbit(0, 2));
+~script1486($widget_406:6_6, ^setpos_abs_right, 1, 0);
 %varcint50 = 256;
-~godwars_hideshow($component2, $component3);
-if_setontimer("godwars_hideshow($component2, $component3)", $component0);
-~script1490($component4);
-~hud_clamp_init($component5);
+~godwars_hideshow($widget_406:1_2, $widget_406:17_3);
+if_setontimer("godwars_hideshow($widget_406:1_2, $widget_406:17_3)", $widget_406:0_0);
+~script1490($widget_406:3_4);
+~hud_clamp_init($widget_406:4_5);

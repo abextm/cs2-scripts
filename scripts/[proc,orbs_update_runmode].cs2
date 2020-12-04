@@ -1,17 +1,17 @@
 // 454
-[proc,orbs_update_runmode](component $component0, component $component1)
+[proc,orbs_update_runmode](component $widget_311:26_0, component $widget_311:29_1)
 if (%var173 = 1) {
-	if_setgraphic("orb_filler,6", $component0);
+	if_setgraphic("orb_filler,6", $widget_311:26_0);
 	if (%varbit25 = 1) {
-		if_setgraphic("orb_icon,5", $component1);
+		if_setgraphic("orb_icon,5", $widget_311:29_1);
 	} else {
-		if_setgraphic("orb_icon,3", $component1);
+		if_setgraphic("orb_icon,3", $widget_311:29_1);
 	}
 } else {
-	if_setgraphic("orb_filler,5", $component0);
+	if_setgraphic("orb_filler,5", $widget_311:26_0);
 	if (%varbit25 = 1) {
-		if_setgraphic("orb_icon,5", $component1);
+		if_setgraphic("orb_icon,5", $widget_311:29_1);
 	} else {
-		if_setgraphic("orb_icon,2", $component1);
+		if_setgraphic("orb_icon,2", $widget_311:29_1);
 	}
 }

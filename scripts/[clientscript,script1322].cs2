@@ -1,5 +1,5 @@
 // 1322
-[clientscript,script1322](component $component0, int $comsubid1)
-if (cc_find($component0, $comsubid1) = ^true) {
-	~script1323($component0);
+[clientscript,script1322](component $widget_12:52_0, int $comsubid1)
+if (cc_find($widget_12:52_0, $comsubid1) = ^true) {
+	~script1323($widget_12:52_0);
 }

@@ -1,7 +1,7 @@
 // 1367
-[proc,script1367](component $component0, component $component1)
-cc_deleteall($component0);
-cc_deleteall($component1);
+[proc,script1367](component $widget_491:2_0, component $widget_491:3_1)
+cc_deleteall($widget_491:2_0);
+cc_deleteall($widget_491:3_1);
 def_int $int2 = 0;
 def_int $int3 = 0;
 def_int $int4 = 1;
@@ -83,7 +83,7 @@ while ($model10 ! null) {
 		$text1 = enum(int, string, enum_1406, $int4);
 		$text2 = enum(int, string, enum_1407, $int4);
 	}
-	cc_create($component0, ^iftype_text, $int2);
+	cc_create($widget_491:2_0, ^iftype_text, $int2);
 	cc_setcolour(0xccccff);
 	cc_setposition(248, calc(6 + 50 * ($int4 - 1)), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(83, 40, ^setsize_abs, ^setsize_abs);
@@ -92,7 +92,7 @@ while ($model10 ! null) {
 	cc_settextshadow(true);
 	cc_settext($text1);
 	$int2 = calc($int2 + 1);
-	cc_create($component0, ^iftype_rectangle, $int2);
+	cc_create($widget_491:2_0, ^iftype_rectangle, $int2);
 	cc_setposition(244, calc(3 + 50 * ($int4 - 1)), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(90, 46, ^setsize_abs, ^setsize_abs);
 	cc_setcolour(0x333300);
@@ -103,7 +103,7 @@ while ($model10 ! null) {
 	} else {
 		$int6 = calc(6 + 50 * ($int4 - 1));
 	}
-	cc_create($component0, ^iftype_text, $int2);
+	cc_create($widget_491:2_0, ^iftype_text, $int2);
 	cc_setcolour(0xcc0000);
 	if (testbit($flags8, calc($int4 - 1)) = ^true) {
 		$text2 = "<col=00ff00><$text2></col>";
@@ -125,7 +125,7 @@ while ($model10 ! null) {
 	$int2 = calc($int2 + 1);
 	if ($boolean7 = true) {
 		$int6 = calc($int6 + 28);
-		cc_create($component0, ^iftype_text, $int2);
+		cc_create($widget_491:2_0, ^iftype_text, $int2);
 		cc_setposition(341, $int6, ^setpos_abs_left, ^setpos_abs_top);
 		cc_setsize(84, 15, ^setsize_abs, ^setsize_abs);
 		cc_settextfont(p12_full);
@@ -134,18 +134,18 @@ while ($model10 ! null) {
 		cc_settext($text3);
 		$int2 = calc($int2 + 1);
 	}
-	cc_create($component0, ^iftype_rectangle, $int2);
+	cc_create($widget_491:2_0, ^iftype_rectangle, $int2);
 	cc_setposition(338, calc(3 + 50 * ($int4 - 1)), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(90, 46, ^setsize_abs, ^setsize_abs);
 	cc_setcolour(0x333300);
 	$int2 = calc($int2 + 1);
-	cc_create($component0, ^iftype_model, $int2);
+	cc_create($widget_491:2_0, ^iftype_model, $int2);
 	cc_setmodel($model10);
 	cc_setposition(11, calc(9 + 50 * ($int4 - 1)), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(49, 34, ^setsize_abs, ^setsize_abs);
 	cc_setmodelangle(0, 0, 0, 0, 0, 2372);
 	$int2 = calc($int2 + 1);
-	cc_create($component0, ^iftype_text, $int2);
+	cc_create($widget_491:2_0, ^iftype_text, $int2);
 	cc_setcolour(0xccccff);
 	cc_setposition(70, calc(18 + 50 * ($int4 - 1)), ^setpos_abs_left, ^setpos_abs_top);
 	cc_setsize(162, 15, ^setsize_abs, ^setsize_abs);
@@ -154,15 +154,15 @@ while ($model10 ! null) {
 	cc_settextshadow(true);
 	cc_settext($text0);
 	$int2 = calc($int2 + 1);
-	.cc_create($component1, ^iftype_rectangle, $int3);
+	.cc_create($widget_491:3_1, ^iftype_rectangle, $int3);
 	.cc_setposition(2, calc(3 + 50 * ($int4 - 1)), ^setpos_abs_left, ^setpos_abs_top);
 	.cc_setsize(238, 46, ^setsize_abs, ^setsize_abs);
 	if (%var261 = $int4) {
 		.cc_setcolour(^blue);
 	} else {
 		.cc_setcolour(0x333300);
-		.cc_setonmouseover("cc_colour_swapper($component1, $int3, ^white)");
-		.cc_setonmouseleave("cc_colour_swapper($component1, $int3, 0x333300)");
+		.cc_setonmouseover("cc_colour_swapper($widget_491:3_1, $int3, ^white)");
+		.cc_setonmouseleave("cc_colour_swapper($widget_491:3_1, $int3, 0x333300)");
 	}
 	.cc_setop(1, "Select");
 	.cc_setopbase("<col=ff9040><$text0></col>");
@@ -172,4 +172,4 @@ while ($model10 ! null) {
 	$model10 = enum(int, model, enum_1403, $int4);
 	$int11 = calc($int11 + 50);
 }
-if_setscrollsize(0, $int11, $component0);
+if_setscrollsize(0, $int11, $widget_491:2_0);

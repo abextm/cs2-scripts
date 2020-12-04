@@ -1,9 +1,9 @@
 // 2253
-[clientscript,bugreport_next](component $component0, component $component1, component $component2, component $component3, component $component4, component $component5, component $component6, component $component7, component $component8, component $component9)
+[clientscript,bugreport_next](component $widget_156:11_0, component $widget_156:17_1, component $widget_156:15_2, component $widget_156:16_3, component $widget_156:21_4, component $widget_156:22_5, component $widget_156:11_6, component $widget_156:15_7, component $widget_156:21_8, component $widget_156:23_9)
 sound_synth(synth_2266, 1, 0);
-if_sethide(true, $component0);
-if_sethide(false, $component1);
-~bugreport_switch_textinput($component4, $component5, $component2, $component3, $component1, $component7, $component8, $component9);
+if_sethide(true, $widget_156:11_0);
+if_sethide(false, $widget_156:17_1);
+~bugreport_switch_textinput($widget_156:21_4, $widget_156:22_5, $widget_156:15_2, $widget_156:16_3, $widget_156:17_1, $widget_156:15_7, $widget_156:21_8, $widget_156:23_9);
 if (~on_mobile = true) {
 	~keyboard_show_string(0, 500, %varcstring373);
 }
